@@ -27,3 +27,7 @@
   src: local("Raleway Semi Bold"),
     url(./fonts/Raleway-SemiBold.ttf) format("truetype");
 }
+
+body {
+  margin: 0;
+}

@@ -25,7 +25,6 @@ const StyleGuide = () => {
       <br />
       <ExternalLink>This is an external link</ExternalLink>
       <PinkHeaderMd>Components</PinkHeaderMd>
-
     </>
   )
 }
