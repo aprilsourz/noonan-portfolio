@@ -1,24 +1,18 @@
 import React from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { ThemeProvider } from "styled-components"
 
+import StyleGuide from "./pages/StyleGuide"
+import theme from "./theme"
 function App() {
   return (
-    <div className="App">
-      <p style={{ fontFamily: "Raleway Regular", fontSize: "30px" }}>
-        Raleway Regular
-      </p>
-      <p style={{ fontFamily: "Raleway Extra Bold", fontSize: "30px" }}>
-        Raleway Extra Bold
-      </p>
-      <p style={{ fontFamily: "Raleway Semi Bold", fontSize: "30px" }}>
-        Raleway Semi Bold
-      </p>
-      <p style={{ fontFamily: "Raleway Extra Light", fontSize: "30px" }}>
-        Raleway Extra Light
-      </p>
-      <p style={{ fontFamily: "Raleway Regular Italic", fontSize: "30px" }}>
-        Raleway Regular Italic
-      </p>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Switch>
+          <Route exact path="/style-guide" component={StyleGuide} />
+        </Switch>
+      </Router>
+    </ThemeProvider>
   )
 }
 
