@@ -1,4 +1,6 @@
 // @TODO Replace Raleway with museo-sans
+// Subtract 4px from every font size on mobile devices.
+// The smallest font will be 11px and the typography elements will maintain the same size ratios
 const theme = {
   colors: {
     black: "#1B1723",
@@ -13,34 +15,42 @@ const theme = {
   typography: {
     largeTitleText: {
       fontSize: "50px",
+      mobileFontSize: "46px",
       fontFamily: "Raleway Bold 700",
     },
     largeBodyText: {
       fontSize: "30px",
+      mobileFontSize: "26px",
       fontFamily: "Raleway Medium 500",
     },
-    h1Text: {
+    headerLgText: {
       fontSize: "40px",
+      mobileFontSize: "36px",
       fontFamily: "Raleway Bold 700",
     },
-    h2Text: {
+    headerMdText: {
       fontSize: "30px",
+      mobileFontSize: "26px",
       fontFamily: "Raleway Medium 500 Italic",
     },
-    h3Text: {
+    headerSmText: {
       fontSize: "20px",
+      mobileFontSize: "16px",
       fontFamily: "Raleway Black 900",
     },
     normalBodyText: {
       fontSize: "20px",
+      mobileFontSize: "16px",
       fontFamily: "Raleway Light 300",
     },
-    emphasizedBodyText: {
+    boldBodyText: {
       fontSize: "20px",
+      mobileFontSize: "16px",
       fontFamily: "Raleway Medium 500",
     },
     linkText: {
       fontSize: "20px",
+      mobileFontSize: "16px",
       fontFamily: "Raleway Medium 500 Italic",
     },
   },
