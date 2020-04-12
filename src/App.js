@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import { ThemeProvider } from "styled-components";
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
-  )
+    <ThemeProvider>
+      <div className="App">Hello World</div>
+    </ThemeProvider>
+  );
 }
 
 export default App;
