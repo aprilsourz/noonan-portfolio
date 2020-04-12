@@ -1,12 +1,11 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
+const TestComponent = styled.div`
+  color: ${({ theme }) => theme.colors.pink};
+`
 function App() {
-  return (
-    <ThemeProvider>
-      <div className="App">Hello World</div>
-    </ThemeProvider>
-  );
+  return <TestComponent className="App">Hello World</TestComponent>
 }
 
-export default App;
+export default App
