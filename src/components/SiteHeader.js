@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
+import { withRouter } from "react-router-dom"
 
 import { NavLinkText } from "../components/typography"
 
@@ -23,6 +24,7 @@ const LogoPlaceHolder = styled.div`
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 
   ${breakpoint("tablet")`
     left: 50%;
@@ -81,15 +83,15 @@ const LinkContainer = styled.div`
   `}
 `
 
-const SiteHeader = () => {
+const SiteHeader = ({ history }) => {
   return (
     <StyledHeader>
-      <LogoPlaceHolder />
+      <LogoPlaceHolder onClick={() => history.push("/")} />
       <LinkContainer>
-        <PinkButton>
+        <PinkButton onClick={() => history.push("/work-stuff")}>
           <NavLinkText>work stuff</NavLinkText>
         </PinkButton>
-        <GreenButton>
+        <GreenButton onClick={() => history.push("/fun-stuff")}>
           <NavLinkText>fun stuff</NavLinkText>
         </GreenButton>
       </LinkContainer>
@@ -97,4 +99,4 @@ const SiteHeader = () => {
   )
 }
 
-export default SiteHeader
+export default withRouter(SiteHeader)

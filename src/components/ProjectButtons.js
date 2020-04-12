@@ -41,7 +41,7 @@ const ButtonContainer = styled.div`
   margin-right: 50px;
   margin-left: 50px;
   display: flex;
-  width: 280px;
+  width: 285px;
 `
 
 const ProjectButtons = () => {

@@ -1,9 +1,19 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom"
 import { ThemeProvider } from "styled-components"
 
 import StyleGuide from "./pages/StyleGuide"
+import Home from "./pages/Home"
+import WorkStuff from "./pages/WorkStuff"
+import FunStuff from "./pages/FunStuff"
+import Projects from "./pages/Projects"
+
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
 
@@ -29,7 +39,12 @@ class App extends Component {
             <SiteHeader />
             <Main>
               <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/fun-stuff" component={FunStuff} />
+                <Route exact path="/work-stuff" component={WorkStuff} />
+                <Route exact path="/projects" component={Projects} />
                 <Route exact path="/style-guide" component={StyleGuide} />
+                <Redirect to="/" />
               </Switch>
             </Main>
           </>
