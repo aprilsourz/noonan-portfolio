@@ -5,13 +5,24 @@ import { ThemeProvider } from "styled-components"
 
 import theme from "./theme"
 
+// @TODO replace with museo sans
+import "./fonts/Raleway-Regular.ttf"
+import "./fonts/Raleway-ExtraBold.ttf"
+import "./fonts/Raleway-Italic.ttf"
+import "./fonts/Raleway-Light.ttf"
+import "./fonts/Raleway-SemiBold.ttf"
+
+import "./index.css"
+
 // @TODO Should we leave the service worker?
 import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <>
+        <App />
+      </>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
