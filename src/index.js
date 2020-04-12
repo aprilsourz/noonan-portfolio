@@ -2,7 +2,6 @@ import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
 
-
 // @TODO replace with museo sans
 import "./fonts/Raleway-Regular.ttf"
 import "./fonts/Raleway-ExtraBold.ttf"
@@ -17,7 +16,7 @@ import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
   <React.StrictMode>
-        <App />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 )
