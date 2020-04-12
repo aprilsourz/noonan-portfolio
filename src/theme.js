@@ -9,7 +9,7 @@ const theme = {
     green: "#86EDDF",
     lightGrey: "#F1F2F7",
     lightBlue: "#E9EDFF",
-    lightPink: "#E9EDFF",
+    lightPink: "#FFE9FD",
     lightGreen: "#EAFFFC",
   },
   typography: {
@@ -51,7 +51,7 @@ const theme = {
     linkText: {
       fontSize: "20px",
       mobileFontSize: "16px",
-      fontFamily: `"Raleway Regular" Italic, sans-serif`,
+      fontFamily: `"Raleway Regular Italic", sans-serif`,
     },
     navLinkText: {
       fontSize: "18px",

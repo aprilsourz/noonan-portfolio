@@ -11,6 +11,7 @@ import {
   ExternalLink,
 } from "../components/typography"
 import SectionDivider from "../components/SectionDivider"
+import ProjectButtons from "../components/ProjectButtons"
 
 const StyleGuide = () => {
   return (
@@ -28,6 +29,9 @@ const StyleGuide = () => {
       <PinkHeaderMd>Components</PinkHeaderMd>
       <div style={{ margin: "0 auto", width: "1240px" }}>
         <SectionDivider>/ recent work</SectionDivider>
+        <br />
+        <br />
+        <ProjectButtons />
       </div>
     </>
   )

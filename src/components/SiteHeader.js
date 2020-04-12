@@ -33,23 +33,10 @@ const LogoPlaceHolder = styled.div`
 
 const GreenButton = styled.button`
   background-color: ${({ theme }) => theme.colors.black};
-  height: 34px;
   margin-left: auto;
-  border-radius: 1px;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-out;
-  -moz-transition: background-color 0.3s ease-out;
-  -o-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
 
   span {
     color: ${({ theme }) => theme.colors.green};
-    -webkit-transition: color 0.3s ease-out;
-    -moz-transition: color 0.3s ease-out;
-    -o-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out;
   }
 
   &:hover {
@@ -63,22 +50,8 @@ const GreenButton = styled.button`
 
 const PinkButton = styled.button`
   background-color: ${({ theme }) => theme.colors.black};
-  height: 34px;
-  border-radius: 1px;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-out;
-  -moz-transition: background-color 0.3s ease-out;
-  -o-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
-
   span {
     color: ${({ theme }) => theme.colors.pink};
-    -webkit-transition: color 0.3s ease-out;
-    -moz-transition: color 0.3s ease-out;
-    -o-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out;
   }
 
   &:hover {
