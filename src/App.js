@@ -39,7 +39,7 @@ class App extends Component {
   }
 }
 
-const Main = styled.div`
+const Main = styled.main`
   margin-top: 115px;
 `
 

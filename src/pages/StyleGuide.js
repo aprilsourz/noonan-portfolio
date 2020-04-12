@@ -10,6 +10,7 @@ import {
   Link,
   ExternalLink,
 } from "../components/typography"
+import SectionDivider from "../components/SectionDivider"
 
 const StyleGuide = () => {
   return (
@@ -25,6 +26,9 @@ const StyleGuide = () => {
       <br />
       <ExternalLink>This is an external link</ExternalLink>
       <PinkHeaderMd>Components</PinkHeaderMd>
+      <div style={{ margin: "0 auto", width: "1240px" }}>
+        <SectionDivider>/ recent work</SectionDivider>
+      </div>
     </>
   )
 }
