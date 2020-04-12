@@ -8,12 +8,7 @@ import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
-
     // Allow users who use the tab key to see outlines on button elements
     function handleFirstTab(e) {
       if (e.keyCode === 9) {
