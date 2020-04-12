@@ -31,3 +31,11 @@
 body {
   margin: 0;
 }
+
+/* show button outlines to users who use the tab key to navigate */
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}

@@ -16,42 +16,47 @@ const theme = {
     largeTitleText: {
       fontSize: "50px",
       mobileFontSize: "46px",
-      fontFamily: "Raleway Bold 700",
+      fontFamily: `"Raleway Semi Bold", sans-serif`,
     },
     largeBodyText: {
       fontSize: "30px",
       mobileFontSize: "26px",
-      fontFamily: "Raleway Medium 500",
+      fontFamily: `"Raleway Regular", sans-serif`,
     },
     headerLgText: {
       fontSize: "40px",
       mobileFontSize: "36px",
-      fontFamily: "Raleway Bold 700",
+      fontFamily: `"Raleway Semi Bold", sans-serif`,
     },
     headerMdText: {
       fontSize: "30px",
       mobileFontSize: "26px",
-      fontFamily: "Raleway Medium 500 Italic",
+      fontFamily: `"Raleway Regular Italic", sans-serif`,
     },
     headerSmText: {
       fontSize: "20px",
       mobileFontSize: "16px",
-      fontFamily: "Raleway Black 900",
+      fontFamily: `"Raleway Extra Bold", sans-serif`,
     },
     normalBodyText: {
       fontSize: "20px",
       mobileFontSize: "16px",
-      fontFamily: "Raleway Light 300",
+      fontFamily: `"Raleway Extra Light", sans-serif`,
     },
     boldBodyText: {
       fontSize: "20px",
       mobileFontSize: "16px",
-      fontFamily: "Raleway Medium 500",
+      fontFamily: `"Raleway Regular", sans-serif`,
     },
     linkText: {
       fontSize: "20px",
       mobileFontSize: "16px",
-      fontFamily: "Raleway Medium 500 Italic",
+      fontFamily: `"Raleway Regular" Italic, sans-serif`,
+    },
+    navLinkText: {
+      fontSize: "18px",
+      mobileFontSize: "16px",
+      fontFamily: `"Raleway Regular", sans-serif`,
     },
   },
 }

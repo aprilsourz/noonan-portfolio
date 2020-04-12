@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
 
-import { Link } from "../components/typography"
+import { NavLinkText } from "../components/typography"
 
 const StyledHeader = styled.header`
   height: 65px;
@@ -31,16 +31,63 @@ const LogoPlaceHolder = styled.div`
   `}
 `
 
-const StyledLink = styled(Link)`
-  font-family: "Raleway Regular", sans-serif;
-`
-const GreenLink = styled(StyledLink)`
-  color: ${({ theme }) => theme.colors.green};
+const GreenButton = styled.button`
+  background-color: ${({ theme }) => theme.colors.black};
+  height: 34px;
   margin-left: auto;
+  border-radius: 1px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+
+  span {
+    color: ${({ theme }) => theme.colors.green};
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.green};
+
+    span {
+      color: ${({ theme }) => theme.colors.black};
+    }
+  }
 `
 
-const PinkLink = styled(StyledLink)`
-  color: ${({ theme }) => theme.colors.pink};
+const PinkButton = styled.button`
+  background-color: ${({ theme }) => theme.colors.black};
+  height: 34px;
+  border-radius: 1px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+
+  span {
+    color: ${({ theme }) => theme.colors.pink};
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.pink};
+
+    span {
+      color: ${({ theme }) => theme.colors.black};
+    }
+  }
 `
 
 const LinkContainer = styled.div`
@@ -49,14 +96,15 @@ const LinkContainer = styled.div`
   transform: translateY(-50%);
   display: flex;
   right: 15px;
-  width: 145px;
+  width: 185px;
 
   ${breakpoint("tablet")`
-    width: 210px;
+    width: 223px;
+
   `}
 
   ${breakpoint("desktop")`
-    right: 135px;
+    right: 50px;
   `}
 `
 
@@ -65,8 +113,12 @@ const SiteHeader = () => {
     <StyledHeader>
       <LogoPlaceHolder />
       <LinkContainer>
-        <PinkLink>work stuff</PinkLink>
-        <GreenLink>fun stuff</GreenLink>
+        <PinkButton>
+          <NavLinkText>work stuff</NavLinkText>
+        </PinkButton>
+        <GreenButton>
+          <NavLinkText>fun stuff</NavLinkText>
+        </GreenButton>
       </LinkContainer>
     </StyledHeader>
   )

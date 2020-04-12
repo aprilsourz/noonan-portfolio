@@ -3,7 +3,7 @@ import { Link as ReactRouterLink } from "react-router-dom"
 import breakpoint from "styled-components-breakpoint"
 
 export const LargeTitleText = styled.h1`
-  font-family: "Raleway Semi Bold", sans-serif;
+  font-family: ${({ theme }) => theme.typography.largeTitleText.fontFamily};
   font-size: ${({ theme }) => theme.typography.largeTitleText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -12,7 +12,7 @@ export const LargeTitleText = styled.h1`
 `
 
 export const LargeBodyText = styled.p`
-  font-family: "Raleway Regular", sans-serif;
+  font-family: ${({ theme }) => theme.typography.largeBodyText.fontFamily};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -21,7 +21,7 @@ export const LargeBodyText = styled.p`
 `
 
 export const HeaderLg = styled.h2`
-  font-family: "Raleway Semi Bold", sans-serif;
+  font-family: ${({ theme }) => theme.typography.headerLgText.fontFamily};
   font-size: ${({ theme }) => theme.typography.headerLgText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -30,7 +30,7 @@ export const HeaderLg = styled.h2`
 `
 
 export const HeaderMd = styled.h3`
-  font-family: "Raleway Regular Italic", sans-serif;
+  font-family: ${({ theme }) => theme.typography.headerMdText.fontFamily};
   font-size: ${({ theme }) => theme.typography.headerMdText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -39,7 +39,7 @@ export const HeaderMd = styled.h3`
 `
 
 export const HeaderSm = styled.h4`
-  font-family: "Raleway Extra Bold", sans-serif;
+  font-family: ${({ theme }) => theme.typography.headerSmText.fontFamily};
   text-transform: uppercase;
   font-size: ${({ theme }) => theme.typography.headerSmText.mobileFontSize};
 
@@ -49,7 +49,7 @@ export const HeaderSm = styled.h4`
 `
 
 export const BodyText = styled.p`
-  font-family: "Raleway Extra Light", sans-serif;
+  font-family: ${({ theme }) => theme.typography.normalBodyText.fontFamily};
   font-size: ${({ theme }) => theme.typography.normalBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -58,7 +58,7 @@ export const BodyText = styled.p`
 `
 
 export const BoldBodyText = styled.p`
-  font-family: "Raleway Regular", sans-serif;
+  font-family: ${({ theme }) => theme.typography.boldBodyText.fontFamily};
   font-size: ${({ theme }) => theme.typography.boldBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -67,7 +67,7 @@ export const BoldBodyText = styled.p`
 `
 
 export const Link = styled(ReactRouterLink)`
-  font-family: "Raleway Regular Italic", sans-serif;
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
@@ -79,14 +79,23 @@ export const Link = styled(ReactRouterLink)`
 `
 
 export const ExternalLink = styled.a`
-  font-family: "Raleway Regular Italic", sans-serif;
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
-
   font-size: ${({ theme }) => theme.typography.linkText.mobileFontSize};
 
   ${breakpoint("tablet")`
     font-size: ${({ theme }) => theme.typography.linkText.fontSize};
+  `}
+`
+
+export const NavLinkText = styled.span`
+  font-family: ${({ theme }) => theme.typography.navLinkText.fontFamily};
+  color: ${({ theme }) => theme.colors.green};
+  font-size: ${({ theme }) => theme.typography.navLinkText.mobileFontSize};
+
+  ${breakpoint("tablet")`
+    font-size: ${({ theme }) => theme.typography.navLinkText.fontSize};
   `}
 `
