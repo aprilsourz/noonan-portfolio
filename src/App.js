@@ -55,7 +55,7 @@ class App extends Component {
 }
 
 const Main = styled.main`
-  margin-top: 115px;
+  /* margin-top: 130px; */
 `
 
 export default App

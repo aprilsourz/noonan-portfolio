@@ -90,6 +90,18 @@ export const ExternalLink = styled.a`
   `}
 `
 
+export const ExternalLinkLg = styled.a`
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
+  color: ${({ theme }) => theme.colors.green};
+  text-decoration: none;
+  cursor: pointer;
+  font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
+
+  ${breakpoint("tablet")`
+    font-size: ${({ theme }) => theme.typography.largeBodyText.fontSize};
+  `}
+`
+
 export const NavLinkText = styled.span`
   font-family: ${({ theme }) => theme.typography.navLinkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};

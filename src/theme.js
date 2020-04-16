@@ -11,6 +11,7 @@ const theme = {
     lightBlue: "#E9EDFF",
     lightPink: "#FFE9FD",
     lightGreen: "#EAFFFC",
+    white: "#ffffff",
   },
   typography: {
     largeTitleText: {
