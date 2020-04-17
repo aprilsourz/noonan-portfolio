@@ -4,8 +4,9 @@ import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
 
 import { ContentContainer } from "../components/layout"
+import SectionDivider from "../components/SectionDivider"
 import {
-  HeaderLg,
+  LargeTitleText,
   LargeBodyText,
   ExternalLinkLg,
 } from "../components/typography"
@@ -13,48 +14,122 @@ import { Rainbow } from "../components/icons"
 
 const WorkStuff = () => {
   return (
-    // Decide how to make line breaks match the design better
-    <BlackSection>
-      <ContentContainer>
-        <StyledHeaderLg>
-          I've been doing product design at Yesware for the last three years.
-        </StyledHeaderLg>
-        <StyledLargeBodyText>
-          As part of a small design team, I wear all the "product designer"
-          hats. User Research, user experience, and user interface design all
-          fall into my wheelhouse. I'm the lead designer for two teams working
-          under the <ExternalLinkLg> Empowered Teams</ExternalLinkLg>{" "}
-          methodology and I manage one direct report.
-        </StyledLargeBodyText>
-        <StyledRainbow />
-      </ContentContainer>
-    </BlackSection>
+    <>
+      <BlackSection>
+        <ContentContainer>
+          <TextContainer>
+            <StyledLargeTitleText>
+              I've been doing product design at Yesware for the last three
+              years.
+            </StyledLargeTitleText>
+            <StyledLargeBodyText>
+              As part of a small design team, I wear all the "product designer"
+              hats. User Research, user experience, and user interface design
+              all fall into my wheelhouse. I'm the lead designer for two teams
+              working under the{" "}
+              <ExternalLinkLg> Empowered Teams</ExternalLinkLg> methodology and
+              I manage one direct report.
+            </StyledLargeBodyText>
+          </TextContainer>
+          <StyledRainbow />
+          <StyledSectionDivider>/ recent work</StyledSectionDivider>
+        </ContentContainer>
+      </BlackSection>
+      <div>
+        <ContentContainer>
+          <ProjectSelectorBox color="lightBlue">
+            <ProjectSelectorText>Project Name</ProjectSelectorText>
+          </ProjectSelectorBox>
+          <ProjectSelectorBox color="lightPink">
+            <ProjectSelectorText>Project Name</ProjectSelectorText>
+          </ProjectSelectorBox>
+          <ProjectSelectorBox color="lightGreen">
+            <ProjectSelectorText>Project Name</ProjectSelectorText>
+          </ProjectSelectorBox>
+        </ContentContainer>
+      </div>
+    </>
   )
 }
 
-const StyledRainbow = styled(Rainbow)`
+const TextContainer = styled.div`
+  padding: 0 5px;
+  width: 100%;
   margin: 0 auto;
+
+  ${breakpoint("desktop")`
+    width: 1015px;
+    padding: 0px;
+  `}
+`
+
+const StyledSectionDivider = styled(SectionDivider)`
+  top: 34px;
+  position: relative;
+`
+
+const StyledRainbow = styled(Rainbow)`
   display: block;
-  transform: rotate(-12deg);
-  margin-top: 95px;
+  margin: 0 auto;
+  margin-top: 47.5px;
+  margin-bottom: -17px;
+
+  ${breakpoint("tablet")`
+    margin-top: 95px;
+    margin-bottom: -34px;
+  `}
 `
 
 const BlackSection = styled.div`
   padding-top: 130px;
   background-color: ${({ theme }) => theme.colors.black};
-  /* eventually change this to whatever value needs to happen with mobile layout */
-  height: 675px;
-  ${breakpoint("desktop")`
-    height: 675px;
+  padding-top: 95px;
+
+  ${breakpoint("tablet")`
+     padding-top: 130px;
   `}
 `
 const StyledLargeBodyText = styled(LargeBodyText)`
-  margin-top: 90px;
   color: ${({ theme }) => theme.colors.white};
+  margin-top: 45px;
+
+  ${breakpoint("tablet")`
+    margin-top: 90px;
+  `}
 `
 
-const StyledHeaderLg = styled(HeaderLg)`
+const StyledLargeTitleText = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.pink};
+`
+
+// Give this some kind of hover style
+const ProjectSelectorBox = styled.div`
+  background-color: ${({ color, theme }) => theme.colors[color]};
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 1px;
+  height: 150px;
+  cursor: pointer;
+
+  &:first-of-type {
+    margin-top: 55px;
+  }
+
+  ${breakpoint("tablet")`
+     margin-top: 50px;
+     height: 300px;
+
+     &:first-of-type {
+      margin-top: 85px;
+     }
+  `}
+`
+
+const ProjectSelectorText = styled(LargeBodyText)`
+  color: ${({ theme }) => theme.colors.back};
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 `
 
 export default WorkStuff

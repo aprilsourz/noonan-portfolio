@@ -41,7 +41,8 @@ const GreenButton = styled.button`
     color: ${({ theme }) => theme.colors.green};
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: ${({ theme }) => theme.colors.green};
 
     span {
@@ -56,7 +57,8 @@ const PinkButton = styled.button`
     color: ${({ theme }) => theme.colors.pink};
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: ${({ theme }) => theme.colors.pink};
 
     span {
@@ -88,10 +90,16 @@ const SiteHeader = ({ history }) => {
     <StyledHeader>
       <LogoPlaceHolder onClick={() => history.push("/")} />
       <LinkContainer>
-        <PinkButton onClick={() => history.push("/work-stuff")}>
+        <PinkButton
+          className={window.location.pathname === "/work-stuff" && "active"}
+          onClick={() => history.push("/work-stuff")}
+        >
           <NavLinkText>work stuff</NavLinkText>
         </PinkButton>
-        <GreenButton onClick={() => history.push("/fun-stuff")}>
+        <GreenButton
+          className={window.location.pathname === "/fun-stuff" && "active"}
+          onClick={() => history.push("/fun-stuff")}
+        >
           <NavLinkText>fun stuff</NavLinkText>
         </GreenButton>
       </LinkContainer>

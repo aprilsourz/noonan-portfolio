@@ -16,9 +16,14 @@ const StyledHeaderLg = styled(HeaderLg)`
   transform: translateY(-50%);
 `
 
-const SectionDivider = ({ bgColor = "pink", color = "black", children }) => {
+const SectionDivider = ({
+  bgColor = "pink",
+  color = "black",
+  children,
+  className,
+}) => {
   return (
-    <Divider color={color} bgColor={bgColor}>
+    <Divider className={className} color={color} bgColor={bgColor}>
       <StyledHeaderLg>{children}</StyledHeaderLg>
     </Divider>
   )

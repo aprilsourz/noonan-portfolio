@@ -16,22 +16,22 @@ const theme = {
   typography: {
     largeTitleText: {
       fontSize: "50px",
-      mobileFontSize: "46px",
+      mobileFontSize: "40px",
       fontFamily: `"Raleway Semi Bold", sans-serif`,
     },
     largeBodyText: {
       fontSize: "30px",
-      mobileFontSize: "26px",
+      mobileFontSize: "20px",
       fontFamily: `"Raleway Regular", sans-serif`,
     },
     headerLgText: {
       fontSize: "40px",
-      mobileFontSize: "36px",
+      mobileFontSize: "30px",
       fontFamily: `"Raleway Semi Bold", sans-serif`,
     },
     headerMdText: {
       fontSize: "30px",
-      mobileFontSize: "26px",
+      mobileFontSize: "20px",
       fontFamily: `"Raleway Regular Italic", sans-serif`,
     },
     headerSmText: {
