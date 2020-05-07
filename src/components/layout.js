@@ -1,5 +1,3 @@
-import React from "react"
-import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
 
 export const ContentContainer = styled.div`

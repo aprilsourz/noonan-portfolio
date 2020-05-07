@@ -181,7 +181,7 @@ const Experience = () => {
           <HeaderMdAlignCenter>connect</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer style={{ lineHeight: "30px" }}>
+          <TextContainerlargeBodyTextLineHeight>
             <ExternalLink
               rel="noreferrer noopener"
               href="mailto:carrie.jo.noonan@gmail.com"
@@ -197,7 +197,7 @@ const Experience = () => {
             >
               LinkedIn
             </ExternalLink>
-          </TextContainer>
+          </TextContainerlargeBodyTextLineHeight>
         </Grid.Unit>
       </StyledGrid>
     </>
@@ -235,7 +235,7 @@ const StyledGrid = styled(Grid)`
 
 const SkillsBlock = styled.div`
   margin-bottom: 25px;
-  line-height: 30px;
+  line-height: ${({ theme }) => theme.typography.largeBodyTextLineHeight};
 
   ${breakpoint("tablet")`
     margin-bottom: 50px;
@@ -245,5 +245,9 @@ const SkillsBlock = styled.div`
 const ItalicBodyTextLight = styled(BodyText)`
   font-style: italic;
   font-weight: 100;
+`
+
+const TextContainerlargeBodyTextLineHeight = styled(TextContainer)`
+  line-height: ${({ theme }) => theme.typography.largeBodyTextLineHeight};
 `
 export default Experience
