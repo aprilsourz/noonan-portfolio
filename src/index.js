@@ -2,13 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
 
-// @TODO replace with museo sans
-import "./fonts/Raleway-Regular.ttf"
-import "./fonts/Raleway-ExtraBold.ttf"
-import "./fonts/Raleway-Italic.ttf"
-import "./fonts/Raleway-Light.ttf"
-import "./fonts/Raleway-SemiBold.ttf"
-
+import "./reset.css"
 import "./index.css"
 
 // @TODO Should we leave the service worker?

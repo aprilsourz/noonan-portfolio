@@ -7,3 +7,6 @@ export const ContentContainer = styled.div`
   background: transparent;
   margin: 0 auto;
 `
+export const TextContainer = styled.div`
+  padding: 0 5px;
+`

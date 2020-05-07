@@ -1,9 +1,8 @@
 import React from "react"
 import breakpoint from "styled-components-breakpoint"
-
 import styled from "styled-components"
 
-import { ContentContainer } from "../components/layout"
+import { ContentContainer, TextContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
 import {
   LargeTitleText,
@@ -11,13 +10,14 @@ import {
   ExternalLinkLg,
 } from "../components/typography"
 import { Rainbow } from "../components/icons"
+import Experience from "./WorkStuff/Experience"
 
 const WorkStuff = () => {
   return (
     <>
       <BlackSection>
         <ContentContainer>
-          <TextContainer>
+          <IntroTextContainer>
             <StyledLargeTitleText>
               I've been doing product design at Yesware for the last three
               years.
@@ -30,7 +30,7 @@ const WorkStuff = () => {
               <ExternalLinkLg> Empowered Teams</ExternalLinkLg> methodology and
               I manage one direct report.
             </StyledLargeBodyText>
-          </TextContainer>
+          </IntroTextContainer>
           <StyledRainbow />
           <StyledSectionDivider>/ recent work</StyledSectionDivider>
         </ContentContainer>
@@ -46,14 +46,14 @@ const WorkStuff = () => {
           <ProjectSelectorBox color="lightGreen">
             <ProjectSelectorText>Project Name</ProjectSelectorText>
           </ProjectSelectorBox>
+          <Experience />
         </ContentContainer>
       </div>
     </>
   )
 }
 
-const TextContainer = styled.div`
-  padding: 0 5px;
+const IntroTextContainer = styled(TextContainer)`
   width: 100%;
   margin: 0 auto;
 
@@ -102,7 +102,7 @@ const StyledLargeTitleText = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.pink};
 `
 
-// Give this some kind of hover style
+// @TODO: Give this some kind of hover style
 const ProjectSelectorBox = styled.div`
   background-color: ${({ color, theme }) => theme.colors[color]};
   margin-top: 25px;

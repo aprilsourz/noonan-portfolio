@@ -13,9 +13,10 @@ const StyledHeader = styled.header`
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9999;
 `
 
-const LogoPlaceHolder = styled(CnLogoSm)`
+const Logo = styled(CnLogoSm)`
   margin: 0 auto;
   position: absolute;
   left: 15px;
@@ -85,7 +86,9 @@ const LinkContainer = styled.div`
 const SiteHeader = ({ history }) => {
   return (
     <StyledHeader>
-      <LogoPlaceHolder onClick={() => history.push("/")} />
+      <div onClick={() => history.push("/")}>
+        <Logo />
+      </div>
       <LinkContainer>
         <PinkButton
           className={window.location.pathname === "/work-stuff" && "active"}

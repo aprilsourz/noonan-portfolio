@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight } from "@styled-icons/feather"
 import { NavLinkText } from "../components/typography"
 
 const ItalicNavLinkText = styled(NavLinkText)`
-  font-family: "Raleway Regular Italic", sans-serif;
+  font-style: italic;
   color: ${({ theme }) => theme.colors.black};
   position: relative;
   top: 3px;
