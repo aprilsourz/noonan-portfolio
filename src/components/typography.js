@@ -4,6 +4,7 @@ import breakpoint from "styled-components-breakpoint"
 
 export const LargeTitleText = styled.h1`
   font-family: ${({ theme }) => theme.typography.largeTitleText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.largeTitleText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeTitleText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -13,6 +14,7 @@ export const LargeTitleText = styled.h1`
 
 export const LargeBodyText = styled.p`
   font-family: ${({ theme }) => theme.typography.largeBodyText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.largeBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -23,6 +25,7 @@ export const LargeBodyText = styled.p`
 export const HeaderLg = styled.h2`
   font-family: ${({ theme }) => theme.typography.headerLgText.fontFamily};
   font-size: ${({ theme }) => theme.typography.headerLgText.mobileFontSize};
+  font-weight: ${({ theme }) => theme.typography.headerLgText.fontWeight};
 
   ${breakpoint("tablet")`
     font-size: ${({ theme }) => theme.typography.headerLgText.fontSize};
@@ -31,6 +34,8 @@ export const HeaderLg = styled.h2`
 
 export const HeaderMd = styled.h3`
   font-family: ${({ theme }) => theme.typography.headerMdText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.headerMdText.fontWeight};
+  font-style: ${({ theme }) => theme.typography.headerMdText.fontStyle};
   font-size: ${({ theme }) => theme.typography.headerMdText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -39,8 +44,9 @@ export const HeaderMd = styled.h3`
 `
 
 export const HeaderSm = styled.h4`
-  font-family: ${({ theme }) => theme.typography.headerSmText.fontFamily};
   text-transform: uppercase;
+  font-family: ${({ theme }) => theme.typography.headerSmText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.headerSmText.fontWeight};
   font-size: ${({ theme }) => theme.typography.headerSmText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -50,6 +56,7 @@ export const HeaderSm = styled.h4`
 
 export const BodyText = styled.p`
   font-family: ${({ theme }) => theme.typography.normalBodyText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.normalBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.normalBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -59,6 +66,7 @@ export const BodyText = styled.p`
 
 export const BoldBodyText = styled.p`
   font-family: ${({ theme }) => theme.typography.boldBodyText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.boldBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.boldBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -67,10 +75,12 @@ export const BoldBodyText = styled.p`
 `
 
 export const Link = styled(ReactRouterLink)`
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
+  font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
+  font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.linkText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -79,10 +89,12 @@ export const Link = styled(ReactRouterLink)`
 `
 
 export const ExternalLink = styled.a`
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
+  font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
+  font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.linkText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -91,10 +103,12 @@ export const ExternalLink = styled.a`
 `
 
 export const ExternalLinkLg = styled.a`
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
+  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
+  font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
@@ -103,8 +117,9 @@ export const ExternalLinkLg = styled.a`
 `
 
 export const NavLinkText = styled.span`
-  font-family: ${({ theme }) => theme.typography.navLinkText.fontFamily};
   color: ${({ theme }) => theme.colors.green};
+  font-family: ${({ theme }) => theme.typography.navLinkText.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.navLinkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.navLinkText.mobileFontSize};
 
   ${breakpoint("tablet")`
