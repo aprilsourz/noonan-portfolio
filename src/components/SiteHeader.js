@@ -4,6 +4,7 @@ import breakpoint from "styled-components-breakpoint"
 import { withRouter } from "react-router-dom"
 
 import { NavLinkText } from "../components/typography"
+import { CnLogoSm } from "../components/icons"
 
 const StyledHeader = styled.header`
   height: 65px;
@@ -14,13 +15,9 @@ const StyledHeader = styled.header`
   top: 0;
 `
 
-const LogoPlaceHolder = styled.div`
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
+const LogoPlaceHolder = styled(CnLogoSm)`
   margin: 0 auto;
   position: absolute;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
   left: 15px;
   top: 50%;
   transform: translateY(-50%);

@@ -58,9 +58,10 @@ export const Rainbow = ({ className }) => {
   )
 }
 
-export const CnLogoSm = () => {
+export const CnLogoSm = ({ className }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="42"
       height="35"
@@ -80,9 +81,10 @@ export const CnLogoSm = () => {
   )
 }
 
-export const CnLogoLg = () => {
+export const CnLogoLg = ({ className }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="444"
       height="79"
@@ -102,9 +104,10 @@ export const CnLogoLg = () => {
   )
 }
 
-export const ArrowRight = () => {
+export const ArrowRight = ({ className }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
@@ -124,9 +127,10 @@ export const ArrowRight = () => {
   )
 }
 
-export const ArrowLeft = () => {
+export const ArrowLeft = ({ className }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
@@ -143,5 +147,5 @@ export const ArrowLeft = () => {
         <path d="M0 7h14M7 0l7 7-7 7" transform="matrix(-1 0 0 1 15 1)"></path>
       </g>
     </svg>
-  );
+  )
 }
