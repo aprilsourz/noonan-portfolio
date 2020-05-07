@@ -150,3 +150,75 @@ export const ArrowLeft = ({ className }) => {
     </svg>
   )
 }
+
+export const Clouds = ({ className }) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="60"
+      height="57"
+      viewBox="0 0 60 57"
+    >
+      <g fill="none" fillRule="evenodd" transform="translate(0 1)">
+        <circle
+          cx="35.02"
+          cy="25.02"
+          r="13.02"
+          fill="#ffa4f6"
+          fillRule="nonzero"
+        ></circle>
+        <g strokeLinecap="round" strokeLinejoin="round">
+          <path
+            stroke="#ffa4f6"
+            strokeWidth="1.63"
+            d="M51 28l8.22 2.05M50 18.67L58.04 16M45 11l4.76-7M36 8.46L36.44 0M26.8 10.99L22 4"
+          ></path>
+          <circle
+            cx="34"
+            cy="25"
+            r="12"
+            stroke="#1b1723"
+            strokeWidth="1.5"
+          ></circle>
+        </g>
+        <path
+          fill="#5d76dd"
+          fillRule="nonzero"
+          d="M.58 34.345a5.06 5.06 0 017.07-6.7 7.62 7.62 0 0113.68-5.35c3.29-4.19 8.81-5.36 12.61-3.31 4.7 2.54 6.55 9.88 2.48 15.36z"
+        ></path>
+        <path
+          stroke="#1b1723"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M1.539 34.05a4.66 4.66 0 016.52-6.17 7 7 0 0112.61-4.94c3-3.85 8.12-4.94 11.62-3 4.33 2.33 6 9.1 2.28 14.15z"
+        ></path>
+        <path
+          fill="#86eddf"
+          fillRule="nonzero"
+          d="M16.249 45.345c-4.08-5.48-2.22-12.82 2.47-15.36 3.81-2.05 9.32-.88 12.62 3.31a7.61 7.61 0 0113.67 5.35 5.06 5.06 0 017.08 6.7 4.48 4.48 0 013.77 3.87 4.58 4.58 0 01-4.64 4.64h-31.67z"
+        ></path>
+        <path
+          stroke="#1b1723"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M17.06 44.07c-3.76-5.05-2-11.82 2.28-14.16 3.51-1.89 8.6-.81 11.63 3a7 7 0 0112.6 4.93 4.67 4.67 0 016.52 6.18 4.14 4.14 0 013.49 3.56 4.23 4.23 0 01-4.28 4.28H20.08z"
+        ></path>
+        <path
+          fill="#5d76dd"
+          fillRule="nonzero"
+          d="M2.58 54.35a5.06 5.06 0 017.07-6.7 7.62 7.62 0 0113.68-5.36c3.29-4.18 8.81-5.36 12.61-3.3 4.7 2.53 6.55 9.88 2.48 15.36z"
+        ></path>
+        <path
+          stroke="#1b1723"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M3.539 55.05a4.66 4.66 0 016.52-6.17 7 7 0 0112.61-4.94c3-3.85 8.12-4.94 11.62-3 4.33 2.33 6 9.1 2.28 14.15z"
+        ></path>
+      </g>
+    </svg>
+  )
+}

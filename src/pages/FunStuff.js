@@ -4,13 +4,8 @@ import styled from "styled-components"
 
 import { ContentContainer, TextContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
-import {
-  LargeTitleText,
-  LargeBodyText,
-  ExternalLinkLg,
-} from "../components/typography"
-import { Rainbow } from "../components/icons"
-import Experience from "./WorkStuff/Experience"
+import { LargeTitleText, LargeBodyText } from "../components/typography"
+import { Clouds } from "../components/icons"
 
 const WorkStuff = () => {
   return (
@@ -19,33 +14,25 @@ const WorkStuff = () => {
         <ContentContainer>
           <IntroTextContainer>
             <StyledLargeTitleText>
-              I've been doing product design at Yesware for the last three
-              years.
+              I'll admit, I'm not a workaholic. There are just too many other
+              fun things to do in life!
             </StyledLargeTitleText>
             <StyledLargeBodyText>
-              As part of a small design team, I wear all the "product designer"
-              hats. User Research, user experience, and user interface design
-              all fall into my wheelhouse. I'm the lead designer for two teams
-              working under the{" "}
-              <ExternalLinkLg> Empowered Teams</ExternalLinkLg> methodology and
-              I manage one direct report.
+              Outside of work I'm a crafter, climber, biker, illustrator,
+              amateur baker, laugher, card maker, quilter, snowboarder,
+              gift-giver, and a dreamer. Here's a glimpse of my non-work
+              creations.
             </StyledLargeBodyText>
           </IntroTextContainer>
-          <StyledRainbow />
+          <StyledClouds />
           <StyledSectionDivider>/ recent work</StyledSectionDivider>
         </ContentContainer>
       </BlackSection>
       <div>
         <ContentContainer>
-          <ProjectSelectorBox color="lightBlue">
-            <ProjectSelectorText>Project Name</ProjectSelectorText>
-          </ProjectSelectorBox>
-          <ProjectSelectorBox color="lightPink">
-            <ProjectSelectorText>Project Name</ProjectSelectorText>
-          </ProjectSelectorBox>
-          <ProjectSelectorBox color="lightGreen">
-            <ProjectSelectorText>Project Name</ProjectSelectorText>
-          </ProjectSelectorBox>
+          <ProjectSelectorBox color="lightBlue"></ProjectSelectorBox>
+          <ProjectSelectorBox color="lightPink"></ProjectSelectorBox>
+          <ProjectSelectorBox color="lightGreen"></ProjectSelectorBox>
         </ContentContainer>
       </div>
     </>
@@ -63,11 +50,12 @@ const IntroTextContainer = styled(TextContainer)`
 `
 
 const StyledSectionDivider = styled(SectionDivider)`
+  background-color: ${({ theme }) => theme.colors.green};
   top: 34px;
   position: relative;
 `
 
-const StyledRainbow = styled(Rainbow)`
+const StyledClouds = styled(Clouds)`
   display: block;
   margin: 0 auto;
   margin-top: 47.5px;
@@ -75,7 +63,7 @@ const StyledRainbow = styled(Rainbow)`
 
   ${breakpoint("tablet")`
     margin-top: 95px;
-    margin-bottom: -34px;
+    margin-bottom: 35px;
   `}
 `
 
@@ -85,7 +73,7 @@ const BlackSection = styled.div`
   padding-top: 95px;
 
   ${breakpoint("tablet")`
-     padding-top: 130px;
+     padding-top: 195px;
   `}
 `
 const StyledLargeBodyText = styled(LargeBodyText)`
@@ -98,7 +86,7 @@ const StyledLargeBodyText = styled(LargeBodyText)`
 `
 
 const StyledLargeTitleText = styled(LargeTitleText)`
-  color: ${({ theme }) => theme.colors.pink};
+  color: ${({ theme }) => theme.colors.green};
 `
 
 // @TODO: Give this some kind of hover style

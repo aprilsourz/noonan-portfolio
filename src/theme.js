@@ -1,6 +1,3 @@
-// @TODO Replace Raleway with museo-sans
-// Subtract 4px from every font size on mobile devices.
-// The smallest font will be 11px and the typography elements will maintain the same size ratios
 const theme = {
   colors: {
     black: "#1B1723",
@@ -26,14 +23,14 @@ const theme = {
       mobileFontSize: "20px",
       fontFamily: "museo-sans, sans-serif",
       fontWeight: 300,
-      lineHeight: "40px",
+      lineHeight: "50px",
     },
     headerLgText: {
       fontSize: "40px",
       mobileFontSize: "30px",
       fontFamily: "museo-sans, sans-serif",
       fontWeight: 700,
-      lineHeight: "45px",
+      lineHeight: "50px",
     },
     headerMdText: {
       fontSize: "30px",

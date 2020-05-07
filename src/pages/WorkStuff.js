@@ -76,7 +76,7 @@ const StyledRainbow = styled(Rainbow)`
 
   ${breakpoint("tablet")`
     margin-top: 95px;
-    margin-bottom: -34px;
+    margin-bottom: 0px;
   `}
 `
 
@@ -86,7 +86,7 @@ const BlackSection = styled.div`
   padding-top: 95px;
 
   ${breakpoint("tablet")`
-     padding-top: 130px;
+     padding-top: 195px;
   `}
 `
 const StyledLargeBodyText = styled(LargeBodyText)`
