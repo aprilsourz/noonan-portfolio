@@ -13,6 +13,7 @@ import Home from "./pages/Home"
 import WorkStuff from "./pages/WorkStuff"
 import FunStuff from "./pages/FunStuff"
 import Projects from "./pages/Projects"
+import YeswareCampaigns from "./pages/YeswareCampaigns"
 
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
@@ -43,7 +44,14 @@ class App extends Component {
                 <Route exact path="/fun-stuff" component={FunStuff} />
                 <Route exact path="/work-stuff" component={WorkStuff} />
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/style-guide" component={StyleGuide} />
+                <Route exact path="/projects" component={Projects} />
+                <Route
+                  exact
+                  path="/yesware-campaigns"
+                  component={YeswareCampaigns}
+                />
+
+                {/* <Route exact path="/style-guide" component={StyleGuide} /> */}
                 <Redirect to="/" />
               </Switch>
             </Main>

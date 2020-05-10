@@ -12,7 +12,7 @@ import {
 import { Rainbow } from "../components/icons"
 import Experience from "./WorkStuff/Experience"
 
-const WorkStuff = () => {
+const WorkStuff = ({ history }) => {
   return (
     <>
       <BlackSection>
@@ -37,8 +37,10 @@ const WorkStuff = () => {
       </BlackSection>
       <div>
         <ContentContainer>
-          <ProjectSelectorBox color="lightBlue">
-            <ProjectSelectorText>Project Name</ProjectSelectorText>
+          <ProjectSelectorBox
+            onClick={() => history.push("/yesware-campaigns")}
+          color="lightBlue">
+            <ProjectSelectorText>Yesware Campaigns</ProjectSelectorText>
           </ProjectSelectorBox>
           <ProjectSelectorBox color="lightPink">
             <ProjectSelectorText>Project Name</ProjectSelectorText>

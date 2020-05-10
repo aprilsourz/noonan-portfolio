@@ -52,9 +52,7 @@ const ProjectButtons = () => {
     <ButtonContainer>
       <LeftButton>
         <StyledArrowLeft size={24} />
-        <ItalicNavLinkText>
-          last project
-        </ItalicNavLinkText>
+        <ItalicNavLinkText>last project</ItalicNavLinkText>
       </LeftButton>
       <RightButton>
         <ItalicNavLinkText>next project</ItalicNavLinkText>
