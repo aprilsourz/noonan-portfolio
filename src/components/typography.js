@@ -3,7 +3,8 @@ import { Link as ReactRouterLink } from "react-router-dom"
 import breakpoint from "styled-components-breakpoint"
 
 export const LargeTitleText = styled.h1`
-  line-height: ${({ theme }) => theme.typography.largeTitleText.lineHeight};
+  line-height: ${({ theme }) =>
+    theme.typography.largeTitleText.mobileLineHeight};
   font-family: ${({ theme }) => theme.typography.largeTitleText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.largeTitleText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeTitleText.mobileFontSize};
@@ -11,16 +12,27 @@ export const LargeTitleText = styled.h1`
   ${breakpoint("tablet")`
     font-size: ${({ theme }) => theme.typography.largeTitleText.fontSize};
   `}
+
+  ${breakpoint("tablet")`
+    line-height: ${({ theme }) => theme.typography.largeTitleText.lineHeight};
+  `}
 `
 
+// @TODO Putting the line-height in the same breakpoint fn was behaving unexpectedly.
+// Need to file an issue on the github repo
 export const LargeBodyText = styled.p`
-  line-height: ${({ theme }) => theme.typography.largeBodyText.lineHeight};
+  line-height: ${({ theme }) =>
+    theme.typography.largeBodyText.mobileLineHeight};
   font-family: ${({ theme }) => theme.typography.largeBodyText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.largeBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
 
   ${breakpoint("tablet")`
     font-size: ${({ theme }) => theme.typography.largeBodyText.fontSize};
+  `}
+
+  ${breakpoint("tablet")`
+    line-height: ${({ theme }) => theme.typography.largeBodyText.lineHeight};
   `}
 `
 

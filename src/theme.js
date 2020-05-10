@@ -17,6 +17,7 @@ const theme = {
       fontFamily: "museo-sans, sans-serif",
       fontWeight: 700,
       lineHeight: "55px",
+      mobileLineHeight: "45px"
     },
     largeBodyText: {
       fontSize: "30px",
@@ -24,6 +25,7 @@ const theme = {
       fontFamily: "museo-sans, sans-serif",
       fontWeight: 300,
       lineHeight: "50px",
+      mobileLineHeight: "30px",
     },
     headerLgText: {
       fontSize: "40px",
