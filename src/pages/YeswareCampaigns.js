@@ -1,29 +1,86 @@
+import breakpoint from "styled-components-breakpoint"
+import Grid from "styled-components-grid"
 import React from "react"
 import styled from "styled-components"
-import breakpoint from "styled-components-breakpoint"
 
 import { LargeTitleText, LargeBodyText } from "../components/typography"
-import { ContentContainer } from "../components/layout"
+import { ContentContainer, TextContainer } from "../components/layout"
+import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
 import ProjectButtons from "../components/ProjectButtons"
+import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
 
 const StyleGuide = () => {
   return (
-    <LightGreyContainer>
-      <ProjectButtons />
-      <ContentContainer style={{ maxWidth: "920px" }}>
-        <BlueTitle>Decreasing user experience friction</BlueTitle>
-        <SubTitle>
-          Can we increase Yesware Campaigns user satisfaction and close the gap
-          between expected behavior and what is intuitive to users?
-        </SubTitle>
-      </ContentContainer>
-    </LightGreyContainer>
+    <>
+      <LightGreyContainer>
+        <ProjectButtons />
+        <ContentContainer style={{ maxWidth: "930px" }}>
+          <BlueTitle>Decreasing user experience friction</BlueTitle>
+          <SubTitle>
+            Can we increase Yesware Campaigns user satisfaction and close the
+            gap between expected behavior and what is intuitive to users?
+          </SubTitle>
+
+          <YeswareAnnSmith src={yeswareAnnSmith} />
+        </ContentContainer>
+      </LightGreyContainer>
+      <WhiteContainer>
+        <ContentContainer style={{ maxWidth: "1020px" }}>
+          <Grid>
+            <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
+              <TextContainer>
+                <HeaderMdWithMargin>background</HeaderMdWithMargin>
+                <BodyText>
+                  I was the Lead Designer for Yesware's Campaigns feature for
+                  almost two years. The team consisted of myself, a product
+                  manager, an engineering lead, and four engineers. Campaigns is
+                  one of Yesware's more complex features and I worked on many
+                  different Campaigns projects from a complete redesign to the
+                  addition of new functionality and capabilities both large and
+                  small.
+                </BodyText>
+              </TextContainer>
+            </Grid.Unit>
+            <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }}>
+              <TextContainer>
+                <HeaderMdWithMargin>role</HeaderMdWithMargin>
+                <BoldBodyTextWithMargin>
+                  Lead Product Designer
+                </BoldBodyTextWithMargin>
+                <BodyTextWithMargin>
+                  User Research <br />
+                  Wireframing & Prototyping <br />
+                  UX & UI Design <br />
+                </BodyTextWithMargin>
+                <BodyTextWithMargin style={{ fontStyle: "italic" }}>
+                  Mar '18 - Dec '19
+                </BodyTextWithMargin>
+              </TextContainer>
+            </Grid.Unit>
+          </Grid>
+        </ContentContainer>
+      </WhiteContainer>
+    </>
   )
 }
 
 const LightGreyContainer = styled.div`
   padding-top: 90px;
+  padding-bottom: 40px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
+
+  ${breakpoint("tablet")`
+    padding-bottom: 80px;
+  `}
+`
+
+const WhiteContainer = styled.div`
+  padding: 35px 0;
+  background-color: ${({ theme }) => theme.colors.white};
+
+  ${breakpoint("tablet")`
+    padding: 65px 0;
+  `}
 `
 const BlueTitle = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.blue};
@@ -43,6 +100,42 @@ const SubTitle = styled(LargeBodyText)`
   ${breakpoint("tablet")`
       line-height: 40px;
   `}
+`
+
+const YeswareAnnSmith = styled.img`
+  margin-top: 35px;
+  width: 100%;
+  -webkit-box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
+  -moz-box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
+  box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
+
+  ${breakpoint("tablet")`
+      margin-top: 70px;
+  `}
+`
+
+const HeaderMdWithMargin = styled(HeaderMd)`
+  margin-bottom: 12px;
+
+  ${breakpoint("tablet")`
+      margin-bottom: 25px;
+  `}
+`
+
+const BoldBodyTextWithMargin = styled(BoldBodyText)`
+  margin-bottom: 12px;
+
+  ${breakpoint("tablet")`
+    margin-bottom: 25px;
+`}
+`
+
+const BodyTextWithMargin = styled(BodyText)`
+  margin-bottom: 12px;
+
+  ${breakpoint("tablet")`
+    margin-bottom: 25px;
+`}
 `
 
 export default StyleGuide

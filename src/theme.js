@@ -53,7 +53,7 @@ const theme = {
       fontSize: "20px",
       mobileFontSize: "16px",
       fontFamily: "museo-sans, sans-serif",
-      fontWeight: 300,
+      fontWeight: 100,
       lineHeight: "24px",
     },
     boldBodyText: {
