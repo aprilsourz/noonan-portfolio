@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import breakpoint from "styled-components-breakpoint"
+
 import { ArrowLeft, ArrowRight } from "../components/icons"
 
 import { NavLinkText } from "../components/typography"
@@ -13,7 +15,12 @@ const ItalicNavLinkText = styled(NavLinkText)`
 const RightButton = styled.button`
   margin-left: auto;
   width: 140px;
+  position: relative;
   background-color: ${({ theme }) => theme.colors.pink};
+
+  ${breakpoint("tablet")`
+    left: -50px;
+  `}
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.lightPink};
@@ -36,6 +43,11 @@ const StyledArrowRight = styled(ArrowRight)`
 const LeftButton = styled.button`
   width: 140px;
   background-color: ${({ theme }) => theme.colors.pink};
+  position: relative;
+
+  ${breakpoint("tablet")`
+     right: -50px;
+  `}
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.lightPink};
