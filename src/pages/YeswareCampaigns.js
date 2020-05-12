@@ -89,9 +89,42 @@ const StyleGuide = () => {
         </ContentContainer>
       </BlueContainer>
       <WhiteContainer>
-        <Grid>
-        <HeaderMdWithMargin>goals</HeaderMdWithMargin>
-        </Grid>
+        <ContentContainer style={{ maxWidth: "1020px" }}>
+          <TextContainer>
+            <HeaderMdWithMargin>goals</HeaderMdWithMargin>
+            <Grid>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
+                <NumberedBlock>
+                  <BlueNumber>1 )</BlueNumber>
+                  <NumberedBlockText>
+                    By decreasing friction in the Campaigns user experience, we
+                    hope to increase satisfaction, and thereby increase
+                    retention.
+                  </NumberedBlockText>
+                </NumberedBlock>
+                <NumberedBlock>
+                  <BlueNumber>2 )</BlueNumber>
+                  <NumberedBlockText>
+                    By increasing the flexibility of Campaigns, we should also
+                    be able to offer more opportunities to personalize
+                    messaging.
+                  </NumberedBlockText>
+                </NumberedBlock>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
+                <NumberedBlock className="with-left-margin">
+                  <BlueNumber>3 )</BlueNumber>
+                  <NumberedBlockText>
+                    If we don't work on this, we will continue to grow a cohort
+                    of users who try Campaigns and, finding that it is either
+                    too unintuitive or inflexible, discard campaigns as a viable
+                    solution and churn.
+                  </NumberedBlockText>
+                </NumberedBlock>
+              </Grid.Unit>
+            </Grid>
+          </TextContainer>
+        </ContentContainer>
       </WhiteContainer>
     </>
   )
@@ -178,7 +211,33 @@ const BodyTextWithMargin = styled(BodyText)`
 
   ${breakpoint("tablet")`
     margin-bottom: 25px;
-`}
+  `}
+`
+
+const BlueNumber = styled(BoldBodyText)`
+  color: ${({ theme }) => theme.colors.blue};
+  font-weight: 700;
+  font-style: italic;
+  width: 8%;
+
+  @media (min-width: 500px) {
+    width: 5%;
+  }
+
+  ${breakpoint("tablet")`
+    width: 8%;
+  `}
+`
+
+const NumberedBlock = styled.div`
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
+
+const NumberedBlockText = styled(BodyText)`
+  width: 80%;
 `
 
 export default StyleGuide
