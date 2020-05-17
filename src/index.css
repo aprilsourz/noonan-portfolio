@@ -1,6 +1,7 @@
 /* Rules are in Alpbhectical Order */
 * {
   box-sizing: border-box;
+  font-family: museo-sans, sans-serif;
 }
 
 body {

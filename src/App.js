@@ -9,10 +9,11 @@ import {
 import { ThemeProvider } from "styled-components"
 
 import StyleGuide from "./pages/StyleGuide"
+
 import Home from "./pages/Home"
 import WorkStuff from "./pages/WorkStuff"
 import FunStuff from "./pages/FunStuff"
-import YeswareCampaigns from "./pages/YeswareCampaigns"
+import YeswareCampaignsProject from "./pages/YeswareCampaignsProject"
 
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
@@ -45,7 +46,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/projects/yesware-campaigns"
-                  component={YeswareCampaigns}
+                  component={YeswareCampaignsProject}
                 />
 
                 {/* <Route exact path="/style-guide" component={StyleGuide} /> */}

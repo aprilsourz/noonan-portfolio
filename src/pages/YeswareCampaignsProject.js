@@ -3,16 +3,19 @@ import Grid from "styled-components-grid"
 import React from "react"
 import styled from "styled-components"
 
-import { LargeTitleText, LargeBodyText } from "../components/typography"
+import { ScenarioCard } from "../components/card"
 import { ContentContainer, TextContainer } from "../components/layout"
-import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
 import ProjectButtons from "../components/ProjectButtons"
+import SectionDivider from "../components/SectionDivider"
+import { LargeTitleText, LargeBodyText } from "../components/typography"
+import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
+
 import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
 
-const StyleGuide = () => {
+const YeswareCampaignsProject = () => {
   return (
     <>
-      <LightGreyContainer>
+      <HeadlineContainer>
         <ProjectButtons />
         <ContentContainer style={{ maxWidth: "930px" }}>
           <BlueTitle>Decreasing user experience friction</BlueTitle>
@@ -20,11 +23,10 @@ const StyleGuide = () => {
             Can we increase Yesware Campaigns user satisfaction and close the
             gap between expected behavior and what is intuitive to users?
           </SubTitle>
-
           <YeswareAnnSmith src={yeswareAnnSmith} />
         </ContentContainer>
-      </LightGreyContainer>
-      <WhiteContainer>
+      </HeadlineContainer>
+      <FullWidthBackground backgroundColor="white">
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <Grid>
             <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
@@ -59,8 +61,8 @@ const StyleGuide = () => {
             </Grid.Unit>
           </Grid>
         </ContentContainer>
-      </WhiteContainer>
-      <BlueContainer>
+      </FullWidthBackground>
+      <FullWidthBackground backgroundColor="lightBlue">
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <TextContainer>
             <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
@@ -87,8 +89,8 @@ const StyleGuide = () => {
             </BodyTextWithMargin>
           </TextContainer>
         </ContentContainer>
-      </BlueContainer>
-      <WhiteContainer>
+      </FullWidthBackground>
+      <FullWidthBackground backgroundColor="white">
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <TextContainer>
             <HeaderMdWithMargin>goals</HeaderMdWithMargin>
@@ -125,12 +127,40 @@ const StyleGuide = () => {
             </Grid>
           </TextContainer>
         </ContentContainer>
-      </WhiteContainer>
+        <ContentContainer>
+          <BlueSectionDivider>/ exploration and research</BlueSectionDivider>
+        </ContentContainer>
+        <ContentContainer style={{ maxWidth: "1030px" }}>
+          <TextContainer>
+            <UserExplorationText>
+              Before jumping into research, Jamie (our product manager) and I
+              wrote out all the different scenarios in which a user would make
+              changes to an in-flight campaign, listing our assumptions, and
+              prioritizing the types of scenarios that we would try to solve
+              for.
+            </UserExplorationText>
+          </TextContainer>
+        </ContentContainer>
+      </FullWidthBackground>
+      <FullWidthBackground color="lightGrey">
+        <ContentContainer style={{ maxWidth: "1350px" }}>
+          <ScenarioContainer>
+            <ScenarioCard />
+            <ScenarioCard />
+          </ScenarioContainer>
+        </ContentContainer>
+      </FullWidthBackground>
     </>
   )
 }
 
-const LightGreyContainer = styled.div`
+const ScenarioContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+const HeadlineContainer = styled.div`
   padding-top: 90px;
   padding-bottom: 40px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
@@ -140,18 +170,11 @@ const LightGreyContainer = styled.div`
   `}
 `
 
-const WhiteContainer = styled.div`
+// backgroundColor prop must be one of colors in the styled-components theme
+const FullWidthBackground = styled.div`
+  background-color: ${({ theme, backgroundColor }) =>
+    theme.colors[backgroundColor]};
   padding: 35px 0;
-  background-color: ${({ theme }) => theme.colors.white};
-
-  ${breakpoint("tablet")`
-    padding: 65px 0;
-  `}
-`
-
-const BlueContainer = styled.div`
-  padding: 35px 0;
-  background-color: ${({ theme }) => theme.colors.lightBlue};
 
   ${breakpoint("tablet")`
     padding: 65px 0;
@@ -230,14 +253,35 @@ const BlueNumber = styled(BoldBodyText)`
 `
 
 const NumberedBlock = styled.div`
-  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
 `
 
 const NumberedBlockText = styled(BodyText)`
   width: 80%;
 `
 
-export default StyleGuide
+const BlueSectionDivider = styled(SectionDivider)`
+  background-color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.white};
+  margin-top: 35px;
+
+  ${breakpoint("tablet")`
+     margin-top: 65px;
+  `}
+`
+
+const UserExplorationText = styled(BodyText)`
+  margin-top: 35px;
+
+  ${breakpoint("tablet")`
+     margin-top: 65px;
+  `}
+`
+
+export default YeswareCampaignsProject

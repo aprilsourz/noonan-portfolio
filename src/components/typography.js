@@ -5,7 +5,6 @@ import breakpoint from "styled-components-breakpoint"
 export const LargeTitleText = styled.h1`
   line-height: ${({ theme }) =>
     theme.typography.largeTitleText.mobileLineHeight};
-  font-family: ${({ theme }) => theme.typography.largeTitleText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.largeTitleText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeTitleText.mobileFontSize};
 
@@ -23,7 +22,6 @@ export const LargeTitleText = styled.h1`
 export const LargeBodyText = styled.p`
   line-height: ${({ theme }) =>
     theme.typography.largeBodyText.mobileLineHeight};
-  font-family: ${({ theme }) => theme.typography.largeBodyText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.largeBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
 
@@ -38,7 +36,6 @@ export const LargeBodyText = styled.p`
 
 export const HeaderLg = styled.h2`
   line-height: ${({ theme }) => theme.typography.headerLgText.lineHeight};
-  font-family: ${({ theme }) => theme.typography.headerLgText.fontFamily};
   font-size: ${({ theme }) => theme.typography.headerLgText.mobileFontSize};
   font-weight: ${({ theme }) => theme.typography.headerLgText.fontWeight};
 
@@ -49,7 +46,6 @@ export const HeaderLg = styled.h2`
 
 export const HeaderMd = styled.h3`
   line-height: ${({ theme }) => theme.typography.headerMdText.lineHeight};
-  font-family: ${({ theme }) => theme.typography.headerMdText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.headerMdText.fontWeight};
   font-style: ${({ theme }) => theme.typography.headerMdText.fontStyle};
   font-size: ${({ theme }) => theme.typography.headerMdText.mobileFontSize};
@@ -62,7 +58,6 @@ export const HeaderMd = styled.h3`
 export const HeaderSm = styled.h4`
   text-transform: uppercase;
   line-height: ${({ theme }) => theme.typography.headerSmText.lineHeight};
-  font-family: ${({ theme }) => theme.typography.headerSmText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.headerSmText.fontWeight};
   font-size: ${({ theme }) => theme.typography.headerSmText.mobileFontSize};
 
@@ -73,7 +68,6 @@ export const HeaderSm = styled.h4`
 
 export const BodyText = styled.p`
   line-height: ${({ theme }) => theme.typography.normalBodyText.lineHeight};
-  font-family: ${({ theme }) => theme.typography.normalBodyText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.normalBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.normalBodyText.mobileFontSize};
 
@@ -84,7 +78,6 @@ export const BodyText = styled.p`
 
 export const BoldBodyText = styled.p`
   line-height: ${({ theme }) => theme.typography.boldBodyText.lineHeight};
-  font-family: ${({ theme }) => theme.typography.boldBodyText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.boldBodyText.fontWeight};
   font-size: ${({ theme }) => theme.typography.boldBodyText.mobileFontSize};
 
@@ -97,7 +90,6 @@ export const Link = styled(ReactRouterLink)`
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
   font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.linkText.mobileFontSize};
@@ -111,7 +103,6 @@ export const ExternalLink = styled.a`
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
   font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.linkText.mobileFontSize};
@@ -125,7 +116,6 @@ export const ExternalLinkLg = styled.a`
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
   cursor: pointer;
-  font-family: ${({ theme }) => theme.typography.linkText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.linkText.fontWeight};
   font-style: ${({ theme }) => theme.typography.linkText.fontStyle};
   font-size: ${({ theme }) => theme.typography.largeBodyText.mobileFontSize};
@@ -137,7 +127,6 @@ export const ExternalLinkLg = styled.a`
 
 export const NavLinkText = styled.span`
   color: ${({ theme }) => theme.colors.green};
-  font-family: ${({ theme }) => theme.typography.navLinkText.fontFamily};
   font-weight: ${({ theme }) => theme.typography.navLinkText.fontWeight};
   font-size: ${({ theme }) => theme.typography.navLinkText.mobileFontSize};
 
