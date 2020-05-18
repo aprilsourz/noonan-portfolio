@@ -147,6 +147,8 @@ const YeswareCampaignsProject = () => {
           <ScenarioContainer>
             <ScenarioCard />
             <ScenarioCard />
+            <ScenarioCard />
+            <ScenarioCard />
           </ScenarioContainer>
         </ContentContainer>
       </FullWidthBackground>
