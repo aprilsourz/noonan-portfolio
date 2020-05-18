@@ -30,12 +30,13 @@ const Scenarios = () => {
         customizations"
         body={<ScenarioThreeContent />}
       />
-       <ScenarioCard
+      <ScenarioCard
         label="SCENARIO FOUR"
-        title="CUSTOMIZE A SCHEDULED TOUCH FOR A SPECIFIC RECIPIENT"
-        subtitle="A user starts a campaign, then wants to make recipient
-        customizations"
-        body={<ScenarioThreeContent />}
+        title="ADD TOUCHES TO A SCHEDULED CAMPAIGN"
+        subtitle="A group of recipients completes a campaign, the
+        user wants to follow up with recipients who have engaged
+        but not responded"
+        body={<ScenarioFourContent />}
       />
     </ScenarioContainer>
   )
@@ -97,6 +98,21 @@ const ScenarioThreeContent = () => (
       needs to know whether the recipient will receive the customization (i.e.
       the recipient will not see the changes if they are made too close to the
       scheduled send time)
+    </ScenariosOutcomeText>
+  </>
+)
+
+const ScenarioFourContent = () => (
+  <>
+    <ScenariosOutcomeText>
+      <span style={{ fontWeight: "500" }}>Outcome:</span> the user needs a UI
+      where they can quickly and easily add a touch (or touches), and select
+      users who should receive the new touches
+    </ScenariosOutcomeText>
+    <ScenariosOutcomeText>
+      <span style={{ fontWeight: "500" }}>Secondary Outcome:</span> if the
+      campaign is shared, the user needs to know if the new touches will be
+      shared with others using the campaign
     </ScenariosOutcomeText>
   </>
 )
