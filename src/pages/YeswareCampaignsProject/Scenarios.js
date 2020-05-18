@@ -30,6 +30,13 @@ const Scenarios = () => {
         customizations"
         body={<ScenarioThreeContent />}
       />
+       <ScenarioCard
+        label="SCENARIO FOUR"
+        title="CUSTOMIZE A SCHEDULED TOUCH FOR A SPECIFIC RECIPIENT"
+        subtitle="A user starts a campaign, then wants to make recipient
+        customizations"
+        body={<ScenarioThreeContent />}
+      />
     </ScenarioContainer>
   )
 }
