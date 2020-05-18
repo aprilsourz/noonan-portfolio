@@ -45,11 +45,12 @@ const Card = styled.div`
   box-shadow: 1px 1px 5px 0px rgba(204, 204, 204, 1);
   max-width: 325px;
   width: 325px;
-  height: 500px;
+  height: auto;
+  margin-bottom: 10px;
 
   ${breakpoint("tablet")`
-    height: auto;
-  `}
+    height: 500px;
+  `};
 `
 
 const CardContent = styled.div`

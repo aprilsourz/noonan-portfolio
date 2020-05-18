@@ -159,7 +159,13 @@ const YeswareCampaignsProject = () => {
 const ScenarioContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media(min-width: 1315px) {
+    justify-content: space-between;
+
+  }
 `
 
 const HeadlineContainer = styled.div`
