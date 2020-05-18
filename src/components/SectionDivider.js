@@ -14,6 +14,7 @@ const StyledHeaderLg = styled(HeaderLg)`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  line-height: unset;
 `
 
 const SectionDivider = ({

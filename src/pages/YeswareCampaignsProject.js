@@ -25,7 +25,10 @@ const YeswareCampaignsProject = () => {
           <YeswareAnnSmith src={yeswareAnnSmith} />
         </ContentContainer>
       </HeadlineContainer>
-      <FullWidthBackground backgroundColor="white">
+      <FullWidthBackground
+        className="responsive-align-center"
+        backgroundColor="white"
+      >
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <Grid>
             <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
@@ -61,7 +64,10 @@ const YeswareCampaignsProject = () => {
           </Grid>
         </ContentContainer>
       </FullWidthBackground>
-      <FullWidthBackground backgroundColor="lightBlue">
+      <FullWidthBackground
+        className="responsive-align-center"
+        backgroundColor="lightBlue"
+      >
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <TextContainer>
             <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
@@ -89,7 +95,10 @@ const YeswareCampaignsProject = () => {
           </TextContainer>
         </ContentContainer>
       </FullWidthBackground>
-      <FullWidthBackground backgroundColor="white">
+      <FullWidthBackground
+        className="responsive-align-center"
+        backgroundColor="white"
+      >
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <TextContainer>
             <HeaderMdWithMargin>goals</HeaderMdWithMargin>
@@ -166,8 +175,16 @@ const FullWidthBackground = styled.div`
     theme.colors[backgroundColor]};
   padding: 35px 0;
 
+  &.responsive-align-center {
+    text-align: center;
+  }
+
   ${breakpoint("tablet")`
     padding: 65px 0;
+
+    &.responsive-align-center {
+      text-align: left;
+    }
   `}
 `
 
@@ -207,7 +224,7 @@ const HeaderMdWithMargin = styled(HeaderMd)`
   margin-bottom: 12px;
 
   ${breakpoint("tablet")`
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   `}
 `
 
@@ -231,14 +248,11 @@ const BlueNumber = styled(BoldBodyText)`
   color: ${({ theme }) => theme.colors.blue};
   font-weight: 700;
   font-style: italic;
-  width: 8%;
-
-  @media (min-width: 500px) {
-    width: 5%;
-  }
+  display: none;
 
   ${breakpoint("tablet")`
     width: 8%;
+    display: inline;
   `}
 `
 
@@ -247,13 +261,28 @@ const NumberedBlock = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
 
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 25px;
   }
+
+  ${breakpoint("tablet")`
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  `}
 `
 
 const NumberedBlockText = styled(BodyText)`
-  width: 80%;
+  width: 100%;
+
+  ${breakpoint("tablet")`
+     width: 80%
+  `};
 `
 
 const BlueSectionDivider = styled(SectionDivider)`
@@ -267,7 +296,7 @@ const BlueSectionDivider = styled(SectionDivider)`
 `
 
 const UserExplorationText = styled(BodyText)`
-  margin-top: 35px;
+  margin-top: 25px;
 
   ${breakpoint("tablet")`
      margin-top: 65px;
