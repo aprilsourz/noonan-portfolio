@@ -3,14 +3,13 @@ import Grid from "styled-components-grid"
 import React from "react"
 import styled from "styled-components"
 
-import { ScenarioCard } from "../components/card"
+import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
 import { ContentContainer, TextContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import SectionDivider from "../components/SectionDivider"
 import { LargeTitleText, LargeBodyText } from "../components/typography"
 import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
-
-import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
+import Scenarios from "./YeswareCampaignsProject/Scenarios"
 
 const YeswareCampaignsProject = () => {
   return (
@@ -142,31 +141,14 @@ const YeswareCampaignsProject = () => {
           </TextContainer>
         </ContentContainer>
       </FullWidthBackground>
-      <FullWidthBackground color="lightGrey">
+      <FullWidthBackground backgroundColor="lightGrey">
         <ContentContainer style={{ maxWidth: "1350px" }}>
-          <ScenarioContainer>
-            <ScenarioCard />
-            <ScenarioCard />
-            <ScenarioCard />
-            <ScenarioCard />
-          </ScenarioContainer>
+          <Scenarios />
         </ContentContainer>
       </FullWidthBackground>
     </>
   )
 }
-
-const ScenarioContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  @media(min-width: 1315px) {
-    justify-content: space-between;
-
-  }
-`
 
 const HeadlineContainer = styled.div`
   padding-top: 90px;
