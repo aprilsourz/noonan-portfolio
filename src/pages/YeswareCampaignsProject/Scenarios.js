@@ -2,43 +2,48 @@ import React from "react"
 import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
 
+import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { BodyText } from "../../components/typography"
 import ScenarioCard from "../../components/ScenarioCard"
 
 const Scenarios = () => {
   return (
-    <ScenarioContainer>
-      <ScenarioCard
-        label="SCENARIO ONE"
-        title="UPDATE RECIPIENT DATA IN YESWARE"
-        subtitle="A user starts a campaign, then
-        needs to edit some of the
-        recipient’s data"
-        body={<ScenarioOneContent />}
-      />
-      <ScenarioCard
-        label="SCENARIO TWO"
-        title="EDITING A TOUCH WITH IN-FLIGHT RECIPIENTS"
-        subtitle="A user starts a campaign, then
-        fixes a typo in Touch 1"
-        body={<ScenarioTwoContent />}
-      />
-      <ScenarioCard
-        label="SCENARIO THREE"
-        title="CUSTOMIZE A SCHEDULED TOUCH FOR A SPECIFIC RECIPIENT"
-        subtitle="A user starts a campaign, then wants to make recipient
-        customizations"
-        body={<ScenarioThreeContent />}
-      />
-      <ScenarioCard
-        label="SCENARIO FOUR"
-        title="ADD TOUCHES TO A SCHEDULED CAMPAIGN"
-        subtitle="A group of recipients completes a campaign, the
-        user wants to follow up with recipients who have engaged
-        but not responded"
-        body={<ScenarioFourContent />}
-      />
-    </ScenarioContainer>
+    <FullWidthBackground backgroundColor="lightGrey">
+      <ContentContainer style={{ maxWidth: "1350px" }}>
+        <ScenarioContainer>
+          <ScenarioCard
+            label="SCENARIO ONE"
+            title="UPDATE RECIPIENT DATA IN YESWARE"
+            subtitle="A user starts a campaign, then
+              needs to edit some of the
+              recipient’s data"
+            body={<ScenarioOneContent />}
+          />
+          <ScenarioCard
+            label="SCENARIO TWO"
+            title="EDITING A TOUCH WITH IN-FLIGHT RECIPIENTS"
+            subtitle="A user starts a campaign, then
+              fixes a typo in Touch 1"
+            body={<ScenarioTwoContent />}
+          />
+          <ScenarioCard
+            label="SCENARIO THREE"
+            title="CUSTOMIZE A SCHEDULED TOUCH FOR A SPECIFIC RECIPIENT"
+            subtitle="A user starts a campaign, then wants to make recipient
+              customizations"
+            body={<ScenarioThreeContent />}
+          />
+          <ScenarioCard
+            label="SCENARIO FOUR"
+            title="ADD TOUCHES TO A SCHEDULED CAMPAIGN"
+            subtitle="A group of recipients completes a campaign, the
+              user wants to follow up with recipients who have engaged
+              but not responded"
+            body={<ScenarioFourContent />}
+          />
+        </ScenarioContainer>
+      </ContentContainer>
+    </FullWidthBackground>
   )
 }
 
