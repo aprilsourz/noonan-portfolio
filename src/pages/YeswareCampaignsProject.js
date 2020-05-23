@@ -3,12 +3,18 @@ import React from "react"
 import styled from "styled-components"
 
 import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
-import { ContentContainer, FullWidthBackground } from "../components/layout"
+import {
+  ContentContainer,
+  TextContainer,
+  FullWidthBackground,
+} from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import {
   LargeTitleText,
   LargeBodyText,
   HeaderSm,
+  BodyText,
+  BoldBodyText,
 } from "../components/typography"
 
 import GoalsExplorationAndResearch from "./YeswareCampaignsProject/GoalsExplorationAndResearch"
@@ -39,12 +45,74 @@ const YeswareCampaignsProject = () => {
         backgroundColor="white"
       >
         <ContentContainer style={{ maxWidth: "1030px" }}>
-          <BlueHeaderSm>RESEARCH ROUND ONE</BlueHeaderSm>
+          <TextContainer>
+            <BlueHeaderSm>RESEARCH ROUND ONE</BlueHeaderSm>
+            <BodyTextWithMargin>
+              After listing out our scenarios, I mocked up two different
+              workflows that would solve for the most high priority scenarios
+              and we kicked off our first round of user research. Our goals for
+              the research were to know if users found the designs easy to
+              understand and navigate, if there were any interactions that
+              needed to be reworked, and if users understood what they were
+              editing and who it would impact.
+            </BodyTextWithMargin>
+            <BodyTextWithMargin>
+              We did 7 interviews with customers who were frequent users of
+              Campaigns and we asked each user to complete specific tasks like:
+            </BodyTextWithMargin>
+          </TextContainer>
+          <ExampleContainer>
+            <BlueExampleBox>
+              <BoldBodyText style={{ fontWeight: "300" }}>
+                “You realize you have a typo in Touch 2. How would you correct
+                it?”
+              </BoldBodyText>
+            </BlueExampleBox>
+            <BlueExampleBox>
+              <BoldBodyText style={{ fontWeight: "300" }}>
+                “You find out that one of your prospects, George Oscar Bluth,
+                actually goes by Gob Bluth. He’s about to receive several
+                automated email touches and you want to greet him by “Gob”
+                instead of “George”. How would you change this information?”
+              </BoldBodyText>
+            </BlueExampleBox>
+          </ExampleContainer>
         </ContentContainer>
       </FullWidthBackground>
     </>
   )
 }
+
+const BodyTextWithMargin = styled(BodyText)`
+  margin-top: 12px;
+
+  ${breakpoint("tablet")`
+    margin-top: 25px;
+  `}
+`
+
+const ExampleContainer = styled.div`
+  margin-top: 12px;
+  padding: 0 20px;
+
+  ${breakpoint("tablet")`
+  margin-top: 25px;
+`}
+`
+const BlueExampleBox = styled.div`
+  background-color: ${({ theme }) => theme.colors.lightBlue};
+  color: ${({ theme }) => theme.colors.blue};
+  padding: 20px;
+
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
+  ${breakpoint("tablet")`
+      padding-left: 20px;
+      padding-right: 50px;
+  `}
+`
 
 const HeadlineContainer = styled.div`
   padding-top: 90px;
