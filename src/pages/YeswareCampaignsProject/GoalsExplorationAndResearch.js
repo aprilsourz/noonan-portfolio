@@ -10,7 +10,13 @@ import {
 } from "../../components/layout"
 import SectionDivider from "../../components/SectionDivider"
 
-import { HeaderMd, BodyText, BoldBodyText } from "../../components/typography"
+import {
+  HeaderMd,
+  BodyText,
+  NumberedBlock,
+  BlueNumber,
+  NumberedBlockText,
+} from "../../components/typography"
 
 const GoalsExplorationAndResearch = () => (
   <FullWidthBackground
@@ -73,46 +79,6 @@ const HeaderMdWithMargin = styled(HeaderMd)`
   ${breakpoint("tablet")`
     margin-bottom: 25px;
   `}
-`
-const BlueNumber = styled(BoldBodyText)`
-  color: ${({ theme }) => theme.colors.blue};
-  font-weight: 700;
-  font-style: italic;
-  display: none;
-
-  ${breakpoint("tablet")`
-    width: 8%;
-    display: inline;
-  `}
-`
-
-const NumberedBlock = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  &:last-of-type {
-    margin-bottom: 25px;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: 25px;
-  }
-
-  ${breakpoint("tablet")`
-
-    &:last-of-type {
-      margin-bottom: 0px;
-    }
-  `}
-`
-
-const NumberedBlockText = styled(BodyText)`
-  width: 100%;
-
-  ${breakpoint("tablet")`
-     width: 80%
-  `};
 `
 
 const BlueSectionDivider = styled(SectionDivider)`

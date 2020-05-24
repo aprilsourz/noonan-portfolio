@@ -134,3 +134,44 @@ export const NavLinkText = styled.span`
     font-size: ${({ theme }) => theme.typography.navLinkText.fontSize};
   `}
 `
+
+export const BlueNumber = styled(BoldBodyText)`
+  color: ${({ theme }) => theme.colors.blue};
+  font-weight: 700;
+  font-style: italic;
+  display: none;
+
+  ${breakpoint("tablet")`
+    width: 8%;
+    display: inline;
+  `}
+`
+
+export const NumberedBlock = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  ${breakpoint("tablet")`
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  `}
+`
+
+export const NumberedBlockText = styled(BodyText)`
+  width: 100%;
+
+  ${breakpoint("tablet")`
+     width: 80%
+  `};
+`
