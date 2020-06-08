@@ -21,11 +21,13 @@ import {
   NumberedBlockText,
 } from "../components/typography"
 
+import DesignResearchIterate from "./YeswareCampaignsProject/DesignResearchIterate"
 import GoalsExplorationAndResearch from "./YeswareCampaignsProject/GoalsExplorationAndResearch"
 import ProjectBackground from "./YeswareCampaignsProject/ProjectBackground"
 import Scenarios from "./YeswareCampaignsProject/Scenarios"
 import TheProblem from "./YeswareCampaignsProject/TheProblem"
 import Workflows from "./YeswareCampaignsProject/Workflows"
+import ResearchRoundTwo from "./YeswareCampaignsProject/ResearchRoundTwo"
 
 const YeswareCampaignsProject = () => {
   return (
@@ -112,6 +114,8 @@ const YeswareCampaignsProject = () => {
         </ContentContainer>
       </FullWidthBackground>
       <Workflows />
+      <DesignResearchIterate />
+      <ResearchRoundTwo/>
     </>
   )
 }

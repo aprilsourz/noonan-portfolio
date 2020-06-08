@@ -5,6 +5,9 @@ import { TextContainer, FullWidthBackground } from "../../components/layout"
 
 import workflowUpdateRecipient from "../../img/workflowUpdateRecipient.png"
 import workflowEditTouch from "../../img/workflowEditTouch.png"
+import allCampaignsAugustOutreach from "../../img/allCampaignsAugustOutreach.png"
+import allCampaignsAnnAndersonDetails from "../../img/allCampaignsAnnAndersonDetails.png"
+import allCampaignsPartial from "../../img/allCampaignsPartial.png"
 
 const Workflows = () => (
   <FullWidthBackground
@@ -12,16 +15,20 @@ const Workflows = () => (
     backgroundColor="lightGrey"
   >
     <WorkFlowContainer>
-      <Img src={workflowUpdateRecipient} />
-      <Img src={workflowEditTouch} />
+      <Img src={workflowUpdateRecipient} style={{ maxWidth: "630px" }} />
+      <Img src={workflowEditTouch} style={{ maxWidth: "630px" }} />
     </WorkFlowContainer>
+    {/* <ImagesRowOne>
+      <Img src={allCampaignsAugustOutreach} style={{ maxWidth: "630px" }}/>
+      <Img src={allCampaignsAnnAndersonDetails} style={{ maxWidth: "630px" }}/>
+      <Img src={allCampaignsPartial} style={{ maxWidth: "85px" }}/>
+    </ImagesRowOne> */}
   </FullWidthBackground>
 )
 
 export default Workflows
 
 const Img = styled.img`
-  max-width: 630px;
   /* border: 1px solid #e4e6eb; */
   -webkit-box-shadow: 4px 7px 17px -7px rgba(204, 204, 204, 1);
   -moz-box-shadow: 4px 7px 17px -7px rgba(204, 204, 204, 1);
@@ -60,8 +67,12 @@ const WorkFlowContainer = styled.div`
   }
 `
 
-const FixedWidthImgContainer = styled.div`
-  max-width: 1410px;
+const ImagesRowOne = styled.div`
+  max-width: 1400px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 55px;
+  flex-wrap: wrap;
 `
