@@ -57,6 +57,16 @@ const LeftButton = styled.button`
 const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  ${breakpoint("tablet")`
+    &:last-of-type {
+      margin-bottom: 50px
+    }
+  `}
 `
 
 const ProjectButtons = () => {

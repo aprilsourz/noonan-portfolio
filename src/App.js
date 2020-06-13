@@ -16,6 +16,7 @@ import FunStuff from "./pages/FunStuff"
 import DecreasingUserExperienceFriction from "./pages/DecreasingUserExperienceFriction"
 import MakingDataDrivenDecisions from "./pages/MakingDataDrivenDecisions"
 
+import SiteFooter from "./components/SiteFooter"
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
 
@@ -59,6 +60,7 @@ class App extends Component {
                 <Redirect to="/" />
               </Switch>
             </Main>
+            <SiteFooter />
           </>
         </Router>
       </ThemeProvider>

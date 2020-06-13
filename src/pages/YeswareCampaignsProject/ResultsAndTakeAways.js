@@ -9,7 +9,7 @@ import SectionDivider from "../../components/SectionDivider"
 
 const ResultsAndTakeAways = () => (
   <>
-    <FullWidthBackground backgroundColor="white">
+    <FullWidthBackground backgroundColor="white" style={{height: '750px'}}>
       <ContentContainer style={{ maxWidth: "1240px" }}>
         <SectionDivider color="white" bgColor="blue">
           / results and takeaways

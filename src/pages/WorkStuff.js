@@ -38,12 +38,15 @@ const WorkStuff = ({ history }) => {
       <div>
         <ContentContainer>
           <ProjectSelectorBox
-            onClick={() => history.push("/projects/yesware-campaigns")}
+            onClick={() => history.push("/projects/decreasing-friction")}
             color="lightBlue"
           >
             <ProjectSelectorText>Yesware Campaigns</ProjectSelectorText>
           </ProjectSelectorBox>
-          <ProjectSelectorBox color="lightPink">
+          <ProjectSelectorBox
+            onClick={() => history.push("/projects/data-driven-decisions")}
+            color="lightPink"
+          >
             <ProjectSelectorText>Project Name</ProjectSelectorText>
           </ProjectSelectorBox>
           <ProjectSelectorBox color="lightGreen">
