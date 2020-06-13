@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import breakpoint from "styled-components-breakpoint"
 import { withRouter } from "react-router-dom"
 
 import { CnLogoSm } from "../components/icons"
