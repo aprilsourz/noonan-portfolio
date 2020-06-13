@@ -10,22 +10,29 @@ import {
 import ProjectButtons from "../components/ProjectButtons"
 import { LargeBodyText, HeaderLg } from "../components/typography"
 
+import ProjectBackground from "./MakingDataDrivenDecisions/ProjectBackground"
+
 const MakingDataDrivenDecisions = () => (
   <>
     <HeadlineContainer>
       <ProjectButtons />
       <ImagePlaceHolderText>Image</ImagePlaceHolderText>
     </HeadlineContainer>
-    <ProjectButtons />
     <FullWidthBackground backgroundColor="white">
-      <ContentContainer style={{ maxWidth: "1020px" }}>
-        <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
-        <LargeBodyTextWithMargin>
-          What data can Yesware surface that will have an impact on user
-          behavior and decision making
-        </LargeBodyTextWithMargin>
-      </ContentContainer>
+      <TextContainer>
+        <ContentContainer style={{ maxWidth: "1020px" }}>
+          <div style={{ maxWidth: "990px" }}>
+            <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
+            <LargeBodyTextWithMargin>
+              What data can Yesware surface that will have an impact on user
+              behavior and decision making
+            </LargeBodyTextWithMargin>
+          </div>
+        </ContentContainer>
+      </TextContainer>
     </FullWidthBackground>
+    <ProjectBackground />
+    <ProjectButtons />
   </>
 )
 
@@ -63,7 +70,7 @@ const LargeBodyTextWithMargin = styled(LargeBodyText)`
 
   ${breakpoint("tablet")`
     line-height: 41px;
-    font-size: 30px
-    margin-top: 6px;
+    font-size: 30px;
+    margin-top: 10px;
   `}
 `

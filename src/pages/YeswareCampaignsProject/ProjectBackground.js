@@ -42,7 +42,7 @@ const ProjectBackground = () => (
               UX & UI Design <br />
             </BodyTextWithMargin>
             <BodyTextWithMargin style={{ fontStyle: "italic" }}>
-              Mar '18 - Dec '19
+              Aug '19 - Dec '19
             </BodyTextWithMargin>
           </TextContainer>
         </Grid.Unit>
