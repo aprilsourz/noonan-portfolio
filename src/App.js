@@ -11,10 +11,11 @@ import { ThemeProvider } from "styled-components"
 import StyleGuide from "./pages/StyleGuide"
 
 import Home from "./pages/Home"
-import WorkStuff from "./pages/WorkStuff"
 import FunStuff from "./pages/FunStuff"
 import DecreasingUserExperienceFriction from "./pages/DecreasingUserExperienceFriction"
 import MakingDataDrivenDecisions from "./pages/MakingDataDrivenDecisions"
+import UnderstandingCoreUsers from "./pages/UnderstandingCoreUsers"
+import WorkStuff from "./pages/WorkStuff"
 
 import SiteFooter from "./components/SiteFooter"
 import SiteHeader from "./components/SiteHeader"
@@ -54,6 +55,11 @@ class App extends Component {
                   exact
                   path="/projects/data-driven-decisions"
                   component={MakingDataDrivenDecisions}
+                />
+                <Route
+                  exact
+                  path="/projects/core-users"
+                  component={UnderstandingCoreUsers}
                 />
 
                 {/* <Route exact path="/style-guide" component={StyleGuide} /> */}

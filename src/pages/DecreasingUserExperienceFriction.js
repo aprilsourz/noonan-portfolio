@@ -3,24 +3,20 @@ import React from "react"
 import styled from "styled-components"
 
 import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
-import {
-  ContentContainer,
-} from "../components/layout"
+import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
-import {
-  LargeTitleText,
-  LargeBodyText,
-} from "../components/typography"
+import ProjectBackground from "../components/ProjectBackground"
 
-import DesignResearchIterate from "./YeswareCampaignsProject/DesignResearchIterate"
-import GoalsExplorationAndResearch from "./YeswareCampaignsProject/GoalsExplorationAndResearch"
-import ProjectBackground from "./YeswareCampaignsProject/ProjectBackground"
-import ResearchRoundOne from "./YeswareCampaignsProject/ResearchRoundOne"
-import ResearchRoundTwo from "./YeswareCampaignsProject/ResearchRoundTwo"
-import ResultsAndTakeAways from "./YeswareCampaignsProject/ResultsAndTakeAways"
-import Scenarios from "./YeswareCampaignsProject/Scenarios"
-import TheProblem from "./YeswareCampaignsProject/TheProblem"
-import Workflows from "./YeswareCampaignsProject/Workflows"
+import { LargeTitleText, LargeBodyText } from "../components/typography"
+
+import DesignResearchIterate from "./DecreasingUserExperienceFriction/DesignResearchIterate"
+import GoalsExplorationAndResearch from "./DecreasingUserExperienceFriction/GoalsExplorationAndResearch"
+import ResearchRoundOne from "./DecreasingUserExperienceFriction/ResearchRoundOne"
+import ResearchRoundTwo from "./DecreasingUserExperienceFriction/ResearchRoundTwo"
+import ResultsAndTakeAways from "./DecreasingUserExperienceFriction/ResultsAndTakeAways"
+import Scenarios from "./DecreasingUserExperienceFriction/Scenarios"
+import TheProblem from "./DecreasingUserExperienceFriction/TheProblem"
+import Workflows from "./DecreasingUserExperienceFriction/Workflows"
 
 const YeswareCampaignsProject = () => {
   return (
@@ -36,11 +32,27 @@ const YeswareCampaignsProject = () => {
           <YeswareAnnSmith src={yeswareAnnSmith} />
         </ContentContainer>
       </HeadlineContainer>
-      <ProjectBackground />
+      <ProjectBackground
+        bio="I was the Lead Designer for Yesware's Campaigns feature for almost
+        two years. The team consisted of myself, a product manager, an
+        engineering lead, and four engineers. Campaigns is one of Yesware's
+        more complex features and I worked on many different Campaigns
+        projects from a complete redesign to the addition of new
+        functionality and capabilities both large and small."
+        skills={
+          <>
+            User Research <br />
+            Wireframing & Prototyping <br />
+            UX & UI Design <br />
+          </>
+        }
+        dates="Mar '18 - Dec '19"
+        bgColor="white"
+      />
       <TheProblem />
       <GoalsExplorationAndResearch />
       <Scenarios />
-      <ResearchRoundOne/>
+      <ResearchRoundOne />
       <Workflows />
       <DesignResearchIterate />
       <ResearchRoundTwo />

@@ -10,9 +10,9 @@ import {
 import ProjectButtons from "../components/ProjectButtons"
 import { LargeBodyText, HeaderLg } from "../components/typography"
 
-import ProjectBackground from "./MakingDataDrivenDecisions/ProjectBackground"
+import ProjectBackground from "../components/ProjectBackground"
 
-const MakingDataDrivenDecisions = () => (
+const UnderstandingCoreUsers = () => (
   <>
     <HeadlineContainer>
       <ProjectButtons />
@@ -22,32 +22,31 @@ const MakingDataDrivenDecisions = () => (
       <TextContainer>
         <ContentContainer style={{ maxWidth: "1020px" }}>
           <div style={{ maxWidth: "990px" }}>
-            <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
+            <GreenHeaderLg>Understanding our core users</GreenHeaderLg>
             <LargeBodyTextWithMargin>
-              What data can Yesware surface that will have an impact on user
-              behavior and decision making
+              How will knowing Yesware's core users on a deeper level impact the
+              product we build?
             </LargeBodyTextWithMargin>
           </div>
         </ContentContainer>
       </TextContainer>
     </FullWidthBackground>
     <ProjectBackground
-      bio="I was the Lead Designer for the team working on Yesware's Campaigns
-      feature for almost two years. During my time, the team consisted of
-      myself, a product manager, an engineering lead, and four engineers.
-      Campaigns is one of Yesware's more complex features and I worked on
-      many different Campaigns projects from a complete redesign to the
-      addition of new functionality and capabilities both large and small."
+      bio="I was the Lead Designer for Yesware's Campaigns feature for almost
+        two years. The team consisted of myself, a product manager, an
+        engineering lead, and four engineers. Campaigns is one of Yesware's
+        more complex features and I worked on many different Campaigns
+        projects from a complete redesign to the addition of new
+        functionality and capabilities both large and small."
       skills={
         <>
-          Discovery & Exploration <br />
           User Research <br />
           Wireframing & Prototyping <br />
           UX & UI Design <br />
         </>
       }
-      dates="Aug '19 - Dec '19"
-      bgColor="lightPink"
+      dates="Jan '19 - March '19"
+      bgColor="lightGreen"
     />
     <div style={{ height: "600px" }} />
     <ProjectButtons />
@@ -70,8 +69,8 @@ const ImagePlaceHolderText = styled(HeaderLg)`
   font-weight: 300;
 `
 
-const PinkHeaderLg = styled(HeaderLg)`
-  color: ${({ theme }) => theme.colors.pink};
+const GreenHeaderLg = styled(HeaderLg)`
+  color: ${({ theme }) => theme.colors.green};
   font-size: 22px;
 
   ${breakpoint("tablet")`
@@ -90,4 +89,5 @@ const LargeBodyTextWithMargin = styled(LargeBodyText)`
     margin-top: 10px;
   `}
 `
-export default MakingDataDrivenDecisions
+
+export default UnderstandingCoreUsers

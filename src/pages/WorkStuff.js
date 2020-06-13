@@ -49,8 +49,11 @@ const WorkStuff = ({ history }) => {
           >
             <ProjectSelectorText>Data-driven Decisions</ProjectSelectorText>
           </ProjectSelectorBox>
-          <ProjectSelectorBox color="lightGreen">
-            <ProjectSelectorText>Project Name</ProjectSelectorText>
+          <ProjectSelectorBox
+            onClick={() => history.push("/projects/core-users")}
+            color="lightGreen"
+          >
+            <ProjectSelectorText>Understanding core users</ProjectSelectorText>
           </ProjectSelectorBox>
           <Experience />
         </ContentContainer>

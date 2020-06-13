@@ -1,5 +1,4 @@
 import breakpoint from "styled-components-breakpoint"
-import Grid from "styled-components-grid"
 import React from "react"
 import styled from "styled-components"
 
@@ -7,26 +6,19 @@ import {
   ContentContainer,
   TextContainer,
   FullWidthBackground,
-} from "../../components/layout"
-import { HeaderMd, BodyText, BoldBodyText } from "../../components/typography"
+} from "../components/layout"
+import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
 
-const ProjectBackground = () => (
+const ProjectBackground = ({ bio, skills, dates, bgColor }) => (
   <FullWidthBackground
     className="responsive-align-center"
-    backgroundColor="white"
+    backgroundColor={bgColor}
   >
     <CustomContentContainer style={{ maxWidth: "1040px" }}>
       <BackgroundContainer>
         <TextContainer>
           <HeaderMdWithMargin>background</HeaderMdWithMargin>
-          <BodyText>
-            I was the Lead Designer for Yesware's Campaigns feature for almost
-            two years. The team consisted of myself, a product manager, an
-            engineering lead, and four engineers. Campaigns is one of Yesware's
-            more complex features and I worked on many different Campaigns
-            projects from a complete redesign to the addition of new
-            functionality and capabilities both large and small.
-          </BodyText>
+          <BodyText>{bio}</BodyText>
         </TextContainer>
       </BackgroundContainer>
       <RoleContainer>
@@ -34,12 +26,10 @@ const ProjectBackground = () => (
           <HeaderMdWithMargin>role</HeaderMdWithMargin>
           <BoldBodyTextWithMargin>Lead Product Designer</BoldBodyTextWithMargin>
           <BodyTextWithMargin>
-            User Research <br />
-            Wireframing & Prototyping <br />
-            UX & UI Design <br />
+            {skills}
           </BodyTextWithMargin>
           <BodyTextWithMargin style={{ fontStyle: "italic" }}>
-            Mar '18 - Dec '19
+            {dates}
           </BodyTextWithMargin>
         </TextContainer>
       </RoleContainer>
