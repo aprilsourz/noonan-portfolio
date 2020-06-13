@@ -153,14 +153,17 @@ export const NumberedBlock = styled.div`
   flex-wrap: wrap;
 
   &:last-of-type {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   ${breakpoint("tablet")`
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
 
     &:last-of-type {
       margin-bottom: 0px;
