@@ -40,7 +40,7 @@ const ProjectBackground = () => (
             UX & UI Design <br />
           </BodyTextWithMargin>
           <BodyTextWithMargin style={{ fontStyle: "italic" }}>
-            Mar '18 - Dec '19
+            Aug '19 - Dec '19
           </BodyTextWithMargin>
         </TextContainer>
       </RoleContainer>
@@ -91,6 +91,15 @@ const BackgroundContainer = styled.div`
 const RoleContainer = styled.div`
   width: 100%;
   max-width: 270px;
+  margin-top: 10px;
+
+  ${breakpoint("tablet")`
+    margin-top: 20px;
+  `}
+
+  ${breakpoint("desktop")`
+    margin-top: 0px;
+  `}
 `
 
 export default ProjectBackground
