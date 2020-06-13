@@ -13,7 +13,8 @@ import StyleGuide from "./pages/StyleGuide"
 import Home from "./pages/Home"
 import WorkStuff from "./pages/WorkStuff"
 import FunStuff from "./pages/FunStuff"
-import YeswareCampaignsProject from "./pages/YeswareCampaignsProject"
+import DecreasingUserExperienceFriction from "./pages/DecreasingUserExperienceFriction"
+import MakingDataDrivenDecisions from "./pages/MakingDataDrivenDecisions"
 
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
@@ -45,8 +46,13 @@ class App extends Component {
                 <Route exact path="/work-stuff" component={WorkStuff} />
                 <Route
                   exact
-                  path="/projects/yesware-campaigns"
-                  component={YeswareCampaignsProject}
+                  path="/projects/decreasing-friction"
+                  component={DecreasingUserExperienceFriction}
+                />
+                <Route
+                  exact
+                  path="/projects/data-driven-decisions"
+                  component={MakingDataDrivenDecisions}
                 />
 
                 {/* <Route exact path="/style-guide" component={StyleGuide} /> */}
