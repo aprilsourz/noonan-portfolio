@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
-import { TextContainer, FullWidthBackground } from "../../components/layout"
+import { FullWidthBackground } from "../../components/layout"
 
 import workflowUpdateRecipient from "../../img/workflowUpdateRecipient.png"
 import workflowEditTouch from "../../img/workflowEditTouch.png"

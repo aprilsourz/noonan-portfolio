@@ -2,7 +2,7 @@ import React from "react"
 import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
 
-import { ContentContainer, TextContainer } from "../components/layout"
+import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
 import {
   LargeTitleText,
@@ -62,7 +62,7 @@ const WorkStuff = ({ history }) => {
   )
 }
 
-const IntroTextContainer = styled(TextContainer)`
+const IntroTextContainer = styled.div`
   width: 100%;
   margin: 0 auto;
 

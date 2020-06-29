@@ -6,9 +6,6 @@ export const ContentContainer = styled.div`
   background: transparent;
   margin: 0 auto;
 `
-export const TextContainer = styled.div`
-  padding: 0 5px;
-`
 
 // backgroundColor prop must be one of colors in the styled-components theme
 export const FullWidthBackground = styled.div`

@@ -3,11 +3,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import {
-  ContentContainer,
-  TextContainer,
-  FullWidthBackground,
-} from "../../components/layout"
+import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { BodyText, BoldBodyText } from "../../components/typography"
 
 import SectionDivider from "../../components/SectionDivider"
@@ -21,75 +17,73 @@ const DesignResearchIterate = () => (
         </SectionDivider>
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "1040px" }}>
-        <TextContainer>
-          <BodyTextWithMargin60>
-            Due to conflicting priorities for our team, we put this project down
-            for a few months and picked it back up in October of 2018. In the
-            time that passed, it had become clear that in order to truly create
-            an intuitive workflow for “in-progress” edits, we would also need to
-            visually redesign several key Ul components of the feature. Our
-            highest priorities were to:
-          </BodyTextWithMargin60>
+        <BodyTextWithMargin60>
+          Due to conflicting priorities for our team, we put this project down
+          for a few months and picked it back up in October of 2018. In the time
+          that passed, it had become clear that in order to truly create an
+          intuitive workflow for “in-progress” edits, we would also need to
+          visually redesign several key Ul components of the feature. Our
+          highest priorities were to:
+        </BodyTextWithMargin60>
 
-          <BlueRectangle>
-            <BoldBodyText>
-              Users should be able to see what content they've already
-              personalized.
-            </BoldBodyText>
-            <ItalicBodyText>
-              <ul style={{ listStyle: "unset" }}>
-                <li>
-                  Those who are scheduled to be sent that touch within the next
-                  five minutes.
-                </li>
-              </ul>
-            </ItalicBodyText>
-            <ItalicBodyText>
-              <ul style={{ listStyle: "unset" }}>
-                <li>
-                  They should be able to use this UI to personalize messaging
-                  that's already been scheduled for a given recipient.
-                </li>
-              </ul>
-            </ItalicBodyText>
-          </BlueRectangle>
-          <BlueRectangle>
-            <BoldBodyText>
-              Clarify what happens in create mode, edit mode, and add recipients
-              mode.
-            </BoldBodyText>
-            <ItalicBodyText>
-              <ul style={{ listStyle: "unset" }}>
-                <li>
-                  Users don't understand this, so when they make changes in a
-                  given mode, they have no idea who will get the changes or,
-                  they erroneously think changes they make will be saved to the
-                  campaign.
-                </li>
-              </ul>
-            </ItalicBodyText>
-            <ItalicBodyText>
-              <ul style={{ listStyle: "unset" }}>
-                <li>
-                  Users don't understand this, so when they make changes in a
-                  given mode, they have no idea who will get the changes or,
-                  they erroneously think changes they make will be saved to the
-                  campaign.
-                </li>
-              </ul>
-            </ItalicBodyText>
-          </BlueRectangle>
-          <BodyTextWithMargin40>
-            Based on the above priorities and the initial feedback we had
-            received, I worked towards updating the Campaigns Ul and
-            editing-specific workflows throughout the entire feature. I not only
-            updated specific Ul components that already existed as part of
-            Campaigns, but I also designed a brand new piece of functionality
-            that would allow users to more specifically understand what content
-            their individual recipients would be receiving and the ability to
-            customize that content on a per recipient basis.
-          </BodyTextWithMargin40>
-        </TextContainer>
+        <BlueRectangle>
+          <BoldBodyText>
+            Users should be able to see what content they've already
+            personalized.
+          </BoldBodyText>
+          <ItalicBodyText>
+            <ul style={{ listStyle: "unset" }}>
+              <li>
+                Those who are scheduled to be sent that touch within the next
+                five minutes.
+              </li>
+            </ul>
+          </ItalicBodyText>
+          <ItalicBodyText>
+            <ul style={{ listStyle: "unset" }}>
+              <li>
+                They should be able to use this UI to personalize messaging
+                that's already been scheduled for a given recipient.
+              </li>
+            </ul>
+          </ItalicBodyText>
+        </BlueRectangle>
+        <BlueRectangle>
+          <BoldBodyText>
+            Clarify what happens in create mode, edit mode, and add recipients
+            mode.
+          </BoldBodyText>
+          <ItalicBodyText>
+            <ul style={{ listStyle: "unset" }}>
+              <li>
+                Users don't understand this, so when they make changes in a
+                given mode, they have no idea who will get the changes or, they
+                erroneously think changes they make will be saved to the
+                campaign.
+              </li>
+            </ul>
+          </ItalicBodyText>
+          <ItalicBodyText>
+            <ul style={{ listStyle: "unset" }}>
+              <li>
+                Users don't understand this, so when they make changes in a
+                given mode, they have no idea who will get the changes or, they
+                erroneously think changes they make will be saved to the
+                campaign.
+              </li>
+            </ul>
+          </ItalicBodyText>
+        </BlueRectangle>
+        <BodyTextWithMargin40>
+          Based on the above priorities and the initial feedback we had
+          received, I worked towards updating the Campaigns Ul and
+          editing-specific workflows throughout the entire feature. I not only
+          updated specific Ul components that already existed as part of
+          Campaigns, but I also designed a brand new piece of functionality that
+          would allow users to more specifically understand what content their
+          individual recipients would be receiving and the ability to customize
+          that content on a per recipient basis.
+        </BodyTextWithMargin40>
       </ContentContainer>
     </FullWidthBackground>
     <FullWidthBackground

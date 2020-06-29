@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 import {
   ContentContainer,
-  TextContainer,
   FullWidthBackground,
 } from "../components/layout"
 import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
@@ -16,22 +15,16 @@ const ProjectBackground = ({ bio, skills, dates, bgColor }) => (
   >
     <CustomContentContainer style={{ maxWidth: "1040px" }}>
       <BackgroundContainer>
-        <TextContainer>
-          <HeaderMdWithMargin>background</HeaderMdWithMargin>
-          <BodyText>{bio}</BodyText>
-        </TextContainer>
+        <HeaderMdWithMargin>background</HeaderMdWithMargin>
+        <BodyText>{bio}</BodyText>
       </BackgroundContainer>
       <RoleContainer>
-        <TextContainer>
-          <HeaderMdWithMargin>role</HeaderMdWithMargin>
-          <BoldBodyTextWithMargin>Lead Product Designer</BoldBodyTextWithMargin>
-          <BodyTextWithMargin>
-            {skills}
-          </BodyTextWithMargin>
-          <BodyTextWithMargin style={{ fontStyle: "italic" }}>
-            {dates}
-          </BodyTextWithMargin>
-        </TextContainer>
+        <HeaderMdWithMargin>role</HeaderMdWithMargin>
+        <BoldBodyTextWithMargin>Lead Product Designer</BoldBodyTextWithMargin>
+        <BodyTextWithMargin>{skills}</BodyTextWithMargin>
+        <BodyTextWithMargin style={{ fontStyle: "italic" }}>
+          {dates}
+        </BodyTextWithMargin>
       </RoleContainer>
     </CustomContentContainer>
   </FullWidthBackground>

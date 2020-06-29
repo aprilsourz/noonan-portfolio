@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 import {
   FullWidthBackground,
-  TextContainer,
   ContentContainer,
 } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
@@ -19,17 +18,15 @@ const UnderstandingCoreUsers = () => (
       <ImagePlaceHolderText>Image</ImagePlaceHolderText>
     </HeadlineContainer>
     <FullWidthBackground backgroundColor="white">
-      <TextContainer>
-        <ContentContainer style={{ maxWidth: "1020px" }}>
-          <div style={{ maxWidth: "990px" }}>
-            <GreenHeaderLg>Understanding our core users</GreenHeaderLg>
-            <LargeBodyTextWithMargin>
-              How will knowing Yesware's core users on a deeper level impact the
-              product we build?
-            </LargeBodyTextWithMargin>
-          </div>
-        </ContentContainer>
-      </TextContainer>
+      <ContentContainer style={{ maxWidth: "1020px" }}>
+        <div style={{ maxWidth: "990px" }}>
+          <GreenHeaderLg>Understanding our core users</GreenHeaderLg>
+          <LargeBodyTextWithMargin>
+            How will knowing Yesware's core users on a deeper level impact the
+            product we build?
+          </LargeBodyTextWithMargin>
+        </div>
+      </ContentContainer>
     </FullWidthBackground>
     <ProjectBackground
       bio="I was the Lead Designer for Yesware's Campaigns feature for almost

@@ -2,11 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import {
-  FullWidthBackground,
-  TextContainer,
-  ContentContainer,
-} from "../components/layout"
+import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import { LargeBodyText, HeaderLg } from "../components/typography"
 
@@ -19,17 +15,15 @@ const MakingDataDrivenDecisions = () => (
       <ImagePlaceHolderText>Image</ImagePlaceHolderText>
     </HeadlineContainer>
     <FullWidthBackground backgroundColor="white">
-      <TextContainer>
-        <ContentContainer style={{ maxWidth: "1020px" }}>
-          <div style={{ maxWidth: "990px" }}>
-            <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
-            <LargeBodyTextWithMargin>
-              What data can Yesware surface that will have an impact on user
-              behavior and decision making
-            </LargeBodyTextWithMargin>
-          </div>
-        </ContentContainer>
-      </TextContainer>
+      <ContentContainer style={{ maxWidth: "1020px" }}>
+        <div style={{ maxWidth: "990px" }}>
+          <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
+          <LargeBodyTextWithMargin>
+            What data can Yesware surface that will have an impact on user
+            behavior and decision making
+          </LargeBodyTextWithMargin>
+        </div>
+      </ContentContainer>
     </FullWidthBackground>
     <ProjectBackground
       bio="I was the Lead Designer for the team working on Yesware's Campaigns

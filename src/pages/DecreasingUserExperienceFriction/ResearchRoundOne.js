@@ -3,11 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import Grid from "styled-components-grid"
 
-import {
-  ContentContainer,
-  TextContainer,
-  FullWidthBackground,
-} from "../../components/layout"
+import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import {
   HeaderSm,
   BodyText,
@@ -23,21 +19,19 @@ const ResearchRoundOne = () => (
     backgroundColor="white"
   >
     <ContentContainer style={{ maxWidth: "1030px" }}>
-      <TextContainer>
-        <BlueHeaderSm>RESEARCH ROUND ONE</BlueHeaderSm>
-        <BodyTextWithMargin>
-          After listing out our scenarios, I mocked up two different workflows
-          that would solve for the most high priority scenarios and we kicked
-          off our first round of user research. Our goals for the research were
-          to know if users found the designs easy to understand and navigate, if
-          there were any interactions that needed to be reworked, and if users
-          understood what they were editing and who it would impact.
-        </BodyTextWithMargin>
-        <BodyTextWithMargin>
-          We did 7 interviews with customers who were frequent users of
-          Campaigns and we asked each user to complete specific tasks like:
-        </BodyTextWithMargin>
-      </TextContainer>
+      <BlueHeaderSm>RESEARCH ROUND ONE</BlueHeaderSm>
+      <BodyTextWithMargin>
+        After listing out our scenarios, I mocked up two different workflows
+        that would solve for the most high priority scenarios and we kicked off
+        our first round of user research. Our goals for the research were to
+        know if users found the designs easy to understand and navigate, if
+        there were any interactions that needed to be reworked, and if users
+        understood what they were editing and who it would impact.
+      </BodyTextWithMargin>
+      <BodyTextWithMargin>
+        We did 7 interviews with customers who were frequent users of Campaigns
+        and we asked each user to complete specific tasks like:
+      </BodyTextWithMargin>
       <ExampleContainer>
         <BlueExampleBox>
           <BoldBodyText style={{ fontWeight: "300" }}>
@@ -53,33 +47,31 @@ const ResearchRoundOne = () => (
           </BoldBodyText>
         </BlueExampleBox>
       </ExampleContainer>
-      <TextContainer>
-        <BoldBodyTextWithMargin>
-          Our most important findings:
-        </BoldBodyTextWithMargin>
-        <GridWithMargin>
-          <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
-            <NumberedBlock>
-              <BlueNumber>1 )</BlueNumber>
-              <NumberedBlockText>
-                We were able to see firsthand several of the ways users
-                misinterpreted and misused the existing workflow and therefore
-                expected one outcome but received another.
-              </NumberedBlockText>
-            </NumberedBlock>
-          </Grid.Unit>
-          <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
-            <NumberedBlock>
-              <BlueNumber>2 )</BlueNumber>
-              <NumberedBlockText>
-                Most users felt that the “overlay” Ul was the most user friendly
-                and did the best job of helping the user understand what they
-                were and were not editing.
-              </NumberedBlockText>
-            </NumberedBlock>
-          </Grid.Unit>
-        </GridWithMargin>
-      </TextContainer>
+      <BoldBodyTextWithMargin>
+        Our most important findings:
+      </BoldBodyTextWithMargin>
+      <GridWithMargin>
+        <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
+          <NumberedBlock>
+            <BlueNumber>1 )</BlueNumber>
+            <NumberedBlockText>
+              We were able to see firsthand several of the ways users
+              misinterpreted and misused the existing workflow and therefore
+              expected one outcome but received another.
+            </NumberedBlockText>
+          </NumberedBlock>
+        </Grid.Unit>
+        <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
+          <NumberedBlock>
+            <BlueNumber>2 )</BlueNumber>
+            <NumberedBlockText>
+              Most users felt that the “overlay” Ul was the most user friendly
+              and did the best job of helping the user understand what they were
+              and were not editing.
+            </NumberedBlockText>
+          </NumberedBlock>
+        </Grid.Unit>
+      </GridWithMargin>
     </ContentContainer>
   </FullWidthBackground>
 )

@@ -1,7 +1,6 @@
 import React from "react"
 import Grid from "styled-components-grid"
 import styled from "styled-components"
-import { TextContainer } from "../../components/layout"
 import {
   BodyText,
   BoldBodyText,
@@ -20,7 +19,6 @@ const Experience = () => {
           <HeaderMdAlignCenter>about</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer>
             <BodyText>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
@@ -43,7 +41,6 @@ const Experience = () => {
               lectus quam id leo. Magna ac placerat vestibulum lectus mauris
               ultrices.
             </BodyText>
-          </TextContainer>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
@@ -51,7 +48,6 @@ const Experience = () => {
           <HeaderMdAlignCenter>experience</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer>
             <BoldBodyText>
               SENIOR PRODUCT DESIGNER - YESWARE
               <br />
@@ -78,14 +74,12 @@ const Experience = () => {
               Tellus cras adipiscing enim eu. Urna nunc id cursus metus aliquam
               eleifend mi.
             </BodyText>
-          </TextContainer>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }} />
 
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer>
             <BoldBodyText>
               PRODUCT DESIGNER - MAXWELL HEALTH
               <br />
@@ -112,13 +106,11 @@ const Experience = () => {
               Tellus cras adipiscing enim eu. Urna nunc id cursus metus aliquam
               eleifend mi.
             </BodyText>
-          </TextContainer>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }} />
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer>
             <BoldBodyText>
               BRAND DEVELOPER AND VISUAL DESIGNER - REDEEMER CHURCH
               <br />
@@ -134,7 +126,6 @@ const Experience = () => {
               Ipsum dolor sit amet consectetur adipiscing elit. Id eu nisl nunc
               mi. Nunc eget lorem dolor sed viverra ipsum.
             </BodyText>
-          </TextContainer>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
@@ -142,7 +133,6 @@ const Experience = () => {
           <HeaderMdAlignCenter>skills & tools</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainer>
             <SkillsBlock>
               <BoldBodyText>
                 user experience design
@@ -173,7 +163,6 @@ const Experience = () => {
                 branding and identity
               </ItalicBodyTextLight>
             </SkillsBlock>
-          </TextContainer>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
@@ -181,7 +170,7 @@ const Experience = () => {
           <HeaderMdAlignCenter>connect</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-          <TextContainerlargeBodyTextLineHeight>
+          <LargeBodyTextLineHeight>
             <ExternalLink
               rel="noreferrer noopener"
               href="mailto:carrie.jo.noonan@gmail.com"
@@ -197,7 +186,7 @@ const Experience = () => {
             >
               LinkedIn
             </ExternalLink>
-          </TextContainerlargeBodyTextLineHeight>
+          </LargeBodyTextLineHeight>
         </Grid.Unit>
       </StyledGrid>
     </>
@@ -247,7 +236,7 @@ const ItalicBodyTextLight = styled(BodyText)`
   font-weight: 100;
 `
 
-const TextContainerlargeBodyTextLineHeight = styled(TextContainer)`
+const LargeBodyTextLineHeight = styled.div`
   line-height: ${({ theme }) => theme.typography.largeBodyTextLineHeight};
 `
 export default Experience
