@@ -8,8 +8,6 @@ import {
 } from "react-router-dom"
 import { ThemeProvider } from "styled-components"
 
-import StyleGuide from "./pages/StyleGuide"
-
 import Home from "./pages/Home"
 import FunStuff from "./pages/FunStuff"
 import DecreasingUserExperienceFriction from "./pages/DecreasingUserExperienceFriction"
@@ -61,8 +59,6 @@ class App extends Component {
                   path="/projects/core-users"
                   component={UnderstandingCoreUsers}
                 />
-
-                {/* <Route exact path="/style-guide" component={StyleGuide} /> */}
                 <Redirect to="/" />
               </Switch>
             </Main>

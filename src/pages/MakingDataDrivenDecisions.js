@@ -8,10 +8,10 @@ import { LargeBodyText, HeaderLg } from "../components/typography"
 
 import ProjectBackground from "../components/ProjectBackground"
 
-const MakingDataDrivenDecisions = () => (
+const MakingDataDrivenDecisions = ({ history }) => (
   <>
     <HeadlineContainer>
-      <ProjectButtons />
+      <ProjectButtons history={history} />
       <ImagePlaceHolderText>Image</ImagePlaceHolderText>
     </HeadlineContainer>
     <FullWidthBackground backgroundColor="white">
@@ -44,7 +44,7 @@ const MakingDataDrivenDecisions = () => (
       bgColor="lightPink"
     />
     <div style={{ height: "600px" }} />
-    <ProjectButtons />
+    <ProjectButtons history={history} />
   </>
 )
 

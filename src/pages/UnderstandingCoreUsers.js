@@ -2,19 +2,16 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import {
-  FullWidthBackground,
-  ContentContainer,
-} from "../components/layout"
+import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import { LargeBodyText, HeaderLg } from "../components/typography"
 
 import ProjectBackground from "../components/ProjectBackground"
 
-const UnderstandingCoreUsers = () => (
+const UnderstandingCoreUsers = ({ history }) => (
   <>
     <HeadlineContainer>
-      <ProjectButtons />
+      <ProjectButtons history={history} />
       <ImagePlaceHolderText>Image</ImagePlaceHolderText>
     </HeadlineContainer>
     <FullWidthBackground backgroundColor="white">
@@ -46,7 +43,7 @@ const UnderstandingCoreUsers = () => (
       bgColor="lightGreen"
     />
     <div style={{ height: "600px" }} />
-    <ProjectButtons />
+    <ProjectButtons history={history} />
   </>
 )
 

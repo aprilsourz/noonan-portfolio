@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
 
-import { ArrowLeft, ArrowRight } from "../components/icons"
+import nextProjectPageUrl from "../utils/nextProjectPageUrl"
 
-import { NavLinkText } from "../components/typography"
+import { ArrowLeft, ArrowRight } from "./icons"
+import { NavLinkText } from "./typography"
 
 const ItalicNavLinkText = styled(NavLinkText)`
   font-style: italic;
@@ -12,7 +13,7 @@ const ItalicNavLinkText = styled(NavLinkText)`
   position: relative;
 `
 
-const RightButton = styled.button`
+const ForwardButton = styled.button`
   margin-left: auto;
   width: 140px;
   position: relative;
@@ -40,7 +41,7 @@ const StyledArrowRight = styled(ArrowRight)`
   top: 2px;
 `
 
-const LeftButton = styled.button`
+const BackButton = styled.button`
   width: 140px;
   background-color: ${({ theme }) => theme.colors.pink};
   position: relative;
@@ -69,17 +70,20 @@ const ButtonContainer = styled.div`
   `}
 `
 
-const ProjectButtons = () => {
+const ProjectButtons = ({ history }) => {
+  const backUrl = nextProjectPageUrl(history.location.pathname, "back")
+  const forwardUrl = nextProjectPageUrl(history.location.pathname, "forward")
+
   return (
     <ButtonContainer>
-      <LeftButton>
+      <BackButton onClick={() => history.push(backUrl)}>
         <StyledArrowLeft size={24} />
         <ItalicNavLinkText>last project</ItalicNavLinkText>
-      </LeftButton>
-      <RightButton>
+      </BackButton>
+      <ForwardButton onClick={() => history.push(forwardUrl)}>
         <ItalicNavLinkText>next project</ItalicNavLinkText>
         <StyledArrowRight size={24} />
-      </RightButton>
+      </ForwardButton>
     </ButtonContainer>
   )
 }

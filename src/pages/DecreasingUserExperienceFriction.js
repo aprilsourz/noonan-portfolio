@@ -6,7 +6,6 @@ import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
-
 import { LargeTitleText, LargeBodyText } from "../components/typography"
 
 import DesignResearchIterate from "./DecreasingUserExperienceFriction/DesignResearchIterate"
@@ -18,11 +17,11 @@ import Scenarios from "./DecreasingUserExperienceFriction/Scenarios"
 import TheProblem from "./DecreasingUserExperienceFriction/TheProblem"
 import Workflows from "./DecreasingUserExperienceFriction/Workflows"
 
-const YeswareCampaignsProject = () => {
+const DecreasingUserExperienceFriction = ({ history }) => {
   return (
     <>
       <HeadlineContainer>
-        <ProjectButtons />
+        <ProjectButtons history={history} />
         <ContentContainer style={{ maxWidth: "930px" }}>
           <BlueTitle>Decreasing user experience friction</BlueTitle>
           <SubTitle>
@@ -57,7 +56,7 @@ const YeswareCampaignsProject = () => {
       <DesignResearchIterate />
       <ResearchRoundTwo />
       <ResultsAndTakeAways />
-      <ProjectButtons />
+      <ProjectButtons history={history} />
     </>
   )
 }
@@ -104,4 +103,4 @@ const YeswareAnnSmith = styled.img`
   `}
 `
 
-export default YeswareCampaignsProject
+export default DecreasingUserExperienceFriction
