@@ -5,6 +5,11 @@ export const ContentContainer = styled.div`
   max-width: 1240px;
   background: transparent;
   margin: 0 auto;
+  padding: 0 10px;
+
+  ${breakpoint("desktop")`
+    padding: 0;
+  `}
 `
 
 // backgroundColor prop must be one of colors in the styled-components theme

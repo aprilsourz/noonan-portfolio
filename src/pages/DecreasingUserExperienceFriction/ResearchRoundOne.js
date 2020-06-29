@@ -106,10 +106,10 @@ const GridWithMargin = styled(Grid)`
 
 const ExampleContainer = styled.div`
   margin-top: 12px;
-  padding: 0 20px;
 
   ${breakpoint("tablet")`
-  margin-top: 25px;
+    padding: 0 20px;
+    margin-top: 25px;
 `}
 `
 const BlueExampleBox = styled.div`
