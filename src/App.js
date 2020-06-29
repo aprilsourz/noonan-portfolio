@@ -15,6 +15,7 @@ import MakingDataDrivenDecisions from "./pages/MakingDataDrivenDecisions"
 import UnderstandingCoreUsers from "./pages/UnderstandingCoreUsers"
 import WorkStuff from "./pages/WorkStuff"
 
+import ScrollToTop from "./components/ScrollToTop"
 import SiteFooter from "./components/SiteFooter"
 import SiteHeader from "./components/SiteHeader"
 import theme from "./theme"
@@ -38,6 +39,7 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <Router>
           <>
+            <ScrollToTop />
             <SiteHeader />
             <Main>
               <Switch>
