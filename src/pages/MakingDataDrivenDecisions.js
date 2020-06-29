@@ -10,7 +10,7 @@ import {
 import ProjectButtons from "../components/ProjectButtons"
 import { LargeBodyText, HeaderLg } from "../components/typography"
 
-import ProjectBackground from "./MakingDataDrivenDecisions/ProjectBackground"
+import ProjectBackground from "../components/ProjectBackground"
 
 const MakingDataDrivenDecisions = () => (
   <>
