@@ -21,7 +21,11 @@ const Workflows = () => (
   >
     <ContentContainer style={{ maxWidth: "1320px" }}>
       <WorkFlowContainer>
-        <img src={workflowUpdateRecipient} style={{ maxWidth: "630px" }} alt="" />
+        <img
+          src={workflowUpdateRecipient}
+          style={{ maxWidth: "630px" }}
+          alt=""
+        />
         <img src={workflowEditTouch} style={{ maxWidth: "630px" }} alt="" />
       </WorkFlowContainer>
 
