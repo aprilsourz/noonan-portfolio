@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.14",
     "@styled-icons/feather": "^10.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -44,5 +45,4 @@
     "prettier": "^2.0.4"
   },
   "homepage": "https://arlofeirman.github.io/noonan-portfolio/"
-
 }

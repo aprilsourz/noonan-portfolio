@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import yeswareAnnSmith from "../img/yeswareAnnSmith.png"
+import headerImage from "../img/decreasing-user-friction_header-image.png"
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
@@ -28,7 +28,7 @@ const DecreasingUserExperienceFriction = ({ history }) => {
             Can we increase Yesware Campaigns user satisfaction and close the
             gap between expected behavior and what is intuitive to users?
           </SubTitle>
-          <YeswareAnnSmith src={yeswareAnnSmith} />
+          <HeaderImage src={headerImage} />
         </ContentContainer>
       </HeadlineContainer>
       <ProjectBackground
@@ -91,13 +91,10 @@ const SubTitle = styled(LargeBodyText)`
   `}
 `
 
-const YeswareAnnSmith = styled.img`
+const HeaderImage = styled.img`
   margin-top: 35px;
   width: 100%;
-  -webkit-box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
-  -moz-box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
-  box-shadow: -1px 1px 21px 0px rgba(163, 163, 163, 1);
-
+  
   ${breakpoint("tablet")`
       margin-top: 70px;
   `}
