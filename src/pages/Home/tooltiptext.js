@@ -180,10 +180,12 @@ const bikingContent = `
 
 const plantContent = `
   <span>
-  <b><i style="font-style: italic">I wish I was a plant lady</i></b>
+  <strong style="font-weight: 700">
+  <i style="font-style: italic">I wish I was a plant lady</i>
+  </strong>
   </br>
   </br>
-  <b>Fun Fact: </b>
+  <strong style="font-weight: 700">Fun Fact: </strong>
   I really like plants and I have dreams of planting my own gigantic flower and vegetable gardens!
   Sadly, I do not have a green thumb and am very bad at keeping plants alive.
   </span>
