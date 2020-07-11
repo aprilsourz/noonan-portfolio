@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 import React from "react"
 import "./Home/index.css"
+import { withSize } from "react-sizeme"
+
 import carrieNoonan from "../img/carrienoonan.svg"
 import { tooltipContents } from "./Home/tooltiptext"
 import sewing from "../img/sewing.svg"
@@ -29,11 +31,11 @@ import boston from "../img/boston.svg"
 
 class Home extends React.Component {
   componentDidMount() {
-    var originalIconsHTML = document.getElementById("icons").innerHTML
-    var removeTouchingIcons = function () {
-      var nameRect = document.getElementById("name").getBoundingClientRect()
+    let originalIconsHTML = document.getElementById("icons").innerHTML
+    let removeTouchingIcons = function () {
+      let nameRect = document.getElementById("name").getBoundingClientRect()
 
-      var getTouching = function (rect1, rect2) {
+      let getTouching = function (rect1, rect2) {
         return !(
           rect1.right <= rect2.left ||
           rect1.left >= rect2.right ||
@@ -42,8 +44,8 @@ class Home extends React.Component {
         )
       }
 
-      var boxes = [].slice.call(document.getElementsByClassName("box"))
-      var boxElementRect = boxes.map(function (element, ix) {
+      let boxes = [].slice.call(document.getElementsByClassName("box"))
+      let boxElementRect = boxes.map(function (element, ix) {
         return {
           element: element,
           rect: document
@@ -53,8 +55,8 @@ class Home extends React.Component {
       })
 
       boxElementRect.forEach(function (item) {
-        var element = item.element
-        var rect = item.rect
+        let element = item.element
+        let rect = item.rect
 
         if (getTouching(nameRect, rect)) {
           element.innerHTML = ""
@@ -73,15 +75,15 @@ class Home extends React.Component {
 
       tippy(".box img", {
         content: function (reference) {
-          var id = reference.getAttribute("data-template")
-          var container = document.createElement("div")
-          var linkedTemplate = document.getElementById(id)
+          let id = reference.getAttribute("data-template")
+          let container = document.createElement("div")
+          let linkedTemplate = document.getElementById(id)
           if (linkedTemplate) {
-            var node = document.importNode(linkedTemplate.content, true)
+            let node = document.importNode(linkedTemplate.content, true)
             container.appendChild(node)
             return container
           } else {
-            var node = document.createElement("span")
+            let node = document.createElement("span")
             node.innerHTML = "wait for copy!"
             container.appendChild(node)
             return container
@@ -92,7 +94,7 @@ class Home extends React.Component {
 
     addTooltips()
 
-    var addEvent = function (object, type, callback) {
+    let addEvent = function (object, type, callback) {
       if (object == null || typeof object == "undefined") return
       if (object.addEventListener) {
         object.addEventListener(type, callback, false)
@@ -109,10 +111,18 @@ class Home extends React.Component {
       addTooltips()
     })
   }
+
   render() {
-    const tooltips = tooltipContents.map((tooltip) => {
+    const { width } = this.props.size
+    const tooltips = tooltipContents.map((tooltip, idx) => {
+      if (tooltip === "spacer") {
+        return <div className="box" key={idx} />
+      }
+
+      const boxStyle = width < 768 && idx % 2 === 0 ? { display: "none" } : {}
+      console.log(boxStyle)
       return (
-        <div className="box">
+        <div className="box" key={tooltip.id} style={boxStyle}>
           <img data-template={tooltip.id} src={imageMap[tooltip.id]} alt="" />
           <template
             dangerouslySetInnerHTML={{
@@ -123,15 +133,14 @@ class Home extends React.Component {
         </div>
       )
     })
+
     return (
       <div className="home-page-container">
         <section>
           <div>
-            <img id="name" src={carrieNoonan} alt="" />
+            <img id="name" class="carrie-noonan" src={carrieNoonan} alt="" />
           </div>
           <div id="icons" className="wrapper">
-            <div className="box"></div>
-            <div className="box"></div>
             {tooltips}
           </div>
         </section>
@@ -166,4 +175,4 @@ const imageMap = {
   boston,
 }
 
-export default Home
+export default withSize()(Home)
