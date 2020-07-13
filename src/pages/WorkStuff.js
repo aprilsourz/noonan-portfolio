@@ -8,9 +8,11 @@ import {
   LargeTitleText,
   LargeBodyText,
   ExternalLinkLg,
+  HeaderLg,
 } from "../components/typography"
 import { Rainbow } from "../components/icons"
 import Experience from "./WorkStuff/Experience"
+import headerImage from "../img/decreasing-user-friction_header-image.png"
 
 const WorkStuff = ({ history }) => {
   return (
@@ -41,19 +43,28 @@ const WorkStuff = ({ history }) => {
             onClick={() => history.push("/projects/decreasing-friction")}
             color="lightBlue"
           >
-            <ProjectSelectorText>Decreasing Friction</ProjectSelectorText>
+            <ProjectSelectorText color="blue">
+              Decreasing user experience friction
+            </ProjectSelectorText>
+            <ImageContainer>
+              <Image src={headerImage} />
+            </ImageContainer>
           </ProjectSelectorBox>
           <ProjectSelectorBox
             onClick={() => history.push("/projects/data-driven-decisions")}
             color="lightPink"
           >
-            <ProjectSelectorText>Data-driven Decisions</ProjectSelectorText>
+            <ProjectSelectorText color="pink">
+              Making data-driven decisions
+            </ProjectSelectorText>
           </ProjectSelectorBox>
           <ProjectSelectorBox
             onClick={() => history.push("/projects/core-users")}
             color="lightGreen"
           >
-            <ProjectSelectorText>Understanding core users</ProjectSelectorText>
+            <ProjectSelectorText color="green">
+              Understanding our core users
+            </ProjectSelectorText>
           </ProjectSelectorBox>
           <Experience />
         </ContentContainer>
@@ -61,6 +72,25 @@ const WorkStuff = ({ history }) => {
     </>
   )
 }
+
+const Image = styled.img`
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  opacity: 0.3;
+`
+
+const ImageContainer = styled.div`
+  margin: -35px auto;
+  max-width: 925px;
+  display: none;
+
+  ${breakpoint("tablet")`
+    display: block;
+    width: 1015px;
+    padding: 0px;
+  `}
+`
 
 const IntroTextContainer = styled.div`
   width: 100%;
@@ -119,6 +149,9 @@ const ProjectSelectorBox = styled.div`
   border-radius: 1px;
   height: 150px;
   cursor: pointer;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 
   &:first-of-type {
     margin-top: 55px;
@@ -134,8 +167,8 @@ const ProjectSelectorBox = styled.div`
   `}
 `
 
-const ProjectSelectorText = styled(LargeBodyText)`
-  color: ${({ theme }) => theme.colors.back};
+const ProjectSelectorText = styled(HeaderLg)`
+  color: ${({ theme, color }) => theme.colors[color]};
   position: relative;
   top: 50%;
   transform: translateY(-50%);
