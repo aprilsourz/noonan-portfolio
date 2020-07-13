@@ -12,19 +12,14 @@ const MakingDataDrivenDecisions = ({ history }) => (
   <>
     <HeadlineContainer>
       <ProjectButtons history={history} />
-      <ImagePlaceHolderText>Image</ImagePlaceHolderText>
-    </HeadlineContainer>
-    <FullWidthBackground backgroundColor="white">
-      <ContentContainer style={{ maxWidth: "1020px" }}>
-        <div style={{ maxWidth: "990px" }}>
-          <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
-          <LargeBodyTextWithMargin>
-            What data can Yesware surface that will have an impact on user
-            behavior and decision making
-          </LargeBodyTextWithMargin>
-        </div>
+      <ContentContainer style={{ maxWidth: "930px", textAlign: "center" }}>
+        <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
+        <LargeBodyTextWithMargin>
+          How can we understand what data Yesware could be surfacing that will
+          have an impact on user behavior and decision making?
+        </LargeBodyTextWithMargin>
       </ContentContainer>
-    </FullWidthBackground>
+    </HeadlineContainer>
     <ProjectBackground
       bio="I was the Lead Designer for the team working on Yesware's Campaigns
       feature for almost two years. During my time, the team consisted of
@@ -40,9 +35,12 @@ const MakingDataDrivenDecisions = ({ history }) => (
           UX & UI Design <br />
         </>
       }
-      dates="Aug '19 - Dec '19"
-      bgColor="lightPink"
+      dates="Aug '19 - Current"
+      bgColor="white"
     />
+    <FullWidthBackground bgColor="lightPink">
+      
+    </FullWidthBackground>
     <div style={{ height: "600px" }} />
     <ProjectButtons history={history} />
   </>
@@ -52,26 +50,21 @@ const HeadlineContainer = styled.div`
   padding-top: 90px;
   padding-bottom: 40px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
-
+  height: 1000px;
   ${breakpoint("tablet")`
     padding-bottom: 80px;
   `}
 `
 
-const ImagePlaceHolderText = styled(HeaderLg)`
-  margin: 275px 0;
-  text-align: center;
-  font-weight: 300;
-`
-
 const PinkHeaderLg = styled(HeaderLg)`
   color: ${({ theme }) => theme.colors.pink};
   font-size: 22px;
+  margin-top: 40px;
 
   ${breakpoint("tablet")`
     line-height: 41px;
     font-size: 50px;
-    margin-top: 6px;
+    margin-top: 75px;
   `}
 `
 const LargeBodyTextWithMargin = styled(LargeBodyText)`
