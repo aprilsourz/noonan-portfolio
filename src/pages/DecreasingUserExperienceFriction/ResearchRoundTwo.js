@@ -14,6 +14,8 @@ import {
   HeaderSm,
 } from "../../components/typography"
 
+import decreasingUserFrictionIterate from "../../img/decreasing-user-friction_iterate.png"
+
 const ResearchRoundTwo = () => (
   <>
     <FullWidthBackground backgroundColor="white">
@@ -83,14 +85,22 @@ const ResearchRoundTwo = () => (
         </WrapUpText>
       </ContentContainer>
     </FullWidthBackground>
-    <FullWidthBackground
-      style={{ height: "500px", paddingTop: "240px" }}
-      backgroundColor="lightGrey"
-    >
-      <BodyText style={{ textAlign: "center" }}>Images of Mockups</BodyText>
+    <FullWidthBackground backgroundColor="lightGrey">
+      <ImgContainer>
+        <img
+          style={{ width: "100%" }}
+          src={decreasingUserFrictionIterate}
+          alt=""
+        />
+      </ImgContainer>
     </FullWidthBackground>
   </>
 )
+
+const ImgContainer = styled(ContentContainer)`
+  padding: 10px 10px;
+  max-width: 1220px;
+`
 
 const BlueHeaderSm = styled(HeaderSm)`
   color: ${({ theme }) => theme.colors.blue};

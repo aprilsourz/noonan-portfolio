@@ -30,68 +30,16 @@ import rainbow from "../img/rainbow.svg"
 import boston from "../img/boston.svg"
 
 class Home extends React.Component {
+  componentWillUnmount() {
+    window.removeEventListener("resize", () =>
+      resizeFunction(originalIconsHTML)
+    )
+  }
+
   componentDidMount() {
     let originalIconsHTML = document.getElementById("icons").innerHTML
-    let removeTouchingIcons = function () {
-      let nameRect = document.getElementById("name").getBoundingClientRect()
-
-      let getTouching = function (rect1, rect2) {
-        return !(
-          rect1.right <= rect2.left ||
-          rect1.left >= rect2.right ||
-          rect1.bottom <= rect2.top ||
-          rect1.top >= rect2.bottom
-        )
-      }
-
-      let boxes = [].slice.call(document.getElementsByClassName("box"))
-      let boxElementRect = boxes.map(function (element, ix) {
-        return {
-          element: element,
-          rect: document
-            .getElementsByClassName("box")
-            [ix].getBoundingClientRect(),
-        }
-      })
-
-      boxElementRect.forEach(function (item) {
-        let element = item.element
-        let rect = item.rect
-
-        if (getTouching(nameRect, rect)) {
-          element.innerHTML = ""
-        }
-      })
-    }
 
     removeTouchingIcons()
-
-    function addTooltips() {
-      tippy.setDefaults({
-        animation: "fade",
-        arrow: true,
-        theme: "joji",
-      })
-
-      tippy(".box img", {
-        content: function (reference) {
-          let id = reference.getAttribute("data-template")
-          let container = document.createElement("div")
-          let linkedTemplate = document.getElementById(id)
-          if (linkedTemplate) {
-            let node = document.importNode(linkedTemplate.content, true)
-            container.appendChild(node)
-            return container
-          } else {
-            let node = document.createElement("span")
-            node.innerHTML = "wait for copy!"
-            container.appendChild(node)
-            return container
-          }
-        },
-      })
-    }
-
     addTooltips()
 
     let addEvent = function (object, type, callback) {
@@ -105,11 +53,7 @@ class Home extends React.Component {
       }
     }
 
-    addEvent(window, "resize", function (event) {
-      document.getElementById("icons").innerHTML = originalIconsHTML
-      removeTouchingIcons()
-      addTooltips()
-    })
+    addEvent(window, "resize", () => resizeFunction(originalIconsHTML))
   }
 
   render() {
@@ -138,7 +82,12 @@ class Home extends React.Component {
       <div className="home-page-container">
         <section>
           <div>
-            <img id="name" class="carrie-noonan" src={carrieNoonan} alt="" />
+            <img
+              id="name"
+              className="carrie-noonan"
+              src={carrieNoonan}
+              alt=""
+            />
           </div>
           <div id="icons" className="wrapper">
             {tooltips}
@@ -147,6 +96,72 @@ class Home extends React.Component {
       </div>
     )
   }
+}
+
+const removeTouchingIcons = function () {
+  let nameRect = document.getElementById("name").getBoundingClientRect()
+
+  let getTouching = function (rect1, rect2) {
+    return !(
+      rect1.right <= rect2.left ||
+      rect1.left >= rect2.right ||
+      rect1.bottom <= rect2.top ||
+      rect1.top >= rect2.bottom
+    )
+  }
+
+  let boxes = [].slice.call(document.getElementsByClassName("box"))
+  let boxElementRect = boxes.map(function (element, ix) {
+    return {
+      element: element,
+      rect: document.getElementsByClassName("box")[ix].getBoundingClientRect(),
+    }
+  })
+
+  boxElementRect.forEach(function (item) {
+    let element = item.element
+    let rect = item.rect
+
+    if (getTouching(nameRect, rect)) {
+      element.innerHTML = ""
+    }
+  })
+}
+
+const resizeFunction = (originalIconsHTML) => {
+  if (!document.getElementById("icons")) {
+    return null
+  }
+
+  document.getElementById("icons").innerHTML = originalIconsHTML
+  removeTouchingIcons()
+  addTooltips()
+}
+
+const addTooltips = () => {
+  tippy.setDefaults({
+    animation: "fade",
+    arrow: true,
+    theme: "joji",
+  })
+
+  tippy(".box img", {
+    content: function (reference) {
+      let id = reference.getAttribute("data-template")
+      let container = document.createElement("div")
+      let linkedTemplate = document.getElementById(id)
+      if (linkedTemplate) {
+        let node = document.importNode(linkedTemplate.content, true)
+        container.appendChild(node)
+        return container
+      } else {
+        let node = document.createElement("span")
+        node.innerHTML = "wait for copy!"
+        container.appendChild(node)
+        return container
+      }
+    },
+  })
 }
 
 const imageMap = {
