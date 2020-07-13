@@ -1,7 +1,14 @@
-import breakpoint from "styled-components-breakpoint"
-
 import React from "react"
+import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
+import carouselImageOne from "../../img/decreasing-user-friction_carousel1.png"
+import carouselImageTwo from "../../img/decreasing-user-friction_carousel2.png"
+import carouselImageThree from "../../img/decreasing-user-friction_carousel3.png"
+import carouselImageFour from "../../img/decreasing-user-friction_carousel4.png"
+import carouselImageFive from "../../img/decreasing-user-friction_carousel5.png"
+
+import Carousel from "@brainhubeu/react-carousel"
+import "@brainhubeu/react-carousel/lib/style.css"
 
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { BodyText, BoldBodyText } from "../../components/typography"
@@ -86,13 +93,31 @@ const DesignResearchIterate = () => (
         </BodyTextWithMargin40>
       </ContentContainer>
     </FullWidthBackground>
-    <FullWidthBackground
-      style={{ height: "500px", paddingTop: "240px" }}
-      backgroundColor="lightGrey"
-    >
-      <BodyTextWithMargin40 style={{ textAlign: "center" }}>
-        Images of Mockups
-      </BodyTextWithMargin40>
+    <FullWidthBackground backgroundColor="lightGrey">
+      <ContentContainer style={{ maxWidth: "1290px" }}>
+        <CarouselContainer>
+          <Carousel
+            infinite
+            arrows
+            dots
+            slidesPerScroll={2}
+            slidesPerPage={2}
+            breakpoints={{
+              737: {
+                arrows: false,
+                slidesPerScroll: 1,
+                slidesPerPage: 1,
+              },
+            }}
+          >
+            <img src={carouselImageOne} alt="" />
+            <img src={carouselImageTwo} alt="" />
+            <img src={carouselImageThree} alt="" />
+            <img src={carouselImageFour} alt="" />
+            <img src={carouselImageFive} alt="" />
+          </Carousel>
+        </CarouselContainer>
+      </ContentContainer>
     </FullWidthBackground>
   </>
 )
@@ -142,8 +167,8 @@ const BlueRectangle = styled.div`
   `}
 `
 
-const StyledUl = styled.ul`
-  list-style: unset;
+const CarouselContainer = styled.div`
+  margin: 0 auto;
 `
 
 export default DesignResearchIterate
