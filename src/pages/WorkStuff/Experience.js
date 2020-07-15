@@ -16,116 +16,94 @@ const Experience = () => {
       <BlueDivider>/ experience</BlueDivider>
       <StyledGrid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }}>
-          <HeaderMdAlignCenter>about</HeaderMdAlignCenter>
-        </Grid.Unit>
-        <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-            <BodyText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-              diam vulputate ut pharetra sit. Mi ipsum faucibus vitae aliquet
-              nec. Tellus cras adipiscing enim eu. Urna nunc id cursus metus
-              aliquam eleifend mi. Cras semper auctor neque vitae tempus. Eget
-              arcu dictum varius duis at consectetur lorem donec. Ut lectus arcu
-              bibendum at varius vel pharetra vel. Interdum posuere lorem ipsum
-              dolor sit amet consectetur adipiscing. Amet aliquam id diam
-              maecenas. Porttitor eget dolor morbi non arcu. Cras ornare arcu
-              dui vivamus arcu felis. Vitae tempus quam pellentesque nec nam
-              aliquam sem et tortor.
-              <br />
-              <br />
-              Nulla pharetra diam sit amet. Tempor orci eu lobortis elementum.
-              Aliquam sem et tortor consequat id. Ipsum dolor sit amet
-              consectetur adipiscing elit. Id eu nisl nunc mi. Nunc eget lorem
-              dolor sed viverra ipsum. Consequat nisl vel pretium lectus quam.
-              Aliquet bibendum enim facilisis gravida neque convallis a. Pretium
-              lectus quam id leo. Magna ac placerat vestibulum lectus mauris
-              ultrices.
-            </BodyText>
-        </Grid.Unit>
-      </StyledGrid>
-      <StyledGrid>
-        <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }}>
           <HeaderMdAlignCenter>experience</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-            <BoldBodyText>
-              SENIOR PRODUCT DESIGNER - YESWARE
-              <br />
-              2017 - PRESENT
-              <br />
-              <br />
-            </BoldBodyText>
-            <BodyText>
-              Nulla pharetra diam sit amet. Tempor orci eu lobortis elementum.
-              Aliquam sem et tortor consequat id.
-              <br />
-              <br />
-              Ipsum dolor sit amet consectetur adipiscing elit. Id eu nisl nunc
-              mi. Nunc eget lorem dolor sed viverra ipsum.
-              <br />
-              <br />
-              Vitae tempus quam pellentesque nec nam aliquam sem et tortor.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <br />
-              Tellus cras adipiscing enim eu. Urna nunc id cursus metus aliquam
-              eleifend mi.
-            </BodyText>
-        </Grid.Unit>
-      </StyledGrid>
-      <StyledGrid>
-        <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }} />
-
-        <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-            <BoldBodyText>
-              PRODUCT DESIGNER - MAXWELL HEALTH
-              <br />
-              2014 - 2017
-              <br />
-              <br />
-            </BoldBodyText>
-            <BodyText>
-              Nulla pharetra diam sit amet. Tempor orci eu lobortis elementum.
-              Aliquam sem et tortor consequat id.
-              <br />
-              <br />
-              Ipsum dolor sit amet consectetur adipiscing elit. Id eu nisl nunc
-              mi. Nunc eget lorem dolor sed viverra ipsum.
-              <br />
-              <br />
-              Vitae tempus quam pellentesque nec nam aliquam sem et tortor.
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              <br />
-              <br />
-              Tellus cras adipiscing enim eu. Urna nunc id cursus metus aliquam
-              eleifend mi.
-            </BodyText>
+          <BoldBodyText>
+            SENIOR PRODUCT DESIGNER - YESWARE
+            <br />
+            2017 - PRESENT
+            <br />
+            <br />
+          </BoldBodyText>
+          <BodyText>
+            I’m currently a senior designer at Yesware. I lead design for two of
+            our engineering teams and I’m a manager of one direct report (a
+            product designer).
+            <br />
+            <br />
+          </BodyText>
+          <BoldBodyText>responsibilities include:</BoldBodyText>
+          <BodyText>
+            Designing useful, intuitive, and easy-to-incorporate workflows for
+            sales account executives. Running various types of research studies
+            to gather feedback and validate vision, direction, and design
+            decisions. Working collaboratively with the design team to maintain
+            brand, UX, and UI consistency across the product. Working closely
+            with product managers and tech leads to define team and product
+            strategy, direction, and priorities.
+            <br />
+            <br />
+            Managing, coaching, and mentoring my direct report. Providing
+            continuous feedback and guidance. Promoting professional growth both
+            in hard skills and soft skills. Motivating and inspiring employee
+            engagement, output, and satisfaction.
+          </BodyText>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }} />
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-            <BoldBodyText>
-              BRAND DEVELOPER AND VISUAL DESIGNER - REDEEMER CHURCH
-              <br />
-              2013 - 2018
-              <br />
-              <br />
-            </BoldBodyText>
-            <BodyText>
-              Nulla pharetra diam sit amet. Tempor orci eu lobortis elementum.
-              Aliquam sem et tortor consequat id.
-              <br />
-              <br />
-              Ipsum dolor sit amet consectetur adipiscing elit. Id eu nisl nunc
-              mi. Nunc eget lorem dolor sed viverra ipsum.
-            </BodyText>
+          <BoldBodyText>
+            PRODUCT DESIGNER - MAXWELL HEALTH
+            <br />
+            2014 - 2017
+            <br />
+            <br />
+          </BoldBodyText>
+          <BodyText>
+            I was the product design lead for one of Maxwell Health’s core
+            platforms, Tempo. Tempo is a SaaS product that provides a way for
+            benefits advisors to deploy employee benefits technology to their
+            clients.
+            <br />
+            <br />
+          </BodyText>
+          <BoldBodyText>responsibilities included:</BoldBodyText>
+          <BodyText>
+            Designing the user interface and user experience for Tempo starting
+            with sketches and taking designs through to final high-fidelity
+            mock-ups. Creating workflows and wireframes for new functionality
+            and features. Working collaboratively on a team with engineers and
+            product management to create and implement user-facing features in
+            an Agile environment. Leading user research efforts including
+            creating and testing user experience and design prototypes for new
+            functionality.
+          </BodyText>
+        </Grid.Unit>
+      </StyledGrid>
+      <StyledGrid>
+        <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }} />
+        <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
+          <BoldBodyText>
+            BRAND DEVELOPER AND VISUAL DESIGNER - REDEEMER CHURCH
+            <br />
+            2013 - 2018
+            <br />
+            <br />
+          </BoldBodyText>
+          <BodyText>
+            I worked with Redeemer Church to continuously develop their brand
+            and provide cohesive visual design assets in print as well as on the
+            web.
+          </BodyText>
+          <BoldBodyText>responsibilities included:</BoldBodyText>
+          <BodyText>
+            Maintaining brand standards across all assets. Providing design
+            assets for all sermon series including slides, web banners, and
+            social media images. Creating event posters. Designing brochures,
+            pamphlets, business cards, interior and exterior signage.
+          </BodyText>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
@@ -133,36 +111,36 @@ const Experience = () => {
           <HeaderMdAlignCenter>skills & tools</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
-            <SkillsBlock>
-              <BoldBodyText>
-                user experience design
-                <br />
-              </BoldBodyText>
-              <ItalicBodyTextLight>
-                prototyping
-                <br />
-                wireframing
-                <br />
-                sketching
-                <br />
-                information architecture
-              </ItalicBodyTextLight>
-            </SkillsBlock>
-            <SkillsBlock>
-              <BoldBodyText>
-                user interface design
-                <br />
-              </BoldBodyText>
-              <ItalicBodyTextLight>
-                design system creation
-                <br />
-                visual design
-                <br />
-                illustration
-                <br />
-                branding and identity
-              </ItalicBodyTextLight>
-            </SkillsBlock>
+          <SkillsBlock>
+            <BoldBodyText>
+              user experience design
+              <br />
+            </BoldBodyText>
+            <ItalicBodyTextLight>
+              prototyping
+              <br />
+              wireframing
+              <br />
+              sketching
+              <br />
+              information architecture
+            </ItalicBodyTextLight>
+          </SkillsBlock>
+          <SkillsBlock>
+            <BoldBodyText>
+              user interface design
+              <br />
+            </BoldBodyText>
+            <ItalicBodyTextLight>
+              design system creation
+              <br />
+              visual design
+              <br />
+              illustration
+              <br />
+              branding and identity
+            </ItalicBodyTextLight>
+          </SkillsBlock>
         </Grid.Unit>
       </StyledGrid>
       <StyledGrid>
