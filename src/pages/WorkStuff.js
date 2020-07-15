@@ -29,8 +29,14 @@ const WorkStuff = ({ history }) => {
               hats. User Research, user experience, and user interface design
               all fall into my wheelhouse. I'm the lead designer for two teams
               working under the{" "}
-              <ExternalLinkLg> Empowered Teams</ExternalLinkLg> methodology and
-              I manage one direct report.
+              <ExternalLinkLg
+                target="_blank"
+                href="https://www.producttalk.org/2020/05/product-outcomes/"
+              >
+                {" "}
+                Empowered Teams
+              </ExternalLinkLg>{" "}
+              methodology and I manage one direct report.
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledRainbow />
