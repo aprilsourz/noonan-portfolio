@@ -4,7 +4,12 @@ import styled from "styled-components"
 
 import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
-import { LargeBodyText, HeaderLg } from "../components/typography"
+import {
+  LargeBodyText,
+  HeaderLg,
+  HeaderMd,
+  BodyText,
+} from "../components/typography"
 
 import ProjectBackground from "../components/ProjectBackground"
 
@@ -38,13 +43,25 @@ const MakingDataDrivenDecisions = ({ history }) => (
       dates="Aug '19 - Current"
       bgColor="white"
     />
-    <FullWidthBackground bgColor="lightPink">
-      
+    <FullWidthBackground backgroundColor="lightPink">
+      <ContentContainer style={{ maxWidth: "930px" }}>
+        <HeaderMdWithMargin>Title</HeaderMdWithMargin>
+        <BodyText>copy</BodyText>
+        <div style={{ height: "600px" }} />
+      </ContentContainer>
     </FullWidthBackground>
-    <div style={{ height: "600px" }} />
+
     <ProjectButtons history={history} />
   </>
 )
+
+const HeaderMdWithMargin = styled(HeaderMd)`
+  margin-bottom: 12px;
+
+  ${breakpoint("tablet")`
+    margin-bottom: 25px;
+  `}
+`
 
 const HeadlineContainer = styled.div`
   padding-top: 90px;
