@@ -1,11 +1,31 @@
 import React from "react"
 import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
+import Grid from "styled-components-grid"
 
 import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
 import { LargeTitleText, LargeBodyText } from "../components/typography"
 import { Clouds } from "../components/icons"
+
+import feelings from "../img/01-feelings.png"
+import plants from "../img/02-plants.png"
+import climbing from "../img/03-climbing1.png"
+import embroidery from "../img/04-embroidery.png"
+import tatum from "../img/05-tatum.png"
+import eggs from "../img/06-eggs.png"
+import mothmoon from "../img/07-mothmoon.png"
+import snowboarding from "../img/08-snowboarding.png"
+import watercolor from "../img/09-watercolor.png"
+import collagequeen from "../img/10-collagequeen.png"
+import butterflies from "../img/11-butterflies.png"
+import climbing2 from "../img/12-climbing2.png"
+import backcountry from "../img/13-backcountry.png"
+import weaving from "../img/14-weaving.png"
+import popsicle from "../img/15-popsicle.png"
+import quilt from "../img/16-quilt.png"
+import biking from "../img/17-biking.png"
+import collagelady from "../img/18-collagelady.png"
 
 const WorkStuff = () => {
   return (
@@ -14,14 +34,13 @@ const WorkStuff = () => {
         <ContentContainer>
           <IntroTextContainer>
             <StyledLargeTitleText>
-              I'll admit, I'm not a workaholic. There are just too many other
-              fun things to do in life!
+              Outside of work, you can find me…
             </StyledLargeTitleText>
             <StyledLargeBodyText>
-              Outside of work I'm a crafter, climber, biker, illustrator,
-              amateur baker, laugher, card maker, quilter, snowboarder,
-              gift-giver, and a dreamer. Here's a glimpse of my non-work
-              creations.
+              Crafting, climbing, biking, illustrating, snowboarding, making
+              cards, quilting, painting, giving presents, and straight up day
+              dreaming. I’m a creator by nature - check out what I’m up to
+              outside of working hours.
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledClouds />
@@ -30,14 +49,134 @@ const WorkStuff = () => {
       </BlackSection>
       <div>
         <ContentContainer>
-          <ProjectSelectorBox color="lightBlue"></ProjectSelectorBox>
-          <ProjectSelectorBox color="lightPink"></ProjectSelectorBox>
-          <ProjectSelectorBox color="lightGreen"></ProjectSelectorBox>
+          <PicturesContainer>
+            <Grid>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={feelings} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={plants} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={climbing} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={embroidery} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={tatum} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={eggs} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={mothmoon} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={snowboarding} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={watercolor} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={collagequeen} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={butterflies} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={climbing2} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={backcountry} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={weaving} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={popsicle} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="left">
+                  <Img src={quilt} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="center">
+                  <Img src={biking} />
+                </ImgContainer>
+              </Grid.Unit>
+              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
+                <ImgContainer className="right">
+                  <Img src={collagelady} />
+                </ImgContainer>
+              </Grid.Unit>
+            </Grid>
+          </PicturesContainer>
         </ContentContainer>
       </div>
     </>
   )
 }
+
+const ImgContainer = styled.div`
+  overflow: hidden;
+  max-width: 398px;
+  max-height: 378px;
+  margin-top: 30px;
+
+  &.right {
+    margin-left: auto;
+  }
+
+  &.center {
+    margin: inherit auto;
+  }
+`
+
+const Img = styled.img`
+  max-width: 398px;
+  display: flex;
+`
+
+const PicturesContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 55px;
+`
 
 const IntroTextContainer = styled.div`
   width: 100%;
