@@ -14,7 +14,7 @@ import {
 } from "../../components/typography"
 import SectionDivider from "../../components/SectionDivider"
 
-const GuidedSelling = () => (
+const TheExperiment = () => (
   <>
     <FullWidthBackground backgroundColor="white">
       <ContentContainer style={{ maxWidth: "1240px" }}>
@@ -96,4 +96,4 @@ const GridWithMargin = styled(Grid)`
   `}
 `
 
-export default GuidedSelling
+export default TheExperiment
