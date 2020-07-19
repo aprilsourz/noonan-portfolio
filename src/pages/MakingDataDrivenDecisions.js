@@ -2,6 +2,8 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
+import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
+
 import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
@@ -13,7 +15,7 @@ import {
 } from "../components/typography"
 import TheProblem from "../components/TheProblem"
 
-import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
+import GuidedSelling from "./MakingDataDrivenDecisions/GuidedSelling"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -43,6 +45,7 @@ const MakingDataDrivenDecisions = ({ history }) => (
       bgColor="white"
     />
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
+    <GuidedSelling />
     <ProjectButtons history={history} />
   </>
 )

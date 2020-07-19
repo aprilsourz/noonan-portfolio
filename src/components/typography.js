@@ -161,6 +161,10 @@ export const NumberedBlock = styled.div`
     margin-bottom: 20px;
   }
 
+  &.first-in-sub-block {
+    margin-top: 20px;
+  }
+
   ${breakpoint("tablet")`
     &:not(:last-of-type) {
       margin-bottom: 40px;
@@ -168,6 +172,21 @@ export const NumberedBlock = styled.div`
 
     &:last-of-type {
       margin-bottom: 0px;
+    }
+
+    &.first-in-sub-block {
+      margin-top: 40px;
+    }
+
+    &.first-in-sub-block,
+    &.sub-block {
+      margin-left: 40px;
+
+      .sub-block-text-wrapper {
+        max-width: 450px;
+        width: 120%;
+        display: inline-block;
+      }
     }
   `}
 `

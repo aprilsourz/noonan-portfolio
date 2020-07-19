@@ -7,17 +7,13 @@ import Grid from "styled-components-grid"
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import {
   BodyText,
-  BoldBodyText,
   NumberedBlock,
   NumberedBlockText,
   ColoredNumber,
-  HeaderSm,
   HeaderMd,
 } from "../../components/typography"
 
-import decreasingUserFrictionIterate from "../../img/decreasing-user-friction_iterate.png"
-
-const ResearchRoundTwo = () => (
+const GuidedSelling = () => (
   <>
     <FullWidthBackground backgroundColor="white">
       <ContentContainer style={{ maxWidth: "1030px" }}>
@@ -35,61 +31,56 @@ const ResearchRoundTwo = () => (
         <GridWithMargin>
           <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
             <NumberedBlock>
-              <ColoredNumber>1 )</ColoredNumber>
+              <ColoredNumber color="pink">1 )</ColoredNumber>
               <NumberedBlockText>
-                The new workflows were well received and highly rated. Users
-                felt that the new Ul and interactions of how to make edits in
-                different modes were clear and intuitive.
+                How can we help our users spend more time on the most impactful
+                and valuable customers, prospects, and opportunities?
               </NumberedBlockText>
             </NumberedBlock>
             <NumberedBlock>
-              <ColoredNumber>2 )</ColoredNumber>
+              <ColoredNumber color="pink">2 )</ColoredNumber>
               <NumberedBlockText>
-                Users felt that the new Ul allowing them to edit one touch at a
-                time in a focused Ul gave them more confidence and less anxiety
-                about accidentally making a change in the wrong place.
+                Can we help users learn patterns of success from their own
+                behaviors around their own content?
+              </NumberedBlockText>
+            </NumberedBlock>
+            <NumberedBlock className="first-in-sub-block">
+              <ColoredNumber color="pink">a )</ColoredNumber>
+              <NumberedBlockText className="sub-block-text">
+                <span className="sub-block-text-wrapper">
+                  Do we have the data to connect content back to outcomes? Do we
+                  have the data to show a connection between actions and
+                  outcomes?
+                </span>
+              </NumberedBlockText>
+            </NumberedBlock>
+            <NumberedBlock className="sub-block">
+              <ColoredNumber color="pink">b )</ColoredNumber>
+              <NumberedBlockText>
+                If not, do we have other options for providing more meaningful
+                metrics than recipient engagement? (i.e. reply rates)
               </NumberedBlockText>
             </NumberedBlock>
           </Grid.Unit>
           <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
             <NumberedBlock className="with-left-margin">
-              <ColoredNumber>3 )</ColoredNumber>
+              <ColoredNumber color="pink">3 )</ColoredNumber>
               <NumberedBlockText>
-                Overall, users rated the new functionality very highly and found
-                it very valuable, although several users were not quite sure how
-                to initially navigate to the new page.
+                If we can help users learn from their own behaviors and content,
+                why not let them learn from the successful behaviors and content
+                used by their teammates?
               </NumberedBlockText>
             </NumberedBlock>
             <NumberedBlock className="with-left-margin">
-              <ColoredNumber>4 )</ColoredNumber>
+              <ColoredNumber color="pink">4 )</ColoredNumber>
               <NumberedBlockText>
-                In terms of different ways to edit a campaign touch, users
-                expectations were now more closely aligned with the actual
-                behavior of the feature. And based on specific feedback from
-                this round of research, we were able to make further iterations
-                to several pieces of the editing workflow that would smooth out
-                any kinks.
+                What if we could surface non-obvious insights that could help
+                users prioritize their customers?
               </NumberedBlockText>
             </NumberedBlock>
           </Grid.Unit>
         </GridWithMargin>
-        <WrapUpText>
-          After wrapping up the research, I created final high fidelity mockups
-          in Sketch that iterated and addressed key points of feedback we had
-          received. I transitioned these mockups to lnVision and linked them
-          together as a prototype and worked with engineering to spec out the
-          new workflows, functionality, and Ul elements.
-        </WrapUpText>
       </ContentContainer>
-    </FullWidthBackground>
-    <FullWidthBackground backgroundColor="lightGrey">
-      <ImgContainer>
-        <img
-          style={{ width: "100%" }}
-          src={decreasingUserFrictionIterate}
-          alt=""
-        />
-      </ImgContainer>
     </FullWidthBackground>
   </>
 )
@@ -99,23 +90,6 @@ const HeaderMdWithMargin = styled(HeaderMd)`
 
   ${breakpoint("tablet")`
     margin-bottom: 25px;
-  `}
-`
-
-const ImgContainer = styled(ContentContainer)`
-  padding: 10px 10px;
-  max-width: 1220px;
-`
-
-const BlueHeaderSm = styled(HeaderSm)`
-  color: ${({ theme }) => theme.colors.blue};
-`
-
-const BoldBodyTextWithMargin = styled(BoldBodyText)`
-  margin-top: 20px;
-
-  ${breakpoint("tablet")`
-    margin-top: 40px;
   `}
 `
 
@@ -135,12 +109,4 @@ const GridWithMargin = styled(Grid)`
   `}
 `
 
-const WrapUpText = styled(BodyText)`
-  margin-top: 30px;
-
-  ${breakpoint("tablet")`
-    margin-top: 60px;
-  `}
-`
-
-export default ResearchRoundTwo
+export default GuidedSelling
