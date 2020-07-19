@@ -1,20 +1,22 @@
 const decreasingFrictionUrl = "/projects/decreasing-friction"
 const dataDrivenDecisionsUrl = "/projects/data-driven-decisions"
-const coreUsersUrl = "/projects/core-users"
+// const surfacingDataAndInsightsUrl = "/projects/surfacing-data-and-insights"
+
+// This is way over engineered for two project pages.
+// But once the third project is added this will be needed.
+// Carrie wants the next and last project buttons to cycle through
+// the pages like an image carousel.
 
 const urlMapping = {
   [decreasingFrictionUrl]: {
-    back: coreUsersUrl,
+    back: dataDrivenDecisionsUrl,
     forward: dataDrivenDecisionsUrl,
   },
   [dataDrivenDecisionsUrl]: {
     back: decreasingFrictionUrl,
-    forward: coreUsersUrl,
-  },
-  [coreUsersUrl]: {
-    back: dataDrivenDecisionsUrl,
     forward: decreasingFrictionUrl,
   },
+  // add more keys here for more projects
 }
 
 const nextProjectPageUrl = (currentUrl, direction) =>

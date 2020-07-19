@@ -13,7 +13,8 @@ import {
 
 import ProjectBackground from "../components/ProjectBackground"
 
-const UnderstandingCoreUsers = ({ history }) => (
+// Skeleton component for the Surfacing data and insights project page
+const SurfacingDataAndInsights = ({ history }) => (
   <>
     <HeadlineContainer>
       <ProjectButtons history={history} />
@@ -94,4 +95,4 @@ const LargeBodyTextWithMargin = styled(LargeBodyText)`
     margin-top: 10px;
   `}
 `
-export default UnderstandingCoreUsers
+export default SurfacingDataAndInsights
