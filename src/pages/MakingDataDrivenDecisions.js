@@ -20,8 +20,8 @@ const MakingDataDrivenDecisions = ({ history }) => (
       <ContentContainer style={{ maxWidth: "930px", textAlign: "center" }}>
         <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
         <LargeBodyTextWithMargin>
-          How can we understand what data Yesware could be surfacing that will
-          have an impact on user behavior and decision making?
+          How can we provide meaningful insights and recommendations that will
+          help increase sales success for our users?
         </LargeBodyTextWithMargin>
       </ContentContainer>
     </HeadlineContainer>

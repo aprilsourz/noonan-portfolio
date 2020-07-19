@@ -97,6 +97,8 @@ const Experience = () => {
             and provide cohesive visual design assets in print as well as on the
             web.
           </BodyText>
+          <br />
+          <br />
           <BoldBodyText>responsibilities included:</BoldBodyText>
           <BodyText>
             Maintaining brand standards across all assets. Providing design
@@ -108,7 +110,7 @@ const Experience = () => {
       </StyledGrid>
       <StyledGrid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }}>
-          <HeaderMdAlignCenter>skills & tools</HeaderMdAlignCenter>
+          <HeaderMdAlignCenter>competencies</HeaderMdAlignCenter>
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
           <SkillsBlock>
@@ -117,13 +119,15 @@ const Experience = () => {
               <br />
             </BoldBodyText>
             <ItalicBodyTextLight>
-              prototyping
+              sketching
               <br />
               wireframing
               <br />
-              sketching
+              prototyping
               <br />
               information architecture
+              <br />
+              system thinking
             </ItalicBodyTextLight>
           </SkillsBlock>
           <SkillsBlock>
@@ -139,6 +143,40 @@ const Experience = () => {
               illustration
               <br />
               branding and identity
+            </ItalicBodyTextLight>
+          </SkillsBlock>
+          <SkillsBlock>
+            <BoldBodyText>
+              user research
+              <br />
+            </BoldBodyText>
+            <ItalicBodyTextLight>
+              on-site customer research
+              <br />
+              user feedback
+              <br />
+              continuous discovery
+              <br />
+              surveys
+              <br />
+              prototype and usability studies
+              <br />
+            </ItalicBodyTextLight>
+          </SkillsBlock>
+          <SkillsBlock>
+            <BoldBodyText>
+              leadership
+              <br />
+            </BoldBodyText>
+            <ItalicBodyTextLight>
+              strategy and prioritization
+              <br />
+              communication
+              <br />
+              stakeholder management
+              <br />
+              building team culture
+              <br />
             </ItalicBodyTextLight>
           </SkillsBlock>
         </Grid.Unit>
@@ -202,7 +240,6 @@ const StyledGrid = styled(Grid)`
 
 const SkillsBlock = styled.div`
   margin-bottom: 25px;
-  line-height: ${({ theme }) => theme.typography.largeBodyTextLineHeight};
 
   ${breakpoint("tablet")`
     margin-bottom: 50px;
@@ -212,6 +249,9 @@ const SkillsBlock = styled.div`
 const ItalicBodyTextLight = styled(BodyText)`
   font-style: italic;
   font-weight: 100;
+  ${breakpoint("tablet")`
+    line-height: 40px;
+  `}
 `
 
 const LargeBodyTextLineHeight = styled.div`
