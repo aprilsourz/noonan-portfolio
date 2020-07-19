@@ -12,6 +12,7 @@ import {
   NumberedBlockText,
   ColoredNumber,
   HeaderSm,
+  HeaderMd,
 } from "../../components/typography"
 
 import decreasingUserFrictionIterate from "../../img/decreasing-user-friction_iterate.png"
@@ -20,21 +21,17 @@ const ResearchRoundTwo = () => (
   <>
     <FullWidthBackground backgroundColor="white">
       <ContentContainer style={{ maxWidth: "1030px" }}>
-        <BlueHeaderSm>RESEARCH ROUND TWO</BlueHeaderSm>
+        <HeaderMdWithMargin>guided selling</HeaderMdWithMargin>
         <BodyTextWithMargin>
-          To validate the new designs, Jamie and I conducted usability testing.
-          The script again asked users to complete specific tasks within the
-          workflows with the goal of assessing whether the changes improved the
-          user's understanding of which mode they were in and what actions they
-          could or could not take in that mode. We conducted 8 interviews during
-          which, we kept track of how often users successfully completed their
-          tasks, asked for feedback on the new functionality and workflows, and
-          gathered insights into whether the new Ul updates had helped simplify
-          and clarify user understanding.
+          In research, we had been hearing consistently that one of the most
+          common pain points for our target users was spending time on leads and
+          opportunities that didn’t matter. “Guided Selling” to us, meant that
+          our users would feel that Yesware was giving them the insights and the
+          tools they needed to focus on the right opportunities and take the
+          most appropriate actions at the right time. To kick off any
+          experimentation around guided selling, we asked ourselves a number of
+          questions:
         </BodyTextWithMargin>
-        <BoldBodyTextWithMargin>
-          Our key findings and results:
-        </BoldBodyTextWithMargin>
         <GridWithMargin>
           <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
             <NumberedBlock>
@@ -97,6 +94,14 @@ const ResearchRoundTwo = () => (
   </>
 )
 
+const HeaderMdWithMargin = styled(HeaderMd)`
+  margin-bottom: 12px;
+
+  ${breakpoint("tablet")`
+    margin-bottom: 25px;
+  `}
+`
+
 const ImgContainer = styled(ContentContainer)`
   padding: 10px 10px;
   max-width: 1220px;
@@ -115,18 +120,18 @@ const BoldBodyTextWithMargin = styled(BoldBodyText)`
 `
 
 const BodyTextWithMargin = styled(BodyText)`
-  margin-top: 20px;
+  margin-top: 15px;
 
   ${breakpoint("tablet")`
-    margin-top: 40px;
+    margin-top: 20px;
   `}
 `
 
 const GridWithMargin = styled(Grid)`
-  margin-top: 15px;
+  margin-top: 16px;
 
   ${breakpoint("tablet")`
-    margin-top: 30px;
+    margin-top: 32px;
   `}
 `
 

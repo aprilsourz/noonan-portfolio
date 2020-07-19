@@ -10,7 +10,7 @@ import {
   HeaderMd,
   BodyText,
   NumberedBlock,
-  BlueNumber,
+  ColoredNumber,
   NumberedBlockText,
 } from "../../components/typography"
 
@@ -24,14 +24,14 @@ const GoalsExplorationAndResearch = () => (
       <Grid>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
           <NumberedBlock>
-            <BlueNumber>1 )</BlueNumber>
+            <ColoredNumber>1 )</ColoredNumber>
             <NumberedBlockText>
               By decreasing friction in the Campaigns user experience, we hope
               to increase satisfaction, and thereby increase retention.
             </NumberedBlockText>
           </NumberedBlock>
           <NumberedBlock>
-            <BlueNumber>2 )</BlueNumber>
+            <ColoredNumber>2 )</ColoredNumber>
             <NumberedBlockText>
               By increasing the flexibility of Campaigns, we should also be able
               to offer more opportunities to personalize messaging.
@@ -40,7 +40,7 @@ const GoalsExplorationAndResearch = () => (
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
           <NumberedBlock className="with-left-margin">
-            <BlueNumber>3 )</BlueNumber>
+            <ColoredNumber>3 )</ColoredNumber>
             <NumberedBlockText>
               If we don't work on this, we will continue to grow a cohort of
               users who try Campaigns and, finding that it is either too

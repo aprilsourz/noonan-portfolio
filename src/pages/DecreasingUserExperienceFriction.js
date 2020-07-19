@@ -7,6 +7,7 @@ import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
 import { LargeTitleText, LargeBodyText } from "../components/typography"
+import TheProblem from "../components/TheProblem"
 
 import DesignResearchIterate from "./DecreasingUserExperienceFriction/DesignResearchIterate"
 import GoalsExplorationAndResearch from "./DecreasingUserExperienceFriction/GoalsExplorationAndResearch"
@@ -14,7 +15,6 @@ import ResearchRoundOne from "./DecreasingUserExperienceFriction/ResearchRoundOn
 import ResearchRoundTwo from "./DecreasingUserExperienceFriction/ResearchRoundTwo"
 import ResultsAndTakeAways from "./DecreasingUserExperienceFriction/ResultsAndTakeAways"
 import Scenarios from "./DecreasingUserExperienceFriction/Scenarios"
-import TheProblem from "./DecreasingUserExperienceFriction/TheProblem"
 import Workflows from "./DecreasingUserExperienceFriction/Workflows"
 
 const DecreasingUserExperienceFriction = ({ history }) => {
@@ -48,7 +48,7 @@ const DecreasingUserExperienceFriction = ({ history }) => {
         dates="Mar '18 - Dec '19"
         bgColor="white"
       />
-      <TheProblem />
+      <TheProblem blocksOfText={problemSectionText} />
       <GoalsExplorationAndResearch />
       <Scenarios />
       <ResearchRoundOne />
@@ -60,6 +60,23 @@ const DecreasingUserExperienceFriction = ({ history }) => {
     </>
   )
 }
+
+const problemSectionText = [
+  `Campaigns Is a tool that allows salespeople to send a series of
+  customized messages (called “touches") to many recipients at once
+  through a number of different channels: email, phone, LinkedIn message,
+  etc.`,
+  `In May 2018, the Campaigns feature was being adopted by more and more
+  users. But the more users using the product, the more signals we started
+  to receive that users were experiencing unintuitive behavior and missing
+  functionality in the campaign editing workflow.`,
+  `At the time, there was no easy way for users to make changes to a
+  campaign while there were recipients scheduled to receive touches. If a
+  user needed to change the content of an email or change recipient
+  details, they had no easy way of doing so. We needed to introduce the
+  ability to make edits to an in-progress campaign and make it intuitive
+  to do so.`,
+]
 
 const HeadlineContainer = styled.div`
   padding-top: 90px;
@@ -94,7 +111,7 @@ const SubTitle = styled(LargeBodyText)`
 const HeaderImage = styled.img`
   margin-top: 35px;
   width: 100%;
-  
+
   ${breakpoint("tablet")`
       margin-top: 70px;
   `}

@@ -4,14 +4,16 @@ import styled from "styled-components"
 
 import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
+import ProjectBackground from "../components/ProjectBackground"
 import {
   LargeBodyText,
   HeaderLg,
   HeaderMd,
   BodyText,
 } from "../components/typography"
+import TheProblem from "../components/TheProblem"
 
-import ProjectBackground from "../components/ProjectBackground"
+import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -23,15 +25,11 @@ const MakingDataDrivenDecisions = ({ history }) => (
           How can we provide meaningful insights and recommendations that will
           help increase sales success for our users?
         </LargeBodyTextWithMargin>
+        <HeaderImage src={dataDrivenDecisions} />
       </ContentContainer>
     </HeadlineContainer>
     <ProjectBackground
-      bio="I was the Lead Designer for the team working on Yesware's Campaigns
-      feature for almost two years. During my time, the team consisted of
-      myself, a product manager, an engineering lead, and four engineers.
-      Campaigns is one of Yesware's more complex features and I worked on
-      many different Campaigns projects from a complete redesign to the
-      addition of new functionality and capabilities both large and small."
+      bio="During Q2 and Q3 of 2019, I worked on a small “experimental” team consisting of myself as lead designer, one product manager, and one of our principal engineers. The purpose of this team was to work as quickly as possible implementing small but tangible “experiments” that would validate (or invalidate) certain hypotheses and assumptions we had around surfacing data to users. By working this way, our hope was to come to a quick and clear understanding of what bigger data projects would be most valuable for our data teams to invest in."
       skills={
         <>
           Discovery & Exploration <br />
@@ -40,20 +38,28 @@ const MakingDataDrivenDecisions = ({ history }) => (
           UX & UI Design <br />
         </>
       }
-      dates="Aug '19 - Current"
+      role="Yesware / Lead Product Designer"
+      dates="Aug '19 - October '19"
       bgColor="white"
     />
-    <FullWidthBackground backgroundColor="lightPink">
-      <ContentContainer style={{ maxWidth: "930px" }}>
-        <HeaderMdWithMargin>Title</HeaderMdWithMargin>
-        <BodyText>copy</BodyText>
-        <div style={{ height: "600px" }} />
-      </ContentContainer>
-    </FullWidthBackground>
-
+    <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <ProjectButtons history={history} />
   </>
 )
+
+const problemSectionText = [
+  `We believed that in order to create lasting, differentiated and hard to replace value for our users, Yesware needed to be providing meaningful insights and recommendations that would help increase sales success - we termed this “Guided Selling”. But with anything data-related, there were SO MANY opportunities, and although we had access to good data and knew we wanted to start leveraging it, we didn’t know where to start.`,
+  `Our other concern was the potential for any data project to be largely complex, have a high level of effort, and require a big time investment. We didn’t have enough information to feel comfortable committing an engineering team to a complex and time consuming project. So to move things forward, our small team was tasked with running small experiments with the goal of narrowing down and understanding what types of “guided selling” would have the highest impact on end user success.`,
+]
+
+const HeaderImage = styled.img`
+  margin-top: 35px;
+  width: 100%;
+
+  ${breakpoint("tablet")`
+      margin-top: 70px;
+  `}
+`
 
 const HeaderMdWithMargin = styled(HeaderMd)`
   margin-bottom: 12px;
@@ -66,8 +72,8 @@ const HeaderMdWithMargin = styled(HeaderMd)`
 const HeadlineContainer = styled.div`
   padding-top: 90px;
   padding-bottom: 40px;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  height: 1000px;
+  background-color: ${({ theme }) => theme.colors.whitePinkTint};
+
   ${breakpoint("tablet")`
     padding-bottom: 80px;
   `}

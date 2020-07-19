@@ -9,7 +9,7 @@ import {
   BodyText,
   BoldBodyText,
   NumberedBlock,
-  BlueNumber,
+  ColoredNumber,
   NumberedBlockText,
 } from "../../components/typography"
 
@@ -53,7 +53,7 @@ const ResearchRoundOne = () => (
       <GridWithMargin>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
           <NumberedBlock>
-            <BlueNumber>1 )</BlueNumber>
+            <ColoredNumber>1 )</ColoredNumber>
             <NumberedBlockText>
               We were able to see firsthand several of the ways users
               misinterpreted and misused the existing workflow and therefore
@@ -63,7 +63,7 @@ const ResearchRoundOne = () => (
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>
           <NumberedBlock>
-            <BlueNumber>2 )</BlueNumber>
+            <ColoredNumber>2 )</ColoredNumber>
             <NumberedBlockText>
               Most users felt that the “overlay” Ul was the most user friendly
               and did the best job of helping the user understand what they were

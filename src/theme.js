@@ -10,7 +10,8 @@ const theme = {
     lightBlue: "#E9EDFF",
     lightPink: "#FFE9FD",
     lightGreen: "#EAFFFC",
-    white: "#ffffff",
+    white: "#FFFFFF",
+    whitePinkTint: '#FFF9FE'
   },
   typography: {
     largeTitleText: {

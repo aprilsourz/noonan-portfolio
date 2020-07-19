@@ -2,13 +2,10 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import {
-  ContentContainer,
-  FullWidthBackground,
-} from "../components/layout"
+import { ContentContainer, FullWidthBackground } from "../components/layout"
 import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
 
-const ProjectBackground = ({ bio, skills, dates, bgColor }) => (
+const ProjectBackground = ({ bio, skills, dates, bgColor, role }) => (
   <FullWidthBackground
     className="responsive-align-center"
     backgroundColor={bgColor}
@@ -20,7 +17,9 @@ const ProjectBackground = ({ bio, skills, dates, bgColor }) => (
       </BackgroundContainer>
       <RoleContainer>
         <HeaderMdWithMargin>role</HeaderMdWithMargin>
-        <BoldBodyTextWithMargin>Lead Product Designer</BoldBodyTextWithMargin>
+        <BoldBodyTextWithMargin>
+          {role || "Lead Product Designer"}
+        </BoldBodyTextWithMargin>
         <BodyTextWithMargin>{skills}</BodyTextWithMargin>
         <BodyTextWithMargin style={{ fontStyle: "italic" }}>
           {dates}

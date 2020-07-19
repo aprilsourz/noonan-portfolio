@@ -135,8 +135,9 @@ export const NavLinkText = styled.span`
   `}
 `
 
-export const BlueNumber = styled(BoldBodyText)`
-  color: ${({ theme }) => theme.colors.blue};
+export const ColoredNumber = styled(BoldBodyText)`
+  color: ${({ theme, color }) =>
+    color ? theme.colors[color] : theme.colors.blue};
   font-weight: 700;
   font-style: italic;
   display: none;
