@@ -4,18 +4,14 @@ import styled from "styled-components"
 
 import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
 
-import { FullWidthBackground, ContentContainer } from "../components/layout"
+import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
-import {
-  LargeBodyText,
-  HeaderLg,
-  HeaderMd,
-  BodyText,
-} from "../components/typography"
+import { LargeBodyText, HeaderLg, HeaderMd } from "../components/typography"
 import TheProblem from "../components/TheProblem"
 
 import GuidedSelling from "./MakingDataDrivenDecisions/GuidedSelling"
+import TheExperiment from "./MakingDataDrivenDecisions/TheExperiment"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -46,6 +42,7 @@ const MakingDataDrivenDecisions = ({ history }) => (
     />
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <GuidedSelling />
+    <TheExperiment />
     <ProjectButtons history={history} />
   </>
 )
@@ -61,14 +58,6 @@ const HeaderImage = styled.img`
 
   ${breakpoint("tablet")`
       margin-top: 70px;
-  `}
-`
-
-const HeaderMdWithMargin = styled(HeaderMd)`
-  margin-bottom: 12px;
-
-  ${breakpoint("tablet")`
-    margin-bottom: 25px;
   `}
 `
 

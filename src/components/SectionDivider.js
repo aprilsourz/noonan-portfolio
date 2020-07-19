@@ -12,6 +12,7 @@ const Divider = styled.header`
 
 const StyledHeaderLg = styled(HeaderLg)`
   position: relative;
+  font-weight: 500;
   top: 50%;
   transform: translateY(-50%);
   line-height: unset;
