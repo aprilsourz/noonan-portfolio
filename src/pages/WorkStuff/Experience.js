@@ -174,11 +174,11 @@ const Experience = () => {
 const BlueDivider = styled(SectionDivider)`
   background-color: ${({ theme }) => theme.colors.blue};
   color: ${({ theme }) => theme.colors.white};
-  margin-top: 75px;
+  margin-top: 30px;
   margin-bottom: 40px;
 
   ${breakpoint("tablet")`
-     margin-top: 150px;
+     margin-top: 60px;
      margin-bottom: 80px
   `};
 `

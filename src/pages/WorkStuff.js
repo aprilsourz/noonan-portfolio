@@ -1,6 +1,7 @@
 import React from "react"
 import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
+import Grid from "styled-components-grid"
 
 import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
@@ -12,7 +13,8 @@ import {
 } from "../components/typography"
 import { Rainbow } from "../components/icons"
 import Experience from "./WorkStuff/Experience"
-import headerImage from "../img/decreasing-user-friction_header-image.png"
+import decreasingUserExperienceFriction from "../img/decreasing-user-friction_header-image.png"
+import dataDrivenDecisions from "../img/data-driven-decisions.png"
 
 const WorkStuff = ({ history }) => {
   return (
@@ -20,15 +22,12 @@ const WorkStuff = ({ history }) => {
       <BlackSection>
         <ContentContainer>
           <IntroTextContainer>
-            <StyledLargeTitleText>
-              I've been doing product design at Yesware for the last three
-              years.
-            </StyledLargeTitleText>
+            <StyledLargeTitleText>Hi, I’m Carrie!</StyledLargeTitleText>
             <StyledLargeBodyText>
-              As part of a small design team, I wear all the "product designer"
-              hats. User Research, user experience, and user interface design
-              all fall into my wheelhouse. I'm the lead designer for two teams
-              working under the{" "}
+              As a Senior Designer on a small design team, I wear all the
+              “product designer” hats. User research, user experience, and user
+              interface design all fall into my wheelhouse. I’m the lead
+              designer for two teams working under the{" "}
               <ExternalLinkLg
                 target="_blank"
                 href="https://www.producttalk.org/2020/05/product-outcomes/"
@@ -43,8 +42,8 @@ const WorkStuff = ({ history }) => {
           <StyledSectionDivider>/ recent work</StyledSectionDivider>
         </ContentContainer>
       </BlackSection>
-      <div>
-        <ContentContainer>
+      <ContentContainer>
+        <ProjectSelectorContainer>
           <ProjectSelectorBox
             onClick={() => history.push("/projects/decreasing-friction")}
             color="lightBlue"
@@ -53,7 +52,7 @@ const WorkStuff = ({ history }) => {
               Decreasing user experience friction
             </ProjectSelectorText>
             <ImageContainer>
-              <Image src={headerImage} />
+              <Image src={decreasingUserExperienceFriction} />
             </ImageContainer>
           </ProjectSelectorBox>
           <ProjectSelectorBox
@@ -63,18 +62,13 @@ const WorkStuff = ({ history }) => {
             <ProjectSelectorText color="pink">
               Making data-driven decisions
             </ProjectSelectorText>
+            <ImageContainer>
+              <Image src={dataDrivenDecisions} />
+            </ImageContainer>
           </ProjectSelectorBox>
-          <ProjectSelectorBox
-            onClick={() => history.push("/projects/core-users")}
-            color="lightGreen"
-          >
-            <ProjectSelectorText color="green">
-              Understanding our core users
-            </ProjectSelectorText>
-          </ProjectSelectorBox>
-          <Experience />
-        </ContentContainer>
-      </div>
+        </ProjectSelectorContainer>
+        <Experience />
+      </ContentContainer>
     </>
   )
 }
@@ -83,17 +77,15 @@ const Image = styled.img`
   width: 100%;
   position: relative;
   z-index: -1;
-  opacity: 0.3;
 `
 
 const ImageContainer = styled.div`
-  margin: -35px auto;
-  max-width: 925px;
+  max-width: 577px;
+  margin: 25px auto;
   display: none;
 
   ${breakpoint("tablet")`
     display: block;
-    width: 1015px;
     padding: 0px;
   `}
 `
@@ -150,34 +142,54 @@ const StyledLargeTitleText = styled(LargeTitleText)`
 // @TODO: Give this some kind of hover style
 const ProjectSelectorBox = styled.div`
   background-color: ${({ color, theme }) => theme.colors[color]};
-  margin-top: 25px;
-  text-align: center;
   border-radius: 1px;
-  height: 150px;
   cursor: pointer;
   position: relative;
   z-index: 0;
   overflow: hidden;
+  max-width: 600px;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
 
-  &:first-of-type {
-    margin-top: 55px;
+  &:not(:first-of-type) {
+    margin-top: 20px;
   }
 
   ${breakpoint("tablet")`
-     margin-top: 50px;
-     height: 300px;
+    height: 350px;
+    width: 49%;
 
-     &:first-of-type {
-      margin-top: 85px;
-     }
-  `}
+    &:not(:first-of-type) {
+      margin-top: 0px;
+    }
+  `};
 `
 
 const ProjectSelectorText = styled(HeaderLg)`
   color: ${({ theme, color }) => theme.colors[color]};
   position: relative;
+  text-align: center;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
+
+  ${breakpoint("tablet")`
+    left: 0;
+    top: 0;
+    transform: unset;
+    margin-top: 39px;
+    margin-left: 56px;
+    text-align: left;
+    max-width: 509px;
+  `}
 `
 
+const ProjectSelectorContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+`
 export default WorkStuff

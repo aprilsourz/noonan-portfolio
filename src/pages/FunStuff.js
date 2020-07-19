@@ -44,7 +44,7 @@ const FunStuff = () => {
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledClouds />
-          <StyledSectionDivider>/ recent work</StyledSectionDivider>
+          <StyledSectionDivider>/ on the side</StyledSectionDivider>
         </ContentContainer>
       </BlackSection>
       <div>
