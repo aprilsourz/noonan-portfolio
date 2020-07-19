@@ -249,6 +249,7 @@ const SkillsBlock = styled.div`
 const ItalicBodyTextLight = styled(BodyText)`
   font-style: italic;
   font-weight: 100;
+
   ${breakpoint("tablet")`
     line-height: 40px;
   `}
