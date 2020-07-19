@@ -27,7 +27,7 @@ import quilt from "../img/16-quilt.png"
 import biking from "../img/17-biking.png"
 import collagelady from "../img/18-collagelady.png"
 
-const WorkStuff = () => {
+const FunStuff = () => {
   return (
     <>
       <BlackSection>
@@ -50,98 +50,60 @@ const WorkStuff = () => {
       <div>
         <ContentContainer>
           <PicturesContainer>
-            <Grid>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={feelings} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={plants} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={climbing} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={embroidery} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={tatum} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={eggs} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={mothmoon} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={snowboarding} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={watercolor} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={collagequeen} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={butterflies} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={climbing2} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={backcountry} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={weaving} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={popsicle} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="left">
-                  <Img src={quilt} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="center">
-                  <Img src={biking} />
-                </ImgContainer>
-              </Grid.Unit>
-              <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 3 }}>
-                <ImgContainer className="right">
-                  <Img src={collagelady} />
-                </ImgContainer>
-              </Grid.Unit>
-            </Grid>
+            <ImgContainer className="left">
+              <Img src={feelings} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={plants} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={climbing} />
+            </ImgContainer>
+            <ImgContainer className="left">
+              <Img src={embroidery} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={tatum} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={eggs} />
+            </ImgContainer>
+            <ImgContainer className="left">
+              <Img src={mothmoon} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={snowboarding} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={watercolor} />
+            </ImgContainer>
+            <ImgContainer className="left">
+              <Img src={collagequeen} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={butterflies} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={climbing2} />
+            </ImgContainer>
+            <ImgContainer className="left">
+              <Img src={backcountry} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={weaving} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={popsicle} />
+            </ImgContainer>
+            <ImgContainer className="left">
+              <Img src={quilt} />
+            </ImgContainer>
+            <ImgContainer className="center">
+              <Img src={biking} />
+            </ImgContainer>
+            <ImgContainer className="right">
+              <Img src={collagelady} />
+            </ImgContainer>
           </PicturesContainer>
         </ContentContainer>
       </div>
@@ -153,29 +115,29 @@ const ImgContainer = styled.div`
   overflow: hidden;
   max-width: 398px;
   max-height: 378px;
-  margin-top: 30px;
+  margin: 30px auto 0;
+  width: 100%;
 
-  &.right {
-    margin-left: auto;
-  }
-
-  &.center {
-    margin: inherit auto;
-  }
+  ${breakpoint("tablet")`
+    margin: 30px 0 0;
+    width: 32%;
+  `}
 `
 
 const Img = styled.img`
   max-width: 398px;
   display: flex;
+  width: 100%;
 `
 
 const PicturesContainer = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 55px;
   padding-bottom: 55px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 `
 
 const IntroTextContainer = styled.div`
@@ -227,35 +189,4 @@ const StyledLargeBodyText = styled(LargeBodyText)`
 const StyledLargeTitleText = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.green};
 `
-
-// @TODO: Give this some kind of hover style
-const ProjectSelectorBox = styled.div`
-  background-color: ${({ color, theme }) => theme.colors[color]};
-  margin-top: 25px;
-  text-align: center;
-  border-radius: 1px;
-  height: 150px;
-  cursor: pointer;
-
-  &:first-of-type {
-    margin-top: 55px;
-  }
-
-  ${breakpoint("tablet")`
-     margin-top: 50px;
-     height: 300px;
-
-     &:first-of-type {
-      margin-top: 85px;
-     }
-  `}
-`
-
-const ProjectSelectorText = styled(LargeBodyText)`
-  color: ${({ theme }) => theme.colors.back};
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-`
-
-export default WorkStuff
+export default FunStuff
