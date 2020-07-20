@@ -144,8 +144,8 @@ const ItalicBodyText = styled(BodyText)`
   margin-left: 20px;
 
   ${breakpoint("tablet")`
-  margin-top: 20px;
-`};
+    margin-top: 20px;
+  `};
 `
 
 const BlueRectangle = styled.div`

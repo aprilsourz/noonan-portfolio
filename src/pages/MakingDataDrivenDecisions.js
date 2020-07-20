@@ -7,12 +7,13 @@ import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
-import { LargeBodyText, HeaderLg, HeaderMd } from "../components/typography"
+import { LargeBodyText, HeaderLg } from "../components/typography"
 import TheProblem from "../components/TheProblem"
 
 import GuidedSelling from "./MakingDataDrivenDecisions/GuidedSelling"
 import TheExperiment from "./MakingDataDrivenDecisions/TheExperiment"
 import Charts from "./MakingDataDrivenDecisions/Charts"
+import ResearchAndKeyFindings from "./MakingDataDrivenDecisions/ResearchAndKeyFindings"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -44,7 +45,8 @@ const MakingDataDrivenDecisions = ({ history }) => (
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <GuidedSelling />
     <TheExperiment />
-    <Charts/>
+    <Charts />
+    <ResearchAndKeyFindings />
     <ProjectButtons history={history} />
   </>
 )
@@ -75,8 +77,9 @@ const HeadlineContainer = styled.div`
 
 const PinkHeaderLg = styled(HeaderLg)`
   color: ${({ theme }) => theme.colors.pink};
-  font-size: 22px;
+  font-size: 40px;
   margin-top: 40px;
+  line-height: 45px;
 
   ${breakpoint("tablet")`
     line-height: 41px;
@@ -87,11 +90,11 @@ const PinkHeaderLg = styled(HeaderLg)`
 const LargeBodyTextWithMargin = styled(LargeBodyText)`
   font-size: 18px;
   line-height: 26px;
+  margin-top: 10px;
 
   ${breakpoint("tablet")`
     line-height: 41px;
     font-size: 30px;
-    margin-top: 10px;
   `}
 `
 export default MakingDataDrivenDecisions
