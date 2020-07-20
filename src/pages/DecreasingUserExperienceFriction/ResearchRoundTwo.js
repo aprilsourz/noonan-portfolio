@@ -19,7 +19,7 @@ import decreasingUserFrictionIterate from "../../img/decreasing-user-friction_it
 const ResearchRoundTwo = () => (
   <>
     <FullWidthBackground backgroundColor="white">
-      <ContentContainer style={{ maxWidth: "1030px" }}>
+      <ContentContainer style={{ maxWidth: "1040px" }}>
         <BlueHeaderSm>RESEARCH ROUND TWO</BlueHeaderSm>
         <BodyTextWithMargin>
           To validate the new designs, Jamie and I conducted usability testing.

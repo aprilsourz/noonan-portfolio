@@ -14,6 +14,7 @@ import GuidedSelling from "./MakingDataDrivenDecisions/GuidedSelling"
 import TheExperiment from "./MakingDataDrivenDecisions/TheExperiment"
 import Charts from "./MakingDataDrivenDecisions/Charts"
 import ResearchAndKeyFindings from "./MakingDataDrivenDecisions/ResearchAndKeyFindings"
+import ResultsAndTakeAways from "./MakingDataDrivenDecisions/ResultsAndTakeaways"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -47,6 +48,7 @@ const MakingDataDrivenDecisions = ({ history }) => (
     <TheExperiment />
     <Charts />
     <ResearchAndKeyFindings />
+    <ResultsAndTakeAways />
     <ProjectButtons history={history} />
   </>
 )

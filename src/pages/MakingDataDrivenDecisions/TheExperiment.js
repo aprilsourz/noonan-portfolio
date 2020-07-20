@@ -20,7 +20,7 @@ const TheExperiment = () => (
       <ContentContainer style={{ maxWidth: "1240px" }}>
         <SectionDivider color="white"> / the experiment</SectionDivider>
       </ContentContainer>
-      <ContentContainer style={{ maxWidth: "1030px" }}>
+      <ContentContainer style={{ maxWidth: "1040px" }}>
         <HeaderMdWithMargin>experiment objectives</HeaderMdWithMargin>
         <GridWithMargin>
           <Grid.Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 2 }}>

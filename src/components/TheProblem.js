@@ -10,7 +10,7 @@ const TheProblem = ({ blocksOfText, backgroundColor }) => (
     className="responsive-align-center"
     backgroundColor={backgroundColor || "lightBlue"}
   >
-    <ContentContainer style={{ maxWidth: "1020px" }}>
+    <ContentContainer style={{ maxWidth: "1040px" }}>
       <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
       {blocksOfText.map((blockOfText, idx) => (
         <BodyTextWithMargin key={idx}>{blockOfText}</BodyTextWithMargin>

@@ -18,7 +18,7 @@ const ResearchRoundOne = () => (
     className="responsive-align-center"
     backgroundColor="white"
   >
-    <ContentContainer style={{ maxWidth: "1030px" }}>
+    <ContentContainer style={{ maxWidth: "1040px" }}>
       <BlueHeaderSm>RESEARCH ROUND ONE</BlueHeaderSm>
       <BodyTextWithMargin>
         After listing out our scenarios, I mocked up two different workflows

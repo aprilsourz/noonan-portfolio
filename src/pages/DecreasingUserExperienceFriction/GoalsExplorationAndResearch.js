@@ -54,7 +54,7 @@ const GoalsExplorationAndResearch = () => (
     <ContentContainer>
       <BlueSectionDivider>/ exploration and research</BlueSectionDivider>
     </ContentContainer>
-    <ContentContainer style={{ maxWidth: "1030px" }}>
+    <ContentContainer style={{ maxWidth: "1040px" }}>
       <UserExplorationText>
         Before jumping into research, Jamie (our product manager) and I wrote
         out all the different scenarios in which a user would make changes to an

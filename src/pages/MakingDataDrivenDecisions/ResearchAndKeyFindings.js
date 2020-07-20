@@ -6,13 +6,14 @@ import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { HeaderSm, BodyText, BoldBodyText } from "../../components/typography"
 
 import { SmallerCharts } from "./Charts"
+import ExperimentConclusions from "./ResearchAndKeyFindings/ExperimentConclusions"
 
 const ResearchAndKeyFindings = () => (
   <FullWidthBackground
     className="responsive-align-center"
     backgroundColor="white"
   >
-    <ContentContainer style={{ maxWidth: "1030px" }}>
+    <ContentContainer style={{ maxWidth: "1040px" }}>
       <PinkHeaderSm>RESEARCH & KEY FINDINGS</PinkHeaderSm>
       <BodyTextWithMargin>
         We talked to a total of 10 users - seven account executives, one sales
@@ -122,6 +123,7 @@ const ResearchAndKeyFindings = () => (
         <SmallerCharts />
       </ExampleContainer>
     </ContentContainer>
+    <ExperimentConclusions />
   </FullWidthBackground>
 )
 

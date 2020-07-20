@@ -16,7 +16,7 @@ import {
 const GuidedSelling = () => (
   <>
     <FullWidthBackground backgroundColor="white">
-      <ContentContainer style={{ maxWidth: "1030px" }}>
+      <ContentContainer style={{ maxWidth: "1040px" }}>
         <HeaderMdWithMargin>guided selling</HeaderMdWithMargin>
         <BodyTextWithMargin>
           In research, we had been hearing consistently that one of the most
