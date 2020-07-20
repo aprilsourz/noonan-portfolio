@@ -8,7 +8,7 @@ export const ContentContainer = styled.div`
   padding: 0 10px;
 
   ${breakpoint("desktop")`
-    padding: 0;
+    padding: 0 5px;
   `}
 `
 

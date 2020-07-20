@@ -12,6 +12,7 @@ import TheProblem from "../components/TheProblem"
 
 import GuidedSelling from "./MakingDataDrivenDecisions/GuidedSelling"
 import TheExperiment from "./MakingDataDrivenDecisions/TheExperiment"
+import Charts from "./MakingDataDrivenDecisions/Charts"
 
 const MakingDataDrivenDecisions = ({ history }) => (
   <>
@@ -43,6 +44,7 @@ const MakingDataDrivenDecisions = ({ history }) => (
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <GuidedSelling />
     <TheExperiment />
+    <Charts/>
     <ProjectButtons history={history} />
   </>
 )

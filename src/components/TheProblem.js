@@ -12,8 +12,8 @@ const TheProblem = ({ blocksOfText, backgroundColor }) => (
   >
     <ContentContainer style={{ maxWidth: "1020px" }}>
       <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
-      {blocksOfText.map((blockOfText) => (
-        <BodyTextWithMargin>{blockOfText}</BodyTextWithMargin>
+      {blocksOfText.map((blockOfText, idx) => (
+        <BodyTextWithMargin key={idx}>{blockOfText}</BodyTextWithMargin>
       ))}
     </ContentContainer>
   </FullWidthBackground>
