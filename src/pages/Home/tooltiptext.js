@@ -152,7 +152,7 @@ it and then you will know - that is me.
 </span>
 `
 
-const musicContent = `
+const headphonesContent = `
   <span>
   <strong style="font-weight: 700">Fun Fact: </strong>
   My first memory of music is listening to this cassette tape of
@@ -321,7 +321,6 @@ const toastContent = `
 `
 
 export const tooltipContents = [
-  "spacer", 
   "spacer",
   { id: "sewing", content: sewingContent },
   { id: "moon", content: moonContent },
@@ -331,6 +330,7 @@ export const tooltipContents = [
   { id: "clouds", content: cloudsContent },
   { id: "popsicle", content: popsicleContent },
   { id: "polaroid", content: polaroidContent },
+  "spacer",
   { id: "rainbow", content: rainbowContent },
   { id: "mountains", content: mountainsContent },
   "spacer",
@@ -338,8 +338,9 @@ export const tooltipContents = [
   "spacer",
   "spacer",
   { id: "unicorn", content: unicornContent },
-  { id: "music", content: musicContent },
+  { id: "headphones", content: headphonesContent },
   { id: "biking", content: bikingContent },
+  "spacer",
   { id: "plant", content: plantContent },
   { id: "pizza", content: pizzaContent },
   { id: "piano", content: pianoContent },
@@ -350,5 +351,4 @@ export const tooltipContents = [
   { id: "stars", content: starsContent },
   { id: "snowboard", content: snowboardContent },
   { id: "toast", content: toastContent },
-  
 ]

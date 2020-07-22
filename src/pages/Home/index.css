@@ -71,6 +71,10 @@ section {
   outline: none;
 }
 
+.box img {
+  position: relative;
+}
+
 .box:nth-child(2n) {
   /* background-color: #ccc; */
   color: #000;

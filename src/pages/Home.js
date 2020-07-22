@@ -15,7 +15,7 @@ import doughnut from "../img/doughnut.svg"
 import headphones from "../img/headphones.svg"
 import bike from "../img/bike.svg"
 import mail from "../img/mail.svg"
-import keyboard from "../img/keyboard.svg"
+import piano from "../img/keyboard.svg"
 import mountains from "../img/mountains.svg"
 import plant from "../img/plant.svg"
 import pizza from "../img/pizza.svg"
@@ -63,11 +63,16 @@ class Home extends React.Component {
         return <div className="box" key={idx} />
       }
 
-      const boxStyle = width < 768 && idx % 2 === 0 ? { display: "none" } : {}
-      console.log(boxStyle)
+      const tabletSize = width < 768
+      const boxStyle = tabletSize && idx % 2 === 0 ? { display: "none" } : {}
+
       return (
         <div className="box" key={tooltip.id} style={boxStyle}>
-          <img data-template={tooltip.id} src={imageMap[tooltip.id]} alt="" />
+          <img
+            data-template={tooltip.id}
+            src={imageMap[tooltip.id]}
+            alt=""
+          />
           <template
             dangerouslySetInnerHTML={{
               __html: tooltip.content,
@@ -80,19 +85,12 @@ class Home extends React.Component {
 
     return (
       <div className="home-page-container">
-        <section>
-          <div>
-            <img
-              id="name"
-              className="carrie-noonan"
-              src={carrieNoonan}
-              alt=""
-            />
-          </div>
-          <div id="icons" className="wrapper">
-            {tooltips}
-          </div>
-        </section>
+        <div>
+          <img id="name" className="carrie-noonan" src={carrieNoonan} alt="" />
+        </div>
+        <div id="icons" className="wrapper">
+          {tooltips}
+        </div>
       </div>
     )
   }
@@ -173,9 +171,9 @@ const imageMap = {
   popsicle,
   doughnut,
   headphones,
-  bike,
+  biking: bike,
   mail,
-  keyboard,
+  piano,
   mountains,
   plant,
   pizza,
