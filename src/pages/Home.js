@@ -37,10 +37,18 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
+    const width = this.props.width
     let originalIconsHTML = document.getElementById("icons").innerHTML
 
-    removeTouchingIcons()
-    addTooltips()
+    // don't activate the tooltips on tablet size and smaller
+    if (width < 768) {
+      addTooltips()
+    }
+
+    // hack to get the this to work on page load. I think it takes a few
+    // milliseconds load all the svgs after the component mounts.
+    // didn't have the time to come up with a better solution :(
+    setTimeout(20, removeTouchingIcons())
 
     let addEvent = function (object, type, callback) {
       if (object == null || typeof object == "undefined") return
@@ -63,16 +71,9 @@ class Home extends React.Component {
         return <div className="box" key={idx} />
       }
 
-      const tabletSize = width < 768
-      const boxStyle = tabletSize && idx % 2 === 0 ? { display: "none" } : {}
-
       return (
-        <div className="box" key={tooltip.id} style={boxStyle}>
-          <img
-            data-template={tooltip.id}
-            src={imageMap[tooltip.id]}
-            alt=""
-          />
+        <div className="box" key={tooltip.id}>
+          <img data-template={tooltip.id} src={imageMap[tooltip.id]} alt="" />
           <template
             dangerouslySetInnerHTML={{
               __html: tooltip.content,
@@ -126,13 +127,14 @@ const removeTouchingIcons = function () {
   })
 }
 
-const resizeFunction = (originalIconsHTML) => {
+const resizeFunction = (originalIconsHTML, width) => {
   if (!document.getElementById("icons")) {
     return null
   }
 
   document.getElementById("icons").innerHTML = originalIconsHTML
   removeTouchingIcons()
+
   addTooltips()
 }
 
