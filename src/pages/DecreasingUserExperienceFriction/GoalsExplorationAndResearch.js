@@ -27,14 +27,14 @@ const GoalsExplorationAndResearch = () => (
             <ColoredNumber>1 )</ColoredNumber>
             <NumberedBlockText>
               By decreasing friction in the Campaigns user experience, we hope
-              to increase satisfaction, and thereby increase retention.
+              to increase satisfaction, and thereby increase retention
             </NumberedBlockText>
           </NumberedBlock>
           <NumberedBlock>
             <ColoredNumber>2 )</ColoredNumber>
             <NumberedBlockText>
               By increasing the flexibility of Campaigns, we should also be able
-              to offer more opportunities to personalize messaging.
+              to offer more opportunities to personalize messaging
             </NumberedBlockText>
           </NumberedBlock>
         </Grid.Unit>
@@ -44,8 +44,8 @@ const GoalsExplorationAndResearch = () => (
             <NumberedBlockText>
               If we don't work on this, we will continue to grow a cohort of
               users who try Campaigns and, finding that it is either too
-              unintuitive or inflexible, discard campaigns as a viable solution
-              and churn.
+              unintuitive or inflexible, discard Campaigns as a viable solution
+              and churn
             </NumberedBlockText>
           </NumberedBlock>
         </Grid.Unit>

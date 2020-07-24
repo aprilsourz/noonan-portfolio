@@ -27,7 +27,8 @@ const WorkStuff = ({ history }) => {
               As a Senior Designer on a small design team, I wear all the
               “product designer” hats. User research, user experience, and user
               interface design all fall into my wheelhouse. I’m the lead
-              designer for two teams working under the{" "}
+              designer for two teams and I manage one direct report.
+              {/* working under the{" "}
               <ExternalLinkLg
                 target="_blank"
                 href="https://www.producttalk.org/2020/05/product-outcomes/"
@@ -35,7 +36,7 @@ const WorkStuff = ({ history }) => {
                 {" "}
                 Empowered Teams
               </ExternalLinkLg>{" "}
-              methodology and I manage one direct report.
+              methodology  */}
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledRainbow />
