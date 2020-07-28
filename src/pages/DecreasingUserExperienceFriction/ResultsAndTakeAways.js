@@ -4,7 +4,7 @@ import breakpoint from "styled-components-breakpoint"
 
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 
-import { BodyText } from "../../components/typography"
+import { BodyText, BoldBodyText } from "../../components/typography"
 import SectionDivider from "../../components/SectionDivider"
 
 const ResultsAndTakeAways = () => (
@@ -27,21 +27,21 @@ const ResultsAndTakeAways = () => (
           positive results in user behavior:
         </BodyTextWithMargin40>
         <BlueRectangle>
-          <BodyText>
+          <BoldBodyText>
             60% of senders clicked on recipient names to preview how each step
             would appear
-          </BodyText>
+          </BoldBodyText>
         </BlueRectangle>
         <BlueRectangle>
-          <BodyText>
+          <BoldBodyText>
             32% of senders clicked the new “Edit for # recipients” to make a
             bulk change
-          </BodyText>
+          </BoldBodyText>
         </BlueRectangle>
         <BlueRectangle>
-          <BodyText>
+          <BoldBodyText>
             32% of senders saved a personalization for a single recipient
-          </BodyText>
+          </BoldBodyText>
         </BlueRectangle>
         <div style={{ marginTop: "20px" }}>
           <BodyText>

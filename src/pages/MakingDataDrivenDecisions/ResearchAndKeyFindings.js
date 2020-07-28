@@ -20,10 +20,6 @@ const ResearchAndKeyFindings = () => (
         manager, and two account managers. For each user, we showed them the
         three charts above with their own data.
       </BodyTextWithMargin>
-      <BodyTextWithMargin>
-        We did 7 interviews with customers who were frequent users of Campaigns
-        and we asked each user to complete specific tasks like:
-      </BodyTextWithMargin>
 
       <BoldBodyTextWithMargin>
         Some of the key questions we asked were:
@@ -55,7 +51,7 @@ const ResearchAndKeyFindings = () => (
         </PinkExampleBox>
       </ExampleContainer>
       <BoldBodyTextWithMargin>
-        Our most important findings were:
+        Our most important findings:
       </BoldBodyTextWithMargin>
       <ExampleContainer>
         <PinkExampleBox>

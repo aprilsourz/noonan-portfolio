@@ -41,7 +41,7 @@ class DesignResearchIterate extends React.Component {
               that passed, it had become clear that in order to truly create an
               intuitive workflow for “in-progress” edits, we would also need to
               visually redesign several key Ul components of the feature. Our
-              highest priorities were to:
+              highest priorities were:
         </BodyTextWithMargin60>
 
             <BlueRectangle>
@@ -81,21 +81,11 @@ class DesignResearchIterate extends React.Component {
               </li>
                 </ul>
               </ItalicBodyText>
-              <ItalicBodyText>
-                <ul style={{ listStyle: "unset" }}>
-                  <li>
-                    Users don't understand this, so when they make changes in a
-                    given mode, they have no idea who will get the changes or, they
-                    erroneously think changes they make will be saved to the
-                    campaign.
-              </li>
-                </ul>
-              </ItalicBodyText>
             </BlueRectangle>
             <BodyTextWithMargin40>
               Based on the above priorities and the initial feedback we had
               received, I worked towards updating the Campaigns Ul and
-              editing-specific workflows throughout the entire feature. I not only
+              editing specific workflows throughout the entire feature. I not only
               updated specific Ul components that already existed as part of
               Campaigns, but I also designed a brand new piece of functionality that
               would allow users to more specifically understand what content their

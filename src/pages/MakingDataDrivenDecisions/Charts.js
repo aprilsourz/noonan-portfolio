@@ -60,7 +60,7 @@ export const SmallerCharts = () => {
         header="ACTIVITY ACROSS ACCOUNTS"
       />
       <SmallerChart
-        content={<SpentPerActivityContent />}
+        content={<TimeSpentOnAccounts />}
         label="CHART THREE"
         header="TIME SPENT ON ACCOUNTS BY ACTIVITY"
       />
@@ -84,14 +84,14 @@ const SpentPerActivityContent = () => (
   <>
     <Padding20px>
       <SmallBodyText>
-        7/10 users said this report would encourage them to user their time more
+        7/10 users said this report would encourage them to use their time more
         wisely (i.e. sending emails via Templates instead of individually
         writing every email sent).
         <br />
         <br />
         <strong style={{ fontStyle: "italic", fontWeight: 300 }}>But</strong>,
         users also indicated they desired a way to take action from these
-        insights
+        insights.
       </SmallBodyText>
     </Padding20px>
     <SmallerChartImgContainer>
@@ -108,6 +108,24 @@ const ActivityAcrossAccountsContent = () => (
         keeping things from falling through the cracks, helping prioritize,
         understanding what’s working and what’s not, and what ratios lead to
         success.
+        <br />
+        <br />
+      </SmallBodyText>
+    </Padding20px>
+    <SmallerChartImgContainer>
+      <SmallerChartImg src={activityChart} />
+    </SmallerChartImgContainer>
+  </>
+)
+
+const TimeSpentOnAccounts = () => (
+  <>
+    <Padding20px>
+      <SmallBodyText>
+        5/10 users found this report to be very valuable for similar use cases
+        as the previous chart - understanding what's working and what's not, what
+        ratios lead to success, prioritization, and seeing if the time spent is
+        matching up with the results.
         <br />
         <br />
       </SmallBodyText>

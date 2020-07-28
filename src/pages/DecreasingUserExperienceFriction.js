@@ -62,7 +62,7 @@ const DecreasingUserExperienceFriction = ({ history }) => {
 }
 
 const problemSectionText = [
-  `Campaigns Is a tool that allows salespeople to send a series of
+  `Campaigns is a tool that allows salespeople to send a series of
   customized messages (called “touches") to many recipients at once
   through a number of different channels: email, phone, LinkedIn message,
   etc.`,
