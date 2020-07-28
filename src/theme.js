@@ -52,7 +52,7 @@ const theme = {
       fontSize: "20px",
       mobileFontSize: "16px",
       fontWeight: 100,
-      lineHeight: "24px",
+      lineHeight: "28px",
     },
     boldBodyText: {
       fontSize: "20px",

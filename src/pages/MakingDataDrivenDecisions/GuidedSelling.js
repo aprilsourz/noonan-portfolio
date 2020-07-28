@@ -47,11 +47,10 @@ const GuidedSelling = () => (
             <NumberedBlock className="first-in-sub-block">
               <ColoredNumber color="pink">a )</ColoredNumber>
               <NumberedBlockText className="sub-block-text">
-                <span className="sub-block-text-wrapper">
-                  Do we have the data to connect content back to outcomes? Do we
-                  have the data to show a connection between actions and
-                  outcomes?
-                </span>
+
+                Do we have the data to connect content back to outcomes? Do we
+                have the data to show a connection between actions and
+                outcomes?
               </NumberedBlockText>
             </NumberedBlock>
             <NumberedBlock className="sub-block">

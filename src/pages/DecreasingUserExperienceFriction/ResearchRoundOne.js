@@ -15,7 +15,7 @@ import {
 
 const ResearchRoundOne = () => (
   <FullWidthBackground
-    className="responsive-align-center"
+    className="responsive-align-left"
     backgroundColor="white"
   >
     <ContentContainer style={{ maxWidth: "1040px" }}>

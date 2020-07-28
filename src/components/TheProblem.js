@@ -7,7 +7,7 @@ import { HeaderMd, BodyText } from "./typography"
 
 const TheProblem = ({ blocksOfText, backgroundColor }) => (
   <FullWidthBackground
-    className="responsive-align-center"
+    className="responsive-align-left"
     backgroundColor={backgroundColor || "lightBlue"}
   >
     <ContentContainer style={{ maxWidth: "1040px" }}>

@@ -10,7 +10,7 @@ import ExperimentConclusions from "./ResearchAndKeyFindings/ExperimentConclusion
 
 const ResearchAndKeyFindings = () => (
   <FullWidthBackground
-    className="responsive-align-center"
+    className="responsive-align-left"
     backgroundColor="white"
   >
     <ContentContainer style={{ maxWidth: "1040px" }}>
@@ -55,7 +55,7 @@ const ResearchAndKeyFindings = () => (
         </PinkExampleBox>
       </ExampleContainer>
       <BoldBodyTextWithMargin>
-        Some of the key questions we asked were:
+        Our most important findings were:
       </BoldBodyTextWithMargin>
       <ExampleContainer>
         <PinkExampleBox>
@@ -140,7 +140,7 @@ const BodyTextWithMargin = styled(BodyText)`
 `
 
 const BoldBodyTextWithMargin = styled(BoldBodyText)`
-  margin-top: 12px;
+  margin-top: 14px;
 
   ${breakpoint("tablet")`
     margin-top: 25px;
