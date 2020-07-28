@@ -102,7 +102,7 @@ class DesignResearchIterate extends React.Component {
                 value={this.state.value}
                 onChange={this.onChange}
                 arrows
-                slidesPerScroll={1}
+                slidesPerScroll={2}
                 slidesPerPage={2}
                 breakpoints={{
                   737: {
@@ -117,7 +117,7 @@ class DesignResearchIterate extends React.Component {
                 <img src={carouselImageThree} alt="" />
                 <img src={carouselImageFour} alt="" />
               </Carousel>
-              <Dots number={2} value={this.state.value} />
+              <Dots number={2} value={this.state.value / 2} />
             </CarouselContainer>
           </ContentContainer>
         </FullWidthBackground>

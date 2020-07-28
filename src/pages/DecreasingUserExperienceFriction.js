@@ -74,8 +74,7 @@ const problemSectionText = [
   campaign while there were recipients scheduled to receive touches. If a
   user needed to change the content of an email or change recipient
   details, they had no easy way of doing so. We needed to introduce the
-  ability to make edits to an in-progress campaign and make it intuitive
-  to do so.`,
+  ability to make edits to an in-progress campaign and make it an intuitive experience.`,
 ]
 
 const HeadlineContainer = styled.div`

@@ -66,7 +66,7 @@ const ResearchRoundTwo = () => (
             <NumberedBlock className="with-left-margin">
               <ColoredNumber>4 )</ColoredNumber>
               <NumberedBlockText>
-                In terms of different ways to edit a campaign touch, users
+                In terms of different ways to edit a campaign touch, users'
                 expectations were now more closely aligned with the actual
                 behavior of the feature. And based on specific feedback from
                 this round of research, we were able to make further iterations

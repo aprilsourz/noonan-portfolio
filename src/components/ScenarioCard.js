@@ -32,7 +32,7 @@ const Card = styled(GenericCard)`
   margin-bottom: 10px;
 
   ${breakpoint("tablet")`
-    height: 500px;
+    height: auto;
   `};
 `
 
