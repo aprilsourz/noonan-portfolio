@@ -21,7 +21,7 @@ const MakingDataDrivenDecisions = ({ history }) => (
     <HeadlineContainer>
       <ProjectButtons history={history} />
       <ContentContainer style={{ maxWidth: "930px", textAlign: "center" }}>
-        <PinkHeaderLg>Making Data-driven decisions</PinkHeaderLg>
+        <PinkHeaderLg>Making data-driven decisions</PinkHeaderLg>
         <LargeBodyTextWithMargin>
           How can we provide meaningful insights and recommendations that will
           help increase sales success for our users?
