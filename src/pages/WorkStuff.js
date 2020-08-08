@@ -1,14 +1,12 @@
 import React from "react"
 import breakpoint from "styled-components-breakpoint"
 import styled from "styled-components"
-import Grid from "styled-components-grid"
 
 import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
 import {
   LargeTitleText,
   LargeBodyText,
-  ExternalLinkLg,
   HeaderLg,
 } from "../components/typography"
 import { Rainbow } from "../components/icons"
