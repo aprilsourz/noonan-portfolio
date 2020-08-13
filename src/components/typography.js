@@ -86,6 +86,13 @@ export const BoldBodyText = styled.p`
   `}
 `
 
+export const SmallGreyItalic = styled.p`
+  font-size: 14px;
+  color: #7f8a8c;
+  font-weight: 100;
+  font-style: italic;
+`
+
 export const Link = styled(ReactRouterLink)`
   color: ${({ theme }) => theme.colors.green};
   text-decoration: none;
