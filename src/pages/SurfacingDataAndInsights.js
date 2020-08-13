@@ -11,11 +11,11 @@ import {
   HeaderLg,
   HeaderMd,
   BodyText,
-  SmallGreyItalic,
 } from "../components/typography"
 
 import ProjectBackground from "../components/ProjectBackground"
 import Goals from "./SurfacingDataAndInsights/Goals"
+import InterfaceAndDataIterations from "./SurfacingDataAndInsights/InterfaceAndDataIterations"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -72,7 +72,7 @@ const SurfacingDataAndInsights = ({ history }) => (
       </ContentContainer>
     </FullWidthBackground>
     <Goals />
-
+    <InterfaceAndDataIterations />
     <ProjectButtons history={history} />
   </>
 )
