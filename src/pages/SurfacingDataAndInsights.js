@@ -16,6 +16,7 @@ import {
 import ProjectBackground from "../components/ProjectBackground"
 import Goals from "./SurfacingDataAndInsights/Goals"
 import InterfaceAndDataIterations from "./SurfacingDataAndInsights/InterfaceAndDataIterations"
+import Sketches from "./SurfacingDataAndInsights/Sketches"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -73,6 +74,7 @@ const SurfacingDataAndInsights = ({ history }) => (
     </FullWidthBackground>
     <Goals />
     <InterfaceAndDataIterations />
+    <Sketches />
     <ProjectButtons history={history} />
   </>
 )
