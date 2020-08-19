@@ -17,6 +17,7 @@ import ProjectBackground from "../components/ProjectBackground"
 import Goals from "./SurfacingDataAndInsights/Goals"
 import InterfaceAndDataIterations from "./SurfacingDataAndInsights/InterfaceAndDataIterations"
 import Sketches from "./SurfacingDataAndInsights/Sketches"
+import DesignRoundOne from "./SurfacingDataAndInsights/DesignRoundOne"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -75,6 +76,7 @@ const SurfacingDataAndInsights = ({ history }) => (
     <Goals />
     <InterfaceAndDataIterations />
     <Sketches />
+    <DesignRoundOne />
     <ProjectButtons history={history} />
   </>
 )
