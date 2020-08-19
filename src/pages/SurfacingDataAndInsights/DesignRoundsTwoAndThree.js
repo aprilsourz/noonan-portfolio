@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { HeaderSm, BodyText, BoldBodyText } from "../../components/typography"
 
+import UxElements from "./DesignRoundsTwoAndThree/UxElements"
+
 const DesignRoundsTwoAndThree = () => (
   <>
     <FullWidthBackground
@@ -63,10 +65,7 @@ const DesignRoundsTwoAndThree = () => (
         </BodyTextWithMargin45>
       </ContentContainer>
     </FullWidthBackground>
-    <FullWidthBackground
-      className="responsive-align-left"
-      backgroundColor="lightGreen"
-    ></FullWidthBackground>
+    <UxElements />
   </>
 )
 
