@@ -5,7 +5,6 @@ import styled from "styled-components"
 
 import {
   ContentContainer,
-  FullWidthBackground,
 } from "../../../components/layout"
 import { BodyText, HeaderMd } from "../../../components/typography"
 
