@@ -18,6 +18,7 @@ import Goals from "./SurfacingDataAndInsights/Goals"
 import InterfaceAndDataIterations from "./SurfacingDataAndInsights/InterfaceAndDataIterations"
 import Sketches from "./SurfacingDataAndInsights/Sketches"
 import DesignRoundOne from "./SurfacingDataAndInsights/DesignRoundOne"
+import DesignRoundsTwoAndThree from "./SurfacingDataAndInsights/DesignRoundsTwoAndThree.js"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -77,6 +78,7 @@ const SurfacingDataAndInsights = ({ history }) => (
     <InterfaceAndDataIterations />
     <Sketches />
     <DesignRoundOne />
+    <DesignRoundsTwoAndThree />
     <ProjectButtons history={history} />
   </>
 )
