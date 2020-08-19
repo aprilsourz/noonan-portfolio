@@ -19,6 +19,7 @@ import InterfaceAndDataIterations from "./SurfacingDataAndInsights/InterfaceAndD
 import Sketches from "./SurfacingDataAndInsights/Sketches"
 import DesignRoundOne from "./SurfacingDataAndInsights/DesignRoundOne"
 import DesignRoundsTwoAndThree from "./SurfacingDataAndInsights/DesignRoundsTwoAndThree.js"
+import LookingAhead from "./SurfacingDataAndInsights/LookingAhead.js"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -79,6 +80,7 @@ const SurfacingDataAndInsights = ({ history }) => (
     <Sketches />
     <DesignRoundOne />
     <DesignRoundsTwoAndThree />
+    <LookingAhead />
     <ProjectButtons history={history} />
   </>
 )

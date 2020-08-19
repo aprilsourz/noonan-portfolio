@@ -98,7 +98,6 @@ const UxElements = () => (
   </>
 )
 
-
 const CarouselContainer = styled.div`
   margin: 0 auto;
   max-width: 1040px;
@@ -112,7 +111,11 @@ const CarouselContainer = styled.div`
 
 const Divider = styled.div`
   width: 100%;
-  height: 60px;
+  height: 30px;
+
+  ${breakpoint("tablet")`
+     height: 60px;
+  `}
 `
 
 export default UxElements
