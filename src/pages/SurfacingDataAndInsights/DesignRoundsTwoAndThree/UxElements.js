@@ -35,7 +35,7 @@ const UxElements = () => (
         <BoldBodyText>Information and interface variations:</BoldBodyText>
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "1140px" }}>
-        <CarouselContainer>
+        <FirstCarouselContainer>
           <Carousel
             infinite
             // value={this.state.value}
@@ -60,7 +60,7 @@ const UxElements = () => (
             <img src={optionG} alt="" />
             <img src={optionH} alt="" />
           </Carousel>
-        </CarouselContainer>
+        </FirstCarouselContainer>
       </ContentContainer>
     </FullWidthBackground>
     <Divider />
@@ -70,8 +70,8 @@ const UxElements = () => (
           Possible options for layout now and in the future:
         </BoldBodyText>
       </ContentContainer>
-      <ContentContainer style={{ maxWidth: "750px", marginTop: "-75px" }}>
-        <CarouselContainer>
+      <ContentContainer style={{ maxWidth: "750px" }}>
+        <SecondCarouselContainer>
           <Carousel
             infinite
             // value={this.state.value}
@@ -92,13 +92,13 @@ const UxElements = () => (
             <img src={possibleLayout3} alt="" />
             <img src={possibleLayout4} alt="" />
           </Carousel>
-        </CarouselContainer>
+        </SecondCarouselContainer>
       </ContentContainer>
     </FullWidthBackground>
   </>
 )
 
-const CarouselContainer = styled.div`
+const FirstCarouselContainer = styled.div`
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
@@ -106,6 +106,17 @@ const CarouselContainer = styled.div`
 
   ${breakpoint("tablet")`
     margin-top: 10px
+  `}
+`
+
+const SecondCarouselContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+  margin-top: 30px;
+
+  ${breakpoint("tablet")`
+    margin-top: 15px
   `}
 `
 
