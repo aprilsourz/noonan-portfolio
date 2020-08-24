@@ -1,18 +1,14 @@
 import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 
+import Carousel from "../../../components/Carousel"
 import {
   ContentContainer,
   FullWidthBackground,
 } from "../../../components/layout"
-import {
-  HeaderSm,
-  BodyText,
-  BoldBodyText,
-} from "../../../components/typography"
+import { BoldBodyText } from "../../../components/typography"
 
 import optionA from "../../../img/surfacing-data/04-interface-options-carousel/option-a.png"
 import optionB from "../../../img/surfacing-data/04-interface-options-carousel/option-b.png"
@@ -36,21 +32,7 @@ const UxElements = () => (
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "1140px" }}>
         <FirstCarouselContainer>
-          <Carousel
-            infinite
-            // value={this.state.value}
-            // onChange={this.onChange}
-            arrows
-            slidesPerScroll={1}
-            slidesPerPage={1}
-            breakpoints={{
-              737: {
-                arrows: false,
-                slidesPerScroll: 1,
-                slidesPerPage: 1,
-              },
-            }}
-          >
+          <Carousel infinite slidesPerScroll={1} slidesPerPage={1}>
             <img src={optionA} alt="" />
             <img src={optionB} alt="" />
             <img src={optionC} alt="" />
@@ -72,21 +54,7 @@ const UxElements = () => (
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "750px" }}>
         <SecondCarouselContainer>
-          <Carousel
-            infinite
-            // value={this.state.value}
-            // onChange={this.onChange}
-            arrows
-            slidesPerScroll={1}
-            slidesPerPage={1}
-            breakpoints={{
-              737: {
-                arrows: false,
-                slidesPerScroll: 1,
-                slidesPerPage: 1,
-              },
-            }}
-          >
+          <Carousel infinite slidesPerScroll={1} slidesPerPage={1}>
             <img src={possibleLayout1} alt="" />
             <img src={possibleLayout2} alt="" />
             <img src={possibleLayout3} alt="" />

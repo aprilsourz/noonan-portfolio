@@ -2,12 +2,13 @@ import breakpoint from "styled-components-breakpoint"
 
 import React from "react"
 import styled from "styled-components"
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import { Dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { BodyText } from "../../components/typography"
 import SectionDivider from "../../components/SectionDivider"
+import Carousel from "../../components/Carousel"
 
 import carouselImage1 from "../../img/data-driven_carousel1.png"
 import carouselImage2 from "../../img/data-driven_carousel2.png"
@@ -68,16 +69,8 @@ class TheExperiment extends React.Component {
                 infinite
                 value={this.state.value}
                 onChange={this.onChange}
-                arrows
                 slidesPerScroll={2}
                 slidesPerPage={2}
-                breakpoints={{
-                  737: {
-                    arrows: false,
-                    slidesPerScroll: 1,
-                    slidesPerPage: 1,
-                  },
-                }}
               >
                 <img src={carouselImage2} alt="" />
                 <img src={carouselImage1} alt="" />

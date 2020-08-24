@@ -12,6 +12,7 @@ const theme = {
     lightBlue: "#E9EDFF",
     lightPink: "#FFE9FD",
     lightGreen: "#EAFFFC",
+    purple: "#5D76DD",
     white: "#FFFFFF",
     whitePinkTint: "#FFF9FE",
   },
