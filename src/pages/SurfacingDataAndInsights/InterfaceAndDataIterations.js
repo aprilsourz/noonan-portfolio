@@ -8,7 +8,7 @@ import { BodyText } from "../../components/typography"
 
 const InterfaceAndDataIterations = ({ history }) => (
   <>
-    <FullWidthBackground backgroundColor="white">
+    <FullWidthBackground backgroundColor="white" className="responsive-align-center">
       <ContentContainer style={{ maxWidth: "1240px" }}>
         <SectionDivider bgColor="green" color="white">
           / interface and data iterations

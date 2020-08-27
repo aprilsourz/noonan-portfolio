@@ -47,7 +47,7 @@ const SurfacingDataAndInsights = ({ history }) => (
       dates="Aug '19 - current"
       bgColor="white"
     />
-    <FullWidthBackground backgroundColor="lightGreen">
+    <FullWidthBackground backgroundColor="lightGreen" className="responsive-align-center">
       <ContentContainer style={{ maxWidth: "1040px" }}>
         <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
         <BodyText>

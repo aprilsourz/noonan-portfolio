@@ -10,7 +10,7 @@ import UxElements from "./DesignRoundsTwoAndThree/UxElements"
 const DesignRoundsTwoAndThree = () => (
   <>
     <FullWidthBackground
-      className="responsive-align-left"
+      className="responsive-align-center"
       backgroundColor="white"
     >
       <ContentContainer style={{ maxWidth: "1040px" }}>

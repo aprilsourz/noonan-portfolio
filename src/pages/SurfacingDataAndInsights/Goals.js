@@ -16,7 +16,10 @@ import {
 
 const Goals = () => (
   <>
-    <FullWidthBackground backgroundColor="white">
+    <FullWidthBackground
+      backgroundColor="white"
+      className="responsive-align-center"
+    >
       <ContentContainer style={{ maxWidth: "1040px" }}>
         <RyansFinalDesignImg src={ryansFinalDesign} />
         <ImageSubText>original design by Ryan Tengler</ImageSubText>
