@@ -97,17 +97,6 @@ const BoldBodyTextWithMargin = styled(BoldBodyText)`
   `}
 `
 
-const ItalicBodyText = styled(BodyText)`
-  font-style: italic;
-  margin-top: 10px;
-  margin-left: 20px;
-  font-weight: 300;
-
-  ${breakpoint("tablet")`
-    margin-top: 20px;
-  `};
-`
-
 const ExampleContainer = styled.div`
   margin-top: 12px;
 

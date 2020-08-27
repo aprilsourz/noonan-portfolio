@@ -32,7 +32,12 @@ const UxElements = () => (
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "1140px" }}>
         <FirstCarouselContainer>
-          <Carousel infinite slidesPerScroll={1} slidesPerPage={1} numberOfDots={8}>
+          <Carousel
+            infinite
+            slidesPerScroll={1}
+            slidesPerPage={1}
+            numberOfDots={8}
+          >
             <img src={optionA} alt="" />
             <img src={optionB} alt="" />
             <img src={optionC} alt="" />
@@ -54,7 +59,12 @@ const UxElements = () => (
       </ContentContainer>
       <ContentContainer style={{ maxWidth: "750px" }}>
         <SecondCarouselContainer>
-          <Carousel infinite slidesPerScroll={1} slidesPerPage={1} numberOfDots={4}>
+          <Carousel
+            infinite
+            slidesPerScroll={1}
+            slidesPerPage={1}
+            numberOfDots={4}
+          >
             <img src={possibleLayout1} alt="" />
             <img src={possibleLayout2} alt="" />
             <img src={possibleLayout3} alt="" />
