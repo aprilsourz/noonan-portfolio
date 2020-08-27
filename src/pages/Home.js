@@ -40,11 +40,6 @@ class Home extends React.Component {
     const width = this.props.size.width
     let originalIconsHTML = document.getElementById("icons").innerHTML
 
-    // // don't activate the tooltips on tablet size and smaller
-    // if (width < 768) {
-    //   addTooltips()
-    // }
-
     // hack to get the this to work on page load. I think it takes a few
     // milliseconds load all the svgs after the component mounts.
     // didn't have the time to come up with a better solution :(

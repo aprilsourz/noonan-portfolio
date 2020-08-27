@@ -17,17 +17,7 @@ import carouselImage4 from "../../img/data-driven_carousel4.png"
 import carouselImage5 from "../../img/data-driven_carousel5.png"
 import carouselImage6 from "../../img/data-driven_carousel6.png"
 
-class TheExperiment extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: 0,
-    }
-  }
-
-  onChange = (value) => this.setState({ value })
-
-  render() {
+const TheExperiment = () => {
     return (
       <>
         <FullWidthBackground
@@ -67,10 +57,9 @@ class TheExperiment extends React.Component {
             <CarouselContainer>
               <Carousel
                 infinite
-                value={this.state.value}
-                onChange={this.onChange}
                 slidesPerScroll={2}
                 slidesPerPage={2}
+                numberOfDots={3}
               >
                 <img src={carouselImage2} alt="" />
                 <img src={carouselImage1} alt="" />
@@ -79,7 +68,6 @@ class TheExperiment extends React.Component {
                 <img src={carouselImage5} alt="" />
                 <img src={carouselImage6} alt="" />
               </Carousel>
-              <Dots number={3} value={this.state.value / 2} />
             </CarouselContainer>
           </ContentContainer>
         </FullWidthBackground>
@@ -125,7 +113,6 @@ class TheExperiment extends React.Component {
         </FullWidthBackground>
       </>
     )
-  }
 }
 
 const CarouselContainer = styled.div`
