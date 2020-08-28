@@ -37,7 +37,9 @@ const Goals = () => (
             <NumberedBlock>
               <ColoredNumber color="green">2 )</ColoredNumber>
               <NumberedBlockText>
-              Design a dashboard that allows users to view high-level details related to existing reports and then access those reports via the dashboard 
+                Design a dashboard that allows users to view high-level details
+                related to existing reports and then access those reports via
+                the dashboard
               </NumberedBlockText>
             </NumberedBlock>
           </Grid.Unit>

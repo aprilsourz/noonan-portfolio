@@ -13,6 +13,7 @@ import { Rainbow } from "../components/icons"
 import Experience from "./WorkStuff/Experience"
 import decreasingUserExperienceFriction from "../img/decreasing-user-friction_header-image.png"
 import dataDrivenDecisions from "../img/data-driven-decisions.png"
+import surfacingData from "../img/surfacing-data/00-reporting-header-image.png"
 
 const WorkStuff = ({ history }) => {
   return (
@@ -63,6 +64,18 @@ const WorkStuff = ({ history }) => {
             </ProjectSelectorText>
             <ImageContainer>
               <Image src={dataDrivenDecisions} />
+            </ImageContainer>
+          </ProjectSelectorBox>
+          <ProjectSelectorBox
+            className="second-row"
+            onClick={() => history.push("/projects/surfacing-data-and-insights")}
+            color="lightGreen"
+          >
+            <ProjectSelectorText color="green">
+              Surfacing data and insights
+            </ProjectSelectorText>
+            <ImageContainer>
+              <Image src={surfacingData} />
             </ImageContainer>
           </ProjectSelectorBox>
         </ProjectSelectorContainer>
@@ -151,7 +164,8 @@ const ProjectSelectorBox = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  &:not(:first-of-type) {
+  &:not(:first-of-type),
+  .second-row {
     margin-top: 20px;
   }
 
@@ -159,8 +173,12 @@ const ProjectSelectorBox = styled.div`
     height: 350px;
     width: 49%;
 
-    &:not(:first-of-type) {
+    &:not(:first-of-type):not(.second-row) {
       margin-top: 0px;
+    }
+
+    .second-row {
+      margin-top: 30px;
     }
   `};
 `
