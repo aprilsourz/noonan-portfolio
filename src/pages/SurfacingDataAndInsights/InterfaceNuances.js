@@ -16,6 +16,7 @@ import emptyStateImg from "../../img/surfacing-data/final-designs-images/07-inte
 import loadingStateImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/05-loading-state.png"
 import interactionsImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/06-interactions.png"
 import tooltipImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/07-tooltip.png"
+import fullDesign from "../../img/surfacing-data/00-reporting-header-image.png"
 
 const LookingAhead = () => (
   <>
@@ -57,8 +58,38 @@ const LookingAhead = () => (
         </TwoImageContainer>
       </ContentContainer>
     </FullWidthBackground>
+    <FullWidthBackground className="responsive-align-center">
+      <ContentContainer style={{ maxWidth: "1040px" }}>
+        <BodyText>
+          After working through and considering all the nuances and interactions
+          of the dashboard interface, Caro and I planned out the specific scope
+          of what we would release for the MVP. We felt confident in the design
+          and our plan for rolling out the MVP with fast follow ons. We plan to
+          measure user engagement with the dashboard and will seek post-rollout
+          feedback after releasing the MVP to understand what additional data
+          users would find valuable to access via the dashboard.
+          <br />
+          <br />
+          We feel confident in our ability to scale the dashboard based on the
+          flexible design and UI and we hope to continue adding value as we
+          understand what additional data users are seeking at this level.
+        </BodyText>
+        <FinalImg src={fullDesign} />
+      </ContentContainer>
+    </FullWidthBackground>
   </>
 )
+
+const FinalImg = styled.img`
+  max-width: 922px;
+  max-height: 531px;
+  width: 100%;
+  margin-top: 25px;
+
+  ${breakpoint("tablet")`
+    margin-top: 50px;
+  `}
+`
 
 const ResponsiveBehaviorOne = styled.img`
   @media screen and (max-width: 550px) {
