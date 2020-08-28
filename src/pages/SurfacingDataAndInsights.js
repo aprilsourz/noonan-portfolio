@@ -20,6 +20,7 @@ import Sketches from "./SurfacingDataAndInsights/Sketches"
 import DesignRoundOne from "./SurfacingDataAndInsights/DesignRoundOne"
 import DesignRoundsTwoAndThree from "./SurfacingDataAndInsights/DesignRoundsTwoAndThree.js"
 import LookingAhead from "./SurfacingDataAndInsights/LookingAhead.js"
+import InterfaceNuances from "./SurfacingDataAndInsights/InterfaceNuances"
 
 const SurfacingDataAndInsights = ({ history }) => (
   <>
@@ -47,7 +48,10 @@ const SurfacingDataAndInsights = ({ history }) => (
       dates="Aug '19 - current"
       bgColor="white"
     />
-    <FullWidthBackground backgroundColor="lightGreen" className="responsive-align-center">
+    <FullWidthBackground
+      backgroundColor="lightGreen"
+      className="responsive-align-center"
+    >
       <ContentContainer style={{ maxWidth: "1040px" }}>
         <HeaderMdWithMargin>the problem</HeaderMdWithMargin>
         <BodyText>
@@ -81,6 +85,7 @@ const SurfacingDataAndInsights = ({ history }) => (
     <DesignRoundOne />
     <DesignRoundsTwoAndThree />
     <LookingAhead />
+    <InterfaceNuances />
     <ProjectButtons history={history} />
   </>
 )
