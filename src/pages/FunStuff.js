@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
-import { LargeTitleText, LargeBodyText } from "../components/typography"
+import { LargeTitleText, LargeBodyText, ExternalLinkLg } from "../components/typography"
 import { Clouds } from "../components/icons"
 
 import feelings from "../img/01-feelings.png"
@@ -36,10 +36,16 @@ const FunStuff = () => {
               Outside of work, you can find me…
             </StyledLargeTitleText>
             <StyledLargeBodyText>
-              Crafting, climbing, biking, illustrating, snowboarding, making
-              cards, quilting, painting, giving presents, and straight up day
-              dreaming. I’m a creator by nature - check out what I’m up to
-              outside of working hours.
+              Crafting, climbing, biking,{" "}
+              <ExternalLinkLg
+                target="_blank"
+                href="https://carriescloudfactory.tumblr.com/"
+              >
+                illustrating
+              </ExternalLinkLg>
+              , snowboarding, making cards, quilting, painting, giving presents,
+              and straight up day dreaming. I’m a creator by nature - check out
+              what I’m up to outside of working hours.
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledClouds />
