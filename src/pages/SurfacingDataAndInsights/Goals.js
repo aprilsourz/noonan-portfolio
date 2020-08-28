@@ -37,9 +37,7 @@ const Goals = () => (
             <NumberedBlock>
               <ColoredNumber color="green">2 )</ColoredNumber>
               <NumberedBlockText>
-                Take the dashboard concepts that Ryan worked on and define what
-                we can move forward with that will be relatively low effort for
-                engineering.
+              Design a dashboard that allows users to view high-level details related to existing reports and then access those reports via the dashboard 
               </NumberedBlockText>
             </NumberedBlock>
           </Grid.Unit>

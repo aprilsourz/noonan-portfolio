@@ -84,7 +84,10 @@ const FinalImg = styled.img`
   max-width: 922px;
   max-height: 531px;
   width: 100%;
+  margin: 0 auto;
   margin-top: 25px;
+  display: block;
+
 
   ${breakpoint("tablet")`
     margin-top: 50px;
