@@ -4,7 +4,11 @@ import styled from "styled-components"
 
 import { ContentContainer } from "../components/layout"
 import SectionDivider from "../components/SectionDivider"
-import { LargeTitleText, LargeBodyText, ExternalLinkLg } from "../components/typography"
+import {
+  LargeTitleText,
+  LargeBodyText,
+  ExternalLinkLg,
+} from "../components/typography"
 import { Clouds } from "../components/icons"
 
 import feelings from "../img/01-feelings.png"
