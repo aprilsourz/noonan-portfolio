@@ -90,12 +90,19 @@ const HeadlineContainer = styled.div`
 const BlueTitle = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.blue};
   text-align: center;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 40px;
+  line-height: 45px;
+
+  
+  
 
   ${breakpoint("tablet")`
-    margin-bottom: 15px;
-    margin-top: 60px;
+    margin-bottom: 10px;
+    line-height: 41px;
+    font-size: 50px;
+    margin-top: 75px;
   `}
 `
 

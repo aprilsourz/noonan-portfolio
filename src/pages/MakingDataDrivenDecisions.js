@@ -82,6 +82,7 @@ const PinkHeaderLg = styled(HeaderLg)`
   font-size: 40px;
   margin-top: 40px;
   line-height: 45px;
+  
 
   ${breakpoint("tablet")`
     line-height: 41px;
@@ -97,6 +98,7 @@ const LargeBodyTextWithMargin = styled(LargeBodyText)`
   ${breakpoint("tablet")`
     line-height: 41px;
     font-size: 30px;
+    margin-top: 10px;
   `}
 `
 export default MakingDataDrivenDecisions

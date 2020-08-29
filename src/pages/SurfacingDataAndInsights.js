@@ -118,8 +118,9 @@ const HeadlineContainer = styled.div`
 
 const GreenHeaderLg = styled(HeaderLg)`
   color: ${({ theme }) => theme.colors.green};
-  font-size: 22px;
+  font-size: 40px;
   margin-top: 40px;
+  line-height: 45px;
 
   ${breakpoint("tablet")`
     line-height: 41px;
@@ -130,6 +131,8 @@ const GreenHeaderLg = styled(HeaderLg)`
 const LargeBodyTextWithMargin = styled(LargeBodyText)`
   font-size: 18px;
   line-height: 26px;
+  margin-top: 10px;
+
 
   ${breakpoint("tablet")`
     line-height: 41px;
