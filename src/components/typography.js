@@ -17,7 +17,7 @@ export const LargeTitleText = styled.h1`
   `}
 `
 
-// @TODO Putting the line-height in the same breakpoint fn was behaving unexpectedly.
+// @TODO Putting a line-height and font-weight in the same breakpoint function was behaving unexpectedly.
 // Need to file an issue on the github repo
 export const LargeBodyText = styled.p`
   line-height: ${({ theme }) =>
