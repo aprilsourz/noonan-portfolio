@@ -27,15 +27,6 @@ const WorkStuff = ({ history }) => {
               “product designer” hats. User research, user experience, and user
               interface design all fall into my wheelhouse. I’m the lead
               designer for two teams and I manage one direct report.
-              {/* working under the{" "}
-              <ExternalLinkLg
-                target="_blank"
-                href="https://www.producttalk.org/2020/05/product-outcomes/"
-              >
-                {" "}
-                Empowered Teams
-              </ExternalLinkLg>{" "}
-              methodology  */}
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledRainbow />
@@ -68,7 +59,9 @@ const WorkStuff = ({ history }) => {
           </ProjectSelectorBox>
           <ProjectSelectorBox
             className="second-row"
-            onClick={() => history.push("/projects/surfacing-data-and-insights")}
+            onClick={() =>
+              history.push("/projects/surfacing-data-and-insights")
+            }
             color="lightGreen"
           >
             <ProjectSelectorText color="green">
@@ -151,7 +144,6 @@ const StyledLargeTitleText = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.pink};
 `
 
-// @TODO: Give this some kind of hover style
 const ProjectSelectorBox = styled.div`
   background-color: ${({ color, theme }) => theme.colors[color]};
   border-radius: 1px;
@@ -163,6 +155,23 @@ const ProjectSelectorBox = styled.div`
   height: 150px;
   width: 100%;
   margin: 0 auto;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.03);
+  }
 
   &:not(:first-of-type),
   .second-row {
@@ -177,8 +186,11 @@ const ProjectSelectorBox = styled.div`
       margin-top: 0px;
     }
 
-    .second-row {
+    &.second-row {
       margin-top: 30px;
+      max-width: unset;
+      width: 100%;
+      }
     }
   `};
 `
@@ -190,15 +202,16 @@ const ProjectSelectorText = styled(HeaderLg)`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  
 
   ${breakpoint("tablet")`
-    left: 0;
-    top: 0;
-    transform: unset;
-    margin-top: 39px;
-    margin-left: 56px;
-    text-align: left;
-    max-width: 509px;
+      left: 0;
+      top: 0;
+      transform: unset;
+      margin-top: 39px;
+      margin-left: 56px;
+      text-align: left;
+      max-width: 509px;
   `}
 `
 
