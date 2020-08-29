@@ -32,22 +32,8 @@ class Carousel extends React.Component {
           {...propsForBaseCarousel}
           slidesPerScroll={slidesPerScroll}
           addArrowClickHandler
-          arrowLeft={
-            <button
-              style={{ backgroundColor: theme.colors.purple }}
-              className="BrainhubCarousel__arrows BrainhubCarousel__arrowLeft"
-            >
-              <span>prev</span>
-            </button>
-          }
-          arrowRight={
-            <button
-              className="BrainhubCarousel__arrows BrainhubCarousel__arrowRight"
-              style={{ backgroundColor: theme.colors.purple }}
-            >
-              <span>next</span>
-            </button>
-          }
+          arrowLeft={LeftArrow}
+          arrowRight={RightArrow}
           breakpoints={{
             757: {
               arrowLeft: null,
@@ -71,5 +57,23 @@ class Carousel extends React.Component {
     )
   }
 }
+
+const LeftArrow = (
+  <button
+    style={{ backgroundColor: theme.colors.purple }}
+    className="BrainhubCarousel__arrows BrainhubCarousel__arrowLeft"
+  >
+    <span>prev</span>
+  </button>
+)
+
+const RightArrow = (
+  <button
+    className="BrainhubCarousel__arrows BrainhubCarousel__arrowRight"
+    style={{ backgroundColor: theme.colors.purple }}
+  >
+    <span>next</span>
+  </button>
+)
 
 export default withSize()(Carousel)
