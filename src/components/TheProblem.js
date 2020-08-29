@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { ContentContainer, FullWidthBackground } from "./layout"
 import { HeaderMd, BodyText } from "./typography"
 
+// backgroundColor prop must be one of colors in the styled-components theme
 const TheProblem = ({ blocksOfText, backgroundColor }) => (
   <FullWidthBackground
     className="responsive-align-left"
