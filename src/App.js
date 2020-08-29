@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 import {
   BrowserRouter as Router,
   Switch,
@@ -41,7 +40,7 @@ class App extends Component {
           <>
             <ScrollToTop />
             <SiteHeader />
-            <Main>
+            <main>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/fun-stuff" component={FunStuff} />
@@ -63,7 +62,7 @@ class App extends Component {
                 />
                 <Redirect to="/" />
               </Switch>
-            </Main>
+            </main>
             <SiteFooter />
           </>
         </Router>
@@ -71,7 +70,5 @@ class App extends Component {
     )
   }
 }
-
-const Main = styled.main``
 
 export default App
