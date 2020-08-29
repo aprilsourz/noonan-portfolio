@@ -16,7 +16,7 @@ const DesignRoundsTwoAndThree = () => (
       <ContentContainer style={{ maxWidth: "1040px" }}>
         <GreenHeaderSm>DESIGN ROUNDS TWO & THREE</GreenHeaderSm>
         <BodyTextWithMargin25>
-          For next rounds of design, I started narrowing down my options based
+          For the next rounds of design, I started narrowing down my options based
           on what was in scope for the initial release of the dashboard and
           feedback and critique from my design colleagues. Caro and I had also
           narrowed down the questions we wanted the dashboard to be able to
