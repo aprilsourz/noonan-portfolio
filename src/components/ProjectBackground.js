@@ -5,10 +5,10 @@ import styled from "styled-components"
 import { ContentContainer, FullWidthBackground } from "../components/layout"
 import { HeaderMd, BodyText, BoldBodyText } from "../components/typography"
 
-const ProjectBackground = ({ bio, skills, dates, bgColor, role }) => (
+const ProjectBackground = ({ bio, skills, dates, backgroundColor }) => (
   <FullWidthBackground
     className="responsive-align-center"
-    backgroundColor={bgColor}
+    backgroundColor={backgroundColor}
   >
     <CustomContentContainer style={{ maxWidth: "1040px" }}>
       <BackgroundContainer>
@@ -18,7 +18,7 @@ const ProjectBackground = ({ bio, skills, dates, bgColor, role }) => (
       <RoleContainer>
         <HeaderMdWithMargin>role</HeaderMdWithMargin>
         <BoldBodyTextWithMargin>
-          {role || "Lead Product Designer"}
+          Yesware / Lead Product Designer
         </BoldBodyTextWithMargin>
         <BodyTextWithMargin>{skills}</BodyTextWithMargin>
         <BodyTextWithMargin style={{ fontStyle: "italic" }}>

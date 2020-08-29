@@ -46,7 +46,7 @@ const SurfacingDataAndInsights = ({ history }) => (
         </>
       }
       dates="Aug '19 - current"
-      bgColor="white"
+      backgroundColor="white"
     />
     <FullWidthBackground
       backgroundColor="lightGreen"

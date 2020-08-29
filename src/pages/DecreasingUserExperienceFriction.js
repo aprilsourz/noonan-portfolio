@@ -46,7 +46,7 @@ const DecreasingUserExperienceFriction = ({ history }) => {
           </>
         }
         dates="Mar '18 - Dec '19"
-        bgColor="white"
+        backgroundColor="white"
       />
       <TheProblem blocksOfText={problemSectionText} />
       <GoalsExplorationAndResearch />
@@ -94,9 +94,6 @@ const BlueTitle = styled(LargeTitleText)`
   margin-top: 40px;
   font-size: 40px;
   line-height: 45px;
-
-  
-  
 
   ${breakpoint("tablet")`
     margin-bottom: 10px;

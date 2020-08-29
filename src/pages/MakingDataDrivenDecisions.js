@@ -39,9 +39,8 @@ const MakingDataDrivenDecisions = ({ history }) => (
           UX & UI Design <br />
         </>
       }
-      role="Yesware / Lead Product Designer"
       dates="Aug '19 - October '19"
-      bgColor="white"
+      backgroundColor="white"
     />
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <GuidedSelling />
