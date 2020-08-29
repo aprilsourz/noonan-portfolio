@@ -10,7 +10,7 @@ const InterfaceAndDataIterations = ({ history }) => (
   <>
     <FullWidthBackground backgroundColor="white" className="responsive-align-center">
       <ContentContainer style={{ maxWidth: "1240px" }}>
-        <SectionDivider bgColor="green" color="white">
+        <SectionDivider backgroundColor="green" color="white">
           / interface and data iterations
         </SectionDivider>
       </ContentContainer>

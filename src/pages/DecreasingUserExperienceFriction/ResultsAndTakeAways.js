@@ -11,7 +11,7 @@ const ResultsAndTakeAways = () => (
   <>
     <FullWidthBackground backgroundColor="white">
       <ContentContainer style={{ maxWidth: "1240px" }}>
-        <SectionDivider color="white" bgColor="blue">
+        <SectionDivider color="white" backgroundColor="blue">
           / results and takeaways
         </SectionDivider>
       </ContentContainer>

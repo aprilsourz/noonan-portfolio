@@ -18,7 +18,7 @@ const DesignResearchIterate = () => {
     <>
       <FullWidthBackground backgroundColor="white">
         <ContentContainer style={{ maxWidth: "1240px" }}>
-          <SectionDivider color="white" bgColor="blue">
+          <SectionDivider color="white" backgroundColor="blue">
             / design, research, iterate
           </SectionDivider>
         </ContentContainer>

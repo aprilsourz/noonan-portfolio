@@ -13,7 +13,7 @@ const LookingAhead = () => (
   <>
     <FullWidthBackground className="responsive-align-center">
       <ContentContainer>
-        <SectionDivider bgColor="green" color="white">
+        <SectionDivider backgroundColor="green" color="white">
           / final designs and looking ahead
         </SectionDivider>
       </ContentContainer>
