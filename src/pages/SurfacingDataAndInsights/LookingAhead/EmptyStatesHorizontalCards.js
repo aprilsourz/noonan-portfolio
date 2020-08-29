@@ -6,8 +6,8 @@ import { ContentContainer } from "../../../components/layout"
 import { SmallGreyItalic } from "../../../components/typography"
 import GenericCard from "../../../components/GenericCard"
 
-import noActivityImg from "../../../img/surfacing-data/final-designs-images/06-data_nuances/05-no-activity.png"
-import noEngagementImg from "../../../img/surfacing-data/final-designs-images/06-data_nuances/06-no-engagement.png"
+import noActivityImg from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/05-no-activity.png"
+import noEngagementImg from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/06-no-engagement.png"
 
 const LookingAhead = () => (
   <ContentContainer style={{ maxWidth: "1025px" }}>

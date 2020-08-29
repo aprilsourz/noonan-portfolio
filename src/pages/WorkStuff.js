@@ -11,9 +11,9 @@ import {
 } from "../components/typography"
 import { Rainbow } from "../components/icons"
 import Experience from "./WorkStuff/Experience"
-import decreasingUserExperienceFriction from "../img/decreasing-user-friction_header-image.png"
-import dataDrivenDecisions from "../img/data-driven-decisions.png"
-import surfacingData from "../img/surfacing-data/00-reporting-header-image.png"
+import decreasingUserExperienceFriction from "../img/decreasing-user-friction/decreasing-user-friction-header-image.png"
+import dataDrivenDecisions from "../../src/img/data-driven-decisions/data-driven-decisions.png"
+import surfacingData from "../img/surfacing-data-and-insights/00-reporting-header-image.png"
 
 const WorkStuff = ({ history }) => {
   return (
@@ -60,7 +60,7 @@ const WorkStuff = ({ history }) => {
           <ProjectSelectorBox
             className="second-row"
             onClick={() =>
-              history.push("/projects/surfacing-data-and-insights")
+              history.push("/projects/surfacing-data-and-insights-and-insights")
             }
             color="lightGreen"
           >
@@ -202,7 +202,6 @@ const ProjectSelectorText = styled(HeaderLg)`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
 
   ${breakpoint("tablet")`
       left: 0;

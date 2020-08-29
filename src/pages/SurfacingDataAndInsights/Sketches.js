@@ -4,9 +4,9 @@ import styled from "styled-components"
 
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 
-import sketchImage01 from "../../img/surfacing-data/02-original-sketches-images/sketch-1.png"
-import sketchImage02 from "../../img/surfacing-data/02-original-sketches-images/sketch-2.png"
-import sketchImage03 from "../../img/surfacing-data/02-original-sketches-images/sketch-3.png"
+import sketchImage01 from "../../img/surfacing-data-and-insights/02-original-sketches-images/sketch-1.png"
+import sketchImage02 from "../../img/surfacing-data-and-insights/02-original-sketches-images/sketch-2.png"
+import sketchImage03 from "../../img/surfacing-data-and-insights/02-original-sketches-images/sketch-3.png"
 
 const Sketches = () => {
   return (

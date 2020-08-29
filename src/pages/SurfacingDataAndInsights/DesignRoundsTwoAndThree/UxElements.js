@@ -10,19 +10,19 @@ import {
 } from "../../../components/layout"
 import { BoldBodyText } from "../../../components/typography"
 
-import optionA from "../../../img/surfacing-data/04-interface-options-carousel/option-a.png"
-import optionB from "../../../img/surfacing-data/04-interface-options-carousel/option-b.png"
-import optionC from "../../../img/surfacing-data/04-interface-options-carousel/option-c.png"
-import optionD from "../../../img/surfacing-data/04-interface-options-carousel/option-d.png"
-import optionE from "../../../img/surfacing-data/04-interface-options-carousel/option-e.png"
-import optionF from "../../../img/surfacing-data/04-interface-options-carousel/option-f.png"
-import optionG from "../../../img/surfacing-data/04-interface-options-carousel/option-g.png"
-import optionH from "../../../img/surfacing-data/04-interface-options-carousel/option-h.png"
+import optionA from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-a.png"
+import optionB from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-b.png"
+import optionC from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-c.png"
+import optionD from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-d.png"
+import optionE from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-e.png"
+import optionF from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-f.png"
+import optionG from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-g.png"
+import optionH from "../../../img/surfacing-data-and-insights/04-interface-options-carousel/option-h.png"
 
-import possibleLayout1 from "../../../img/surfacing-data/05-progression-carousel/progression-carousel1.png"
-import possibleLayout2 from "../../../img/surfacing-data/05-progression-carousel/progression-carousel2.png"
-import possibleLayout3 from "../../../img/surfacing-data/05-progression-carousel/progression-carousel3.png"
-import possibleLayout4 from "../../../img/surfacing-data/05-progression-carousel/progression-carousel4.png"
+import possibleLayout1 from "../../../img/surfacing-data-and-insights/05-progression-carousel/progression-carousel1.png"
+import possibleLayout2 from "../../../img/surfacing-data-and-insights/05-progression-carousel/progression-carousel2.png"
+import possibleLayout3 from "../../../img/surfacing-data-and-insights/05-progression-carousel/progression-carousel3.png"
+import possibleLayout4 from "../../../img/surfacing-data-and-insights/05-progression-carousel/progression-carousel4.png"
 
 const UxElements = () => (
   <>

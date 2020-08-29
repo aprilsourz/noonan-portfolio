@@ -5,10 +5,10 @@ import styled from "styled-components"
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { HeaderSm, BodyText } from "../../components/typography"
 
-import iteration1 from "../../img/surfacing-data/03-design-round-one-images/iteration1.png"
-import iteration2 from "../../img/surfacing-data/03-design-round-one-images/iteration2.png"
-import iteration3 from "../../img/surfacing-data/03-design-round-one-images/iteration3.png"
-import iteration4 from "../../img/surfacing-data/03-design-round-one-images/iteration4.png"
+import iteration1 from "../../img/surfacing-data-and-insights/03-design-round-one-images/iteration1.png"
+import iteration2 from "../../img/surfacing-data-and-insights/03-design-round-one-images/iteration2.png"
+import iteration3 from "../../img/surfacing-data-and-insights/03-design-round-one-images/iteration3.png"
+import iteration4 from "../../img/surfacing-data-and-insights/03-design-round-one-images/iteration4.png"
 
 const DesignRoundOne = () => (
   <FullWidthBackground

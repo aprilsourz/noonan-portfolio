@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
+import dataDrivenDecisions from "../../src/img/data-driven-decisions/data-driven-decisions.png"
 
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"

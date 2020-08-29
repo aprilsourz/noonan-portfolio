@@ -2,7 +2,6 @@ import breakpoint from "styled-components-breakpoint"
 
 import React from "react"
 import styled from "styled-components"
-import { Dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 
 import { ContentContainer, FullWidthBackground } from "../../components/layout"
@@ -10,12 +9,12 @@ import { BodyText } from "../../components/typography"
 import SectionDivider from "../../components/SectionDivider"
 import Carousel from "../../components/Carousel"
 
-import carouselImage1 from "../../img/data-driven_carousel1.png"
-import carouselImage2 from "../../img/data-driven_carousel2.png"
-import carouselImage3 from "../../img/data-driven_carousel3.png"
-import carouselImage4 from "../../img/data-driven_carousel4.png"
-import carouselImage5 from "../../img/data-driven_carousel5.png"
-import carouselImage6 from "../../img/data-driven_carousel6.png"
+import carouselImage1 from "../../img/data-driven-decisions/data-driven-carousel1.png"
+import carouselImage2 from "../../img/data-driven-decisions/data-driven-carousel2.png"
+import carouselImage3 from "../../img/data-driven-decisions/data-driven-carousel3.png"
+import carouselImage4 from "../../img/data-driven-decisions/data-driven-carousel4.png"
+import carouselImage5 from "../../img/data-driven-decisions/data-driven-carousel5.png"
+import carouselImage6 from "../../img/data-driven-decisions/data-driven-carousel6.png"
 
 const TheExperiment = () => {
   return (

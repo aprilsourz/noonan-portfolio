@@ -9,14 +9,14 @@ import {
   SmallGreyItalic,
 } from "../../components/typography"
 
-import widestImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/01-widest.png"
-import mediumImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/02-medium.png"
-import smallestImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/03-smallest.png"
-import emptyStateImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/04-empty-state.png"
-import loadingStateImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/05-loading-state.png"
-import interactionsImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/06-interactions.png"
-import tooltipImg from "../../img/surfacing-data/final-designs-images/07-interface_nuances/07-tooltip.png"
-import fullDesign from "../../img/surfacing-data/00-reporting-header-image.png"
+import widestImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/01-widest.png"
+import mediumImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/02-medium.png"
+import smallestImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/03-smallest.png"
+import emptyStateImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/04-empty-state.png"
+import loadingStateImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/05-loading-state.png"
+import interactionsImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/06-interactions.png"
+import tooltipImg from "../../img/surfacing-data-and-insights/final-designs-images/07-interface_nuances/07-tooltip.png"
+import fullDesign from "../../img/surfacing-data-and-insights/00-reporting-header-image.png"
 
 const LookingAhead = () => (
   <>

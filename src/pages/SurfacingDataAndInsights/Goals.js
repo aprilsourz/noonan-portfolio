@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import Grid from "styled-components-grid"
 
-import ryansFinalDesign from "../../../src/img/surfacing-data/01-ryans-final-design.png"
+import ryansFinalDesign from "../../../src/img/surfacing-data-and-insights/01-ryans-final-design.png"
 
 import { FullWidthBackground, ContentContainer } from "../../components/layout"
 import {

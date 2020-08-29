@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import headerImage from "../img/decreasing-user-friction_header-image.png"
+import headerImage from "../img/decreasing-user-friction/decreasing-user-friction-header-image.png"
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"

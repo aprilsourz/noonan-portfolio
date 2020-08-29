@@ -6,9 +6,9 @@ import { ContentContainer, FullWidthBackground } from "../../components/layout"
 import { BoldBodyText, BodyText } from "../../components/typography"
 import GenericCard, { CardLabel } from "../../components/GenericCard"
 
-import timeChart from "../../img/chart-time.png"
-import activityChart from "../../img/chart-activity.png"
-import timeActivityChart from "../../img/chart-time-activity.png"
+import timeChart from "../../img/data-driven-decisions/chart-time.png"
+import activityChart from "../../img/data-driven-decisions/chart-activity.png"
+import timeActivityChart from "../../img/data-driven-decisions/chart-time-activity.png"
 
 const Charts = () => {
   return (

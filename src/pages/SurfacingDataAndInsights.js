@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import surfacingDataAndInsights from "../../src/img/surfacing-data/00-reporting-header-image.png"
+import surfacingDataAndInsights from "../../src/img/surfacing-data-and-insights/00-reporting-header-image.png"
 
 import { FullWidthBackground, ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"

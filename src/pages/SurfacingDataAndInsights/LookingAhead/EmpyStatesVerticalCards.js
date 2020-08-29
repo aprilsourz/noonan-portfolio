@@ -6,10 +6,10 @@ import { ContentContainer } from "../../../components/layout"
 import { SmallGreyItalic } from "../../../components/typography"
 import GenericCard from "../../../components/GenericCard"
 
-import noDataAvailableImg from "../../../img/surfacing-data/final-designs-images/06-data_nuances/01-no-data-available.png"
-import noChangeImage from "../../../img/surfacing-data/final-designs-images/06-data_nuances/02-no-change.png"
-import stat0Img from "../../../img/surfacing-data/final-designs-images/06-data_nuances/03-stat-0.png"
-import noDataComparisonImg from "../../../img/surfacing-data/final-designs-images/06-data_nuances/04-no-data-comparison.png"
+import noDataAvailableImg from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/01-no-data-available.png"
+import noChangeImage from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/02-no-change.png"
+import stat0Img from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/03-stat-0.png"
+import noDataComparisonImg from "../../../img/surfacing-data-and-insights/final-designs-images/06-data_nuances/04-no-data-comparison.png"
 
 const EmptyStatesVerticalCards = () => (
   <ContentContainer style={{ maxWidth: "1130px" }}>
