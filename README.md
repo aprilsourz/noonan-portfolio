@@ -1,8 +1,12 @@
 # Portfolio Website For Carrie
+Git repository for Carrie's pesonal portfolio website.
 
-## Available Scripts
+## Technologies used
+This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework.
 
-In the project directory, you can run:
+## Tooling
+
+This project was created with create react app. Here is the all of the documentation about it. 
 
 ### `yarn start`
 
