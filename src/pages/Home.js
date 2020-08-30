@@ -3,31 +3,31 @@ import React from "react"
 import "./Home/index.css"
 import { withSize } from "react-sizeme"
 
-import carrieNoonan from "../img/carrienoonan.svg"
+import carrieNoonan from "../img/icons/carrienoonan.svg"
 import { tooltipContents } from "./Home/tooltiptext"
-import sewing from "../img/sewing.svg"
-import moon from "../img/moon.svg"
-import wand from "../img/wand.svg"
-import turntable from "../img/turntable.svg"
-import clouds from "../img/clouds.svg"
-import popsicle from "../img/popsicle.svg"
-import doughnut from "../img/doughnut.svg"
-import headphones from "../img/headphones.svg"
-import bike from "../img/bike.svg"
-import mail from "../img/mail.svg"
-import piano from "../img/keyboard.svg"
-import mountains from "../img/mountains.svg"
-import plant from "../img/plant.svg"
-import pizza from "../img/pizza.svg"
-import mug from "../img/mug.svg"
-import polaroid from "../img/polaroid.svg"
-import snowboard from "../img/snowboard.svg"
-import stars from "../img/stars.svg"
-import toast from "../img/toast.svg"
-import trees from "../img/trees.svg"
-import unicorn from "../img/unicorn.svg"
-import rainbow from "../img/rainbow.svg"
-import boston from "../img/boston.svg"
+import sewing from "../img/icons/sewing.svg"
+import moon from "../img/icons/moon.svg"
+import wand from "../img/icons/wand.svg"
+import turntable from "../img/icons/turntable.svg"
+import clouds from "../img/icons/clouds.svg"
+import popsicle from "../img/icons/popsicle.svg"
+import doughnut from "../img/icons/doughnut.svg"
+import headphones from "../img/icons/headphones.svg"
+import bike from "../img/icons/bike.svg"
+import mail from "../img/icons/mail.svg"
+import piano from "../img/icons/keyboard.svg"
+import mountains from "../img/icons/mountains.svg"
+import plant from "../img/icons/plant.svg"
+import pizza from "../img/icons/pizza.svg"
+import mug from "../img/icons/mug.svg"
+import polaroid from "../img/icons/polaroid.svg"
+import snowboard from "../img/icons/snowboard.svg"
+import stars from "../img/icons/stars.svg"
+import toast from "../img/icons/toast.svg"
+import trees from "../img/icons/trees.svg"
+import unicorn from "../img/icons/unicorn.svg"
+import rainbow from "../img/icons/rainbow.svg"
+import boston from "../img/icons/boston.svg"
 
 class Home extends React.Component {
   componentWillUnmount() {
@@ -39,11 +39,6 @@ class Home extends React.Component {
   componentDidMount() {
     const width = this.props.size.width
     let originalIconsHTML = document.getElementById("icons").innerHTML
-
-    // // don't activate the tooltips on tablet size and smaller
-    // if (width < 768) {
-    //   addTooltips()
-    // }
 
     // hack to get the this to work on page load. I think it takes a few
     // milliseconds load all the svgs after the component mounts.
@@ -76,7 +71,7 @@ class Home extends React.Component {
       }
 
       return (
-        <div className="box" key={tooltip.id}>
+        <div className="box non-spacer" key={tooltip.id}>
           <img data-template={tooltip.id} src={imageMap[tooltip.id]} alt="" />
           <template
             dangerouslySetInnerHTML={{
@@ -103,14 +98,21 @@ class Home extends React.Component {
 
 const removeTouchingIcons = function () {
   let nameRect = document.getElementById("name").getBoundingClientRect()
+  let footerRect = document
+    .getElementById("site-footer")
+    .getBoundingClientRect()
 
-  let getTouching = function (rect1, rect2) {
+  let getTouchingNameIcon = function (rect1, rect2) {
     return !(
       rect1.right <= rect2.left ||
       rect1.left >= rect2.right ||
       rect1.bottom <= rect2.top ||
       rect1.top >= rect2.bottom
     )
+  }
+
+  let getTouchingFooterIcon = function (rect1, rect2) {
+    return !(rect1.bottom <= rect2.top || rect1.top >= rect2.bottom)
   }
 
   let boxes = [].slice.call(document.getElementsByClassName("box"))
@@ -125,7 +127,10 @@ const removeTouchingIcons = function () {
     let element = item.element
     let rect = item.rect
 
-    if (getTouching(nameRect, rect)) {
+    if (
+      getTouchingNameIcon(nameRect, rect) ||
+      getTouchingFooterIcon(footerRect, rect)
+    ) {
       element.innerHTML = ""
     }
   })

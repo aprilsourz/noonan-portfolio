@@ -6,7 +6,7 @@ import { CnLogoSm } from "../components/icons"
 
 const SiteFooter = ({ history }) => {
   return (
-    <StyledFooter>
+    <StyledFooter id="site-footer">
       <LogoContainer onClick={() => history.push("/")}>
         <CnLogoSm />
       </LogoContainer>

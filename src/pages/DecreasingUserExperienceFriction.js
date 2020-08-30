@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import headerImage from "../img/decreasing-user-friction_header-image.png"
+import headerImage from "../img/decreasing-user-friction/decreasing-user-friction-header-image.png"
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
 import ProjectBackground from "../components/ProjectBackground"
@@ -46,7 +46,7 @@ const DecreasingUserExperienceFriction = ({ history }) => {
           </>
         }
         dates="Mar '18 - Dec '19"
-        bgColor="white"
+        backgroundColor="white"
       />
       <TheProblem blocksOfText={problemSectionText} />
       <GoalsExplorationAndResearch />
@@ -90,12 +90,16 @@ const HeadlineContainer = styled.div`
 const BlueTitle = styled(LargeTitleText)`
   color: ${({ theme }) => theme.colors.blue};
   text-align: center;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 40px;
+  line-height: 45px;
 
   ${breakpoint("tablet")`
-    margin-bottom: 15px;
-    margin-top: 60px;
+    margin-bottom: 10px;
+    line-height: 41px;
+    font-size: 50px;
+    margin-top: 75px;
   `}
 `
 

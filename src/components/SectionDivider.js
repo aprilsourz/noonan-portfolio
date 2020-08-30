@@ -7,7 +7,7 @@ const Divider = styled.header`
   height: 70px;
   max-width: 1240px;
   color: ${({ theme, color }) => theme.colors[color]};
-  background-color: ${({ theme, bgColor }) => theme.colors[bgColor]};
+  background-color: ${({ theme, backgroundColor }) => theme.colors[backgroundColor]};
 `
 
 const StyledHeaderLg = styled(HeaderLg)`
@@ -19,13 +19,13 @@ const StyledHeaderLg = styled(HeaderLg)`
 `
 
 const SectionDivider = ({
-  bgColor = "pink",
+  backgroundColor = "pink",
   color = "black",
   children,
   className,
 }) => {
   return (
-    <Divider className={className} color={color} bgColor={bgColor}>
+    <Divider className={className} color={color} backgroundColor={backgroundColor}>
       <StyledHeaderLg>{children}</StyledHeaderLg>
     </Divider>
   )

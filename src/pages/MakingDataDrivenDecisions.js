@@ -2,7 +2,7 @@ import breakpoint from "styled-components-breakpoint"
 import React from "react"
 import styled from "styled-components"
 
-import dataDrivenDecisions from "../../src/img/data-driven-decisions.png"
+import dataDrivenDecisions from "../../src/img/data-driven-decisions/data-driven-decisions.png"
 
 import { ContentContainer } from "../components/layout"
 import ProjectButtons from "../components/ProjectButtons"
@@ -39,9 +39,8 @@ const MakingDataDrivenDecisions = ({ history }) => (
           UX & UI Design <br />
         </>
       }
-      role="Yesware / Lead Product Designer"
       dates="Aug '19 - October '19"
-      bgColor="white"
+      backgroundColor="white"
     />
     <TheProblem backgroundColor="lightPink" blocksOfText={problemSectionText} />
     <GuidedSelling />
@@ -82,6 +81,7 @@ const PinkHeaderLg = styled(HeaderLg)`
   font-size: 40px;
   margin-top: 40px;
   line-height: 45px;
+  
 
   ${breakpoint("tablet")`
     line-height: 41px;
@@ -97,6 +97,7 @@ const LargeBodyTextWithMargin = styled(LargeBodyText)`
   ${breakpoint("tablet")`
     line-height: 41px;
     font-size: 30px;
+    margin-top: 10px;
   `}
 `
 export default MakingDataDrivenDecisions

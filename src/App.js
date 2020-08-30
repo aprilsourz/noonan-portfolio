@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +11,7 @@ import Home from "./pages/Home"
 import FunStuff from "./pages/FunStuff"
 import DecreasingUserExperienceFriction from "./pages/DecreasingUserExperienceFriction"
 import MakingDataDrivenDecisions from "./pages/MakingDataDrivenDecisions"
-// import SurfacingDataAndInsights from "./pages/SurfacingDataAndInsights"
+import SurfacingDataAndInsights from "./pages/SurfacingDataAndInsights"
 import WorkStuff from "./pages/WorkStuff"
 
 import ScrollToTop from "./components/ScrollToTop"
@@ -41,7 +40,7 @@ class App extends Component {
           <>
             <ScrollToTop />
             <SiteHeader />
-            <Main>
+            <main>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/fun-stuff" component={FunStuff} />
@@ -56,15 +55,14 @@ class App extends Component {
                   path="/projects/data-driven-decisions"
                   component={MakingDataDrivenDecisions}
                 />
-                {/* Skeleton component for the Surfacing data and insights project page */}
-                {/* <Route
+                <Route
                   exact
                   path="/projects/surfacing-data-and-insights"
                   component={SurfacingDataAndInsights}
-                /> */}
+                />
                 <Redirect to="/" />
               </Switch>
-            </Main>
+            </main>
             <SiteFooter />
           </>
         </Router>
@@ -72,7 +70,5 @@ class App extends Component {
     )
   }
 }
-
-const Main = styled.main``
 
 export default App

@@ -3,8 +3,8 @@ import styled from "styled-components"
 import breakpoint from "styled-components-breakpoint"
 import { FullWidthBackground, ContentContainer } from "../../components/layout"
 
-import workflowUpdateRecipient from "../../img/decreasing-user-friction_workflow1.png"
-import workflowEditTouch from "../../img/decreasing-user-friction_workflow2.png"
+import workflowUpdateRecipient from "../../img/decreasing-user-friction/decreasing-user-friction-workflow1.png"
+import workflowEditTouch from "../../img/decreasing-user-friction/decreasing-user-friction-workflow2.png"
 
 const Workflows = () => (
   <FullWidthBackground

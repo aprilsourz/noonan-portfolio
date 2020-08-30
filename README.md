@@ -1,8 +1,12 @@
 # Portfolio Website For Carrie
+Git repository for Carrie's pesonal portfolio website.
 
-## Available Scripts
+## Technologies used
+This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework.
 
-In the project directory, you can run:
+## Tooling
+
+This project was created with create react app. Here is the all of the documentation about it. 
 
 ### `yarn start`
 
@@ -26,9 +30,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn deploy-gh-pages`
-After running `yarn build` run `yarn deploy-gh-pages` to deploy the app gh pages.
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

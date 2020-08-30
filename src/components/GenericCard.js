@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { breakpoint } from "styled-components-breakpoint"
 
 const GenericCard = styled.div`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.white};
   border: 1px solid #e4e6eb;
   -webkit-box-shadow: 4px 7px 17px -7px rgba(204, 204, 204, 1);
   -moz-box-shadow: 4px 7px 17px -7px rgba(204, 204, 204, 1);

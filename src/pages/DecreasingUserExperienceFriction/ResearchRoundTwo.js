@@ -14,7 +14,7 @@ import {
   HeaderSm,
 } from "../../components/typography"
 
-import decreasingUserFrictionIterate from "../../img/decreasing-user-friction_iterate.png"
+import decreasingUserFrictionIterate from "../../img/decreasing-user-friction/decreasing-user-friction-iterate.png"
 
 const ResearchRoundTwo = () => (
   <>

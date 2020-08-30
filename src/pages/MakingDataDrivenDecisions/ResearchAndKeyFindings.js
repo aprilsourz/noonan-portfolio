@@ -147,7 +147,6 @@ const ItalicBodyText = styled(BodyText)`
   font-style: italic;
   margin-top: 10px;
   margin-left: 20px;
-  font-weight: 300;
 
   ${breakpoint("tablet")`
     margin-top: 20px;
