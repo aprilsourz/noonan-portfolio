@@ -71,7 +71,7 @@ class Home extends React.Component {
       }
 
       return (
-        <div className="box" key={tooltip.id}>
+        <div className="box non-spacer" key={tooltip.id}>
           <img data-template={tooltip.id} src={imageMap[tooltip.id]} alt="" />
           <template
             dangerouslySetInnerHTML={{
@@ -98,14 +98,21 @@ class Home extends React.Component {
 
 const removeTouchingIcons = function () {
   let nameRect = document.getElementById("name").getBoundingClientRect()
+  let footerRect = document
+    .getElementById("site-footer")
+    .getBoundingClientRect()
 
-  let getTouching = function (rect1, rect2) {
+  let getTouchingNameIcon = function (rect1, rect2) {
     return !(
       rect1.right <= rect2.left ||
       rect1.left >= rect2.right ||
       rect1.bottom <= rect2.top ||
       rect1.top >= rect2.bottom
     )
+  }
+
+  let getTouchingFooterIcon = function (rect1, rect2) {
+    return !(rect1.bottom <= rect2.top || rect1.top >= rect2.bottom)
   }
 
   let boxes = [].slice.call(document.getElementsByClassName("box"))
@@ -120,7 +127,10 @@ const removeTouchingIcons = function () {
     let element = item.element
     let rect = item.rect
 
-    if (getTouching(nameRect, rect)) {
+    if (
+      getTouchingNameIcon(nameRect, rect) ||
+      getTouchingFooterIcon(footerRect, rect)
+    ) {
       element.innerHTML = ""
     }
   })
