@@ -35,7 +35,7 @@ const ProjectSelectors = ({ history }) => {
       <ProjectSelectorBox
         className="second-row"
         onClick={() =>
-          history.push("/projects/surfacing-data-and-insights-and-insights")
+          history.push("/projects/surfacing-data-and-insights")
         }
         color="lightGreen"
       >

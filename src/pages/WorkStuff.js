@@ -29,7 +29,7 @@ const WorkStuff = ({ history }) => {
         </ContentContainer>
       </BlackSection>
       <ContentContainer>
-        <ProjectSelectors />
+        <ProjectSelectors history={history} />
         <Experience />
       </ContentContainer>
     </>
