@@ -2,7 +2,7 @@
 Git repository for Carrie's pesonal portfolio website.
 
 ## Technologies used
-This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework.
+This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework. styled components is used for styling.
 
 ## Tooling
 
