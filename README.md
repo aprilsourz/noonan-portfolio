@@ -1,5 +1,5 @@
 # Portfolio Website For Carrie
-Git repository for Carrie's pesonal portfolio website.
+Git repository for Carrie's pesonal portfolio website. [https://www.carrienoonan.fun/](https://www.carrienoonan.fun/)
 
 ## Technologies used
 This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework. styled components is used for styling.
