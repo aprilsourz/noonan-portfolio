@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom"
+import Analytics from "react-router-ga"
 import { ThemeProvider } from "styled-components"
 
 import Home from "./pages/Home"
@@ -37,34 +38,36 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <Router>
-          <>
-            <ScrollToTop />
-            <SiteHeader />
-            <main>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/fun-stuff" component={FunStuff} />
-                <Route exact path="/work-stuff" component={WorkStuff} />
-                <Route
-                  exact
-                  path="/projects/decreasing-friction"
-                  component={DecreasingUserExperienceFriction}
-                />
-                <Route
-                  exact
-                  path="/projects/data-driven-decisions"
-                  component={MakingDataDrivenDecisions}
-                />
-                <Route
-                  exact
-                  path="/projects/surfacing-data-and-insights"
-                  component={SurfacingDataAndInsights}
-                />
-                <Redirect to="/" />
-              </Switch>
-            </main>
-            <SiteFooter />
-          </>
+          <Analytics id="UA-177221092-1">
+            <>
+              <ScrollToTop />
+              <SiteHeader />
+              <main>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/fun-stuff" component={FunStuff} />
+                  <Route exact path="/work-stuff" component={WorkStuff} />
+                  <Route
+                    exact
+                    path="/projects/decreasing-friction"
+                    component={DecreasingUserExperienceFriction}
+                  />
+                  <Route
+                    exact
+                    path="/projects/data-driven-decisions"
+                    component={MakingDataDrivenDecisions}
+                  />
+                  <Route
+                    exact
+                    path="/projects/surfacing-data-and-insights"
+                    component={SurfacingDataAndInsights}
+                  />
+                  <Redirect to="/" />
+                </Switch>
+              </main>
+              <SiteFooter />
+            </>
+          </Analytics>
         </Router>
       </ThemeProvider>
     )
