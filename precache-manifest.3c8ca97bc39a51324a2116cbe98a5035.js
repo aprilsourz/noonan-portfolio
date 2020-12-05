@@ -1,35 +1,59 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be79e8288337869c064c3227a5d1cfc1",
+    "revision": "a5126ce61c05a162b58e4861402bd349",
     "url": "/noonan-portfolio/index.html"
   },
   {
-    "revision": "fa069e783c53b9eb4a78",
+    "revision": "eb4d61b17a88db028e31",
     "url": "/noonan-portfolio/static/css/2.9e5c3921.chunk.css"
   },
   {
-    "revision": "086331b20dd90e72c32d",
-    "url": "/noonan-portfolio/static/css/main.95cb0d9c.chunk.css"
+    "revision": "1d010928a9749d851088",
+    "url": "/noonan-portfolio/static/css/main.7d353d29.chunk.css"
   },
   {
-    "revision": "fa069e783c53b9eb4a78",
-    "url": "/noonan-portfolio/static/js/2.d9bec113.chunk.js"
+    "revision": "eb4d61b17a88db028e31",
+    "url": "/noonan-portfolio/static/js/2.e0ee39a2.chunk.js"
   },
   {
     "revision": "3a5402f5ddd536a8f5deb8d906cf7b41",
-    "url": "/noonan-portfolio/static/js/2.d9bec113.chunk.js.LICENSE.txt"
+    "url": "/noonan-portfolio/static/js/2.e0ee39a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "086331b20dd90e72c32d",
-    "url": "/noonan-portfolio/static/js/main.87b1a38a.chunk.js"
+    "revision": "1d010928a9749d851088",
+    "url": "/noonan-portfolio/static/js/main.ffaaeda0.chunk.js"
   },
   {
     "revision": "4f0ca1373c8810a22984",
     "url": "/noonan-portfolio/static/js/runtime-main.a2198669.js"
   },
   {
+    "revision": "01adb8425f6c63bcc2e679bf8b457196",
+    "url": "/noonan-portfolio/static/media/00-reporting-header-image.01adb842.png"
+  },
+  {
     "revision": "3aa70fe41d9a8ab80801a7d959a600e8",
     "url": "/noonan-portfolio/static/media/01-feelings.3aa70fe4.png"
+  },
+  {
+    "revision": "5d35609f577174921f1ce7515b86e508",
+    "url": "/noonan-portfolio/static/media/01-no-data-available.5d35609f.png"
+  },
+  {
+    "revision": "d4595137113d6ff2b928b829508edb87",
+    "url": "/noonan-portfolio/static/media/01-ryans-final-design.d4595137.png"
+  },
+  {
+    "revision": "376348fe6b3f6641b1f56b4559dbe4b6",
+    "url": "/noonan-portfolio/static/media/01-widest.376348fe.png"
+  },
+  {
+    "revision": "7f4de34a45788956b8f8c32b505b22dd",
+    "url": "/noonan-portfolio/static/media/02-medium.7f4de34a.png"
+  },
+  {
+    "revision": "3681142d54a450cd029462a4caa33286",
+    "url": "/noonan-portfolio/static/media/02-no-change.3681142d.png"
   },
   {
     "revision": "d54ce439d64a9ef4f2db6e48b23b4d05",
@@ -40,8 +64,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noonan-portfolio/static/media/03-climbing1.2619d4c6.png"
   },
   {
+    "revision": "97f31a92381f2a38c8b49f7b003d8742",
+    "url": "/noonan-portfolio/static/media/03-smallest.97f31a92.png"
+  },
+  {
+    "revision": "4b7cc8997d6ce65b4cedd7efb7e3b811",
+    "url": "/noonan-portfolio/static/media/03-stat-0.4b7cc899.png"
+  },
+  {
     "revision": "114fafd9d590fc00f90b68b7ba9659ac",
     "url": "/noonan-portfolio/static/media/04-embroidery.114fafd9.png"
+  },
+  {
+    "revision": "f45d091736ebc43203373e33bea6cf21",
+    "url": "/noonan-portfolio/static/media/04-empty-state.f45d0917.png"
+  },
+  {
+    "revision": "718451a7ec8a34906261671fd503ae93",
+    "url": "/noonan-portfolio/static/media/04-no-data-comparison.718451a7.png"
+  },
+  {
+    "revision": "0bc99cc81f6dc65f7633b791f599e110",
+    "url": "/noonan-portfolio/static/media/05-loading-state.0bc99cc8.png"
+  },
+  {
+    "revision": "43e8ae189de8ea621d8545dac3e10df8",
+    "url": "/noonan-portfolio/static/media/05-no-activity.43e8ae18.png"
   },
   {
     "revision": "a0510271c50907e1849fdc2500173166",
@@ -52,8 +100,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noonan-portfolio/static/media/06-eggs.a147fc5f.png"
   },
   {
+    "revision": "9ea662626c8e16e0c6e8e3cd138592aa",
+    "url": "/noonan-portfolio/static/media/06-interactions.9ea66262.png"
+  },
+  {
+    "revision": "7bab352981c21b4069de57822eabef97",
+    "url": "/noonan-portfolio/static/media/06-no-engagement.7bab3529.png"
+  },
+  {
     "revision": "fc9ce64137b450091bb688b2208f64aa",
     "url": "/noonan-portfolio/static/media/07-mothmoon.fc9ce641.png"
+  },
+  {
+    "revision": "1b33f374f59d953b652e3759b8e5080b",
+    "url": "/noonan-portfolio/static/media/07-tooltip.1b33f374.png"
   },
   {
     "revision": "c7193b8a3c1feb19b6410179c5d84530",
@@ -128,76 +188,64 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noonan-portfolio/static/media/clouds.f4594d58.svg"
   },
   {
-    "revision": "dfbb9aac267ea8c9b84e2946032d5146",
-    "url": "/noonan-portfolio/static/media/data-driven-decisions.dfbb9aac.png"
+    "revision": "2b90106f1736bda7132334b66c97dca8",
+    "url": "/noonan-portfolio/static/media/data-driven-carousel1.2b90106f.png"
+  },
+  {
+    "revision": "f709f7b2c579fadbb5e09c307f976604",
+    "url": "/noonan-portfolio/static/media/data-driven-carousel2.f709f7b2.png"
   },
   {
     "revision": "603e70b51e112d858f73f18a21d38597",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel1.603e70b5.png"
+    "url": "/noonan-portfolio/static/media/data-driven-carousel3.603e70b5.png"
   },
   {
-    "revision": "34f7f48caeed48e2042911494e77bd05",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel2.34f7f48c.png"
+    "revision": "5508c20f5bc530abcb9b7c3cc011a96d",
+    "url": "/noonan-portfolio/static/media/data-driven-carousel4.5508c20f.png"
   },
   {
-    "revision": "f48c6d58603c4f45a5019dcfd4d3fb90",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel3.f48c6d58.png"
+    "revision": "28bdc3131560d82667c4345f86284f4b",
+    "url": "/noonan-portfolio/static/media/data-driven-carousel5.28bdc313.png"
   },
   {
-    "revision": "07698da6c96985293218044e41d515b4",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel4.07698da6.png"
+    "revision": "aa9fbc2db179d1acd3b3beec21109939",
+    "url": "/noonan-portfolio/static/media/data-driven-carousel6.aa9fbc2d.png"
   },
   {
-    "revision": "85bb0d054d2c6518ed18f58e067414fb",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel5.85bb0d05.png"
-  },
-  {
-    "revision": "90e52a43dcf224c2adf58fddb620ba43",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel6.90e52a43.png"
-  },
-  {
-    "revision": "78ee3bf5ccc6c23cba4b9813de4b1ed8",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel7.78ee3bf5.png"
-  },
-  {
-    "revision": "639673deae934a3b541e7b9c36cc85b7",
-    "url": "/noonan-portfolio/static/media/data-driven_carousel8.639673de.png"
+    "revision": "4c17d54bebdfaf82e2f82d31503b000f",
+    "url": "/noonan-portfolio/static/media/data-driven-decisions-rotated.4c17d54b.png"
   },
   {
     "revision": "e9cc527280608a3fd5c8975d31abcbef",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_carousel1.e9cc5272.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-carousel1.e9cc5272.png"
   },
   {
     "revision": "583931b1bb75b7bbdb6e45174021a185",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_carousel2.583931b1.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-carousel2.583931b1.png"
   },
   {
     "revision": "e44618464dfa643421062cf6061e1cc2",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_carousel3.e4461846.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-carousel3.e4461846.png"
   },
   {
     "revision": "2a688ae307d9e4f86f83fff498500ddb",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_carousel4.2a688ae3.png"
-  },
-  {
-    "revision": "e9cc527280608a3fd5c8975d31abcbef",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_carousel5.e9cc5272.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-carousel4.2a688ae3.png"
   },
   {
     "revision": "aea5ac4eeebd3f07a3aa1f27665188b6",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_header-image.aea5ac4e.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-header-image.aea5ac4e.png"
   },
   {
     "revision": "bd7a6ad812b543ab051b934a358cc55a",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_iterate.bd7a6ad8.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-iterate.bd7a6ad8.png"
   },
   {
     "revision": "08e523934552232bec263e080f2a6139",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_workflow1.08e52393.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-workflow1.08e52393.png"
   },
   {
     "revision": "be7b3f34bb027ec8b5145dbdb1038397",
-    "url": "/noonan-portfolio/static/media/decreasing-user-friction_workflow2.be7b3f34.png"
+    "url": "/noonan-portfolio/static/media/decreasing-user-friction-workflow2.be7b3f34.png"
   },
   {
     "revision": "49bad3677e9c370d63a2df3a790d318d",
@@ -206,6 +254,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "27de93756549ead7a35ed263e2af8156",
     "url": "/noonan-portfolio/static/media/headphones.27de9375.svg"
+  },
+  {
+    "revision": "06dfe5389cfdc9ee457b6f310343a174",
+    "url": "/noonan-portfolio/static/media/iteration1.06dfe538.png"
+  },
+  {
+    "revision": "02ada399d4ef2b2a725d7b4560183dd0",
+    "url": "/noonan-portfolio/static/media/iteration2.02ada399.png"
+  },
+  {
+    "revision": "6dbe31fd13b12fe605d6bdfdde3a0696",
+    "url": "/noonan-portfolio/static/media/iteration3.6dbe31fd.png"
+  },
+  {
+    "revision": "46541197e029a26f1bf5f0c00e8aaaa0",
+    "url": "/noonan-portfolio/static/media/iteration4.46541197.png"
   },
   {
     "revision": "1a51977686ea49e4eaeda964b38853c0",
@@ -228,6 +292,38 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noonan-portfolio/static/media/mug.6a136661.svg"
   },
   {
+    "revision": "6dac66f31d71672d9566b7bf2eed8e97",
+    "url": "/noonan-portfolio/static/media/option-a.6dac66f3.png"
+  },
+  {
+    "revision": "1caabf50337902c88cdf9299bde3c468",
+    "url": "/noonan-portfolio/static/media/option-b.1caabf50.png"
+  },
+  {
+    "revision": "645099d7aee1a57263fd64bffb858fc8",
+    "url": "/noonan-portfolio/static/media/option-c.645099d7.png"
+  },
+  {
+    "revision": "5a103125752a4f29d2f67e3fd3b2146d",
+    "url": "/noonan-portfolio/static/media/option-d.5a103125.png"
+  },
+  {
+    "revision": "5f17035e32f7fa8be3fa96cfd77af656",
+    "url": "/noonan-portfolio/static/media/option-e.5f17035e.png"
+  },
+  {
+    "revision": "c41b462271e38053790dc7d6dc2eff14",
+    "url": "/noonan-portfolio/static/media/option-f.c41b4622.png"
+  },
+  {
+    "revision": "dfe60784aa737cff2932f1f235721b43",
+    "url": "/noonan-portfolio/static/media/option-g.dfe60784.png"
+  },
+  {
+    "revision": "71f6392ac2a998831d534fa28da97b60",
+    "url": "/noonan-portfolio/static/media/option-h.71f6392a.png"
+  },
+  {
     "revision": "fa8c27d1a321ea2b8990436819033672",
     "url": "/noonan-portfolio/static/media/pizza.fa8c27d1.svg"
   },
@@ -244,12 +340,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noonan-portfolio/static/media/popsicle.00f7c21d.svg"
   },
   {
+    "revision": "a9ae1943a5355326b5d180ac4825c997",
+    "url": "/noonan-portfolio/static/media/progression-carousel1.a9ae1943.png"
+  },
+  {
+    "revision": "5d70ff2786c65b0d871e1ea89c8ad9fc",
+    "url": "/noonan-portfolio/static/media/progression-carousel2.5d70ff27.png"
+  },
+  {
+    "revision": "3eb8d14305b3a7c6855aaa6efd107598",
+    "url": "/noonan-portfolio/static/media/progression-carousel3.3eb8d143.png"
+  },
+  {
+    "revision": "2c1a01976c7527a855c9b0b82aecdeed",
+    "url": "/noonan-portfolio/static/media/progression-carousel4.2c1a0197.png"
+  },
+  {
     "revision": "32b93580f0e74bd017e834e2619b55ca",
     "url": "/noonan-portfolio/static/media/rainbow.32b93580.svg"
   },
   {
     "revision": "1c2e4da3b4a3bad05437caf92dfa69da",
     "url": "/noonan-portfolio/static/media/sewing.1c2e4da3.svg"
+  },
+  {
+    "revision": "223dbb70e02ca0182aeccba495ed73c4",
+    "url": "/noonan-portfolio/static/media/sketch-1.223dbb70.png"
+  },
+  {
+    "revision": "702c22cac9e938148167f0f877e144cd",
+    "url": "/noonan-portfolio/static/media/sketch-2.702c22ca.png"
+  },
+  {
+    "revision": "c60ed1032c6daba211004c4cd25d53aa",
+    "url": "/noonan-portfolio/static/media/sketch-3.c60ed103.png"
   },
   {
     "revision": "e0b81ceb3896898114caa57711f1ccb9",
