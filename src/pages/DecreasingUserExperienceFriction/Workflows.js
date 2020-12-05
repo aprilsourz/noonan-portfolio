@@ -27,12 +27,10 @@ const Workflows = () => (
 export default Workflows
 
 const WorkFlowContainer = styled.div`
-  max-width: 1320px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 1320px;
+  text-align: center;
+  width: fit-content;
 
   img {
     width: 100%;
