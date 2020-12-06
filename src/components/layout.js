@@ -7,6 +7,11 @@ export const ContentContainer = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 
+  @media (hover: none) and (pointer: coarse) and (orientation: landscape) {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
   ${breakpoint("desktop")`
     padding: 0 5px;
   `}
