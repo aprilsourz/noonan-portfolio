@@ -18,10 +18,11 @@ const WorkStuff = ({ history }) => {
           <IntroTextContainer>
             <StyledLargeTitleText>Hi, I’m Carrie!</StyledLargeTitleText>
             <StyledLargeBodyText>
-              As a Senior Designer on a small design team, I wear all the
-              “product designer” hats. User research, user experience, and user
-              interface design all fall into my wheelhouse. I’m the lead
-              designer for two teams and I manage one direct report.
+              I'm an experienced senior product designer with a history designing for
+              SaaS applications. A strong generalist accustomed to wearing all the "product 
+              designer hats," user experience, user interface design, and user research all 
+              fall into my wheelhouse. Most recently, I was the lead designer for multiple teams 
+              at Yesware and I managed one direct report.
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledRainbow />
