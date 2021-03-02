@@ -28,19 +28,24 @@ const ResultsAndTakeAways = () => (
         </BodyTextWithMargin40>
         <BlueRectangle>
           <BoldBodyText>
-            60% of senders clicked on recipient names to preview how each step
+            60% of senders knew to click on recipient names to preview how each step
             would appear
           </BoldBodyText>
         </BlueRectangle>
         <BlueRectangle>
           <BoldBodyText>
-            32% of senders clicked the new “Edit for # recipients” to make a
+            32% of senders correctly clicked the new “Edit for # recipients” to make a
             bulk change
           </BoldBodyText>
         </BlueRectangle>
         <BlueRectangle>
           <BoldBodyText>
-            32% of senders saved a personalization for a single recipient
+            32% of senders correctly saved a personalization for a single recipient
+          </BoldBodyText>
+        </BlueRectangle>
+        <BlueRectangle>
+          <BoldBodyText>
+            Support tickets related to these workflows were reduced by 22% over six months
           </BoldBodyText>
         </BlueRectangle>
         <div style={{ marginTop: "20px" }}>
@@ -54,7 +59,7 @@ const ResultsAndTakeAways = () => (
           <BodyTextWithMargin40>
             The undertaking of this project, while a high level of effort both
             on the design and engineering side, paid off. We had created a more
-            intuitive experience for our users and we saw a decrease in support
+            intuitive experience for our users and we saw a significant decrease in support
             tickets around these workflows.
           </BodyTextWithMargin40>
         </div>

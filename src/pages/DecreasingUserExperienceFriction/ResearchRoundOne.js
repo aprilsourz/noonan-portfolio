@@ -65,9 +65,9 @@ const ResearchRoundOne = () => (
           <NumberedBlock>
             <ColoredNumber>2 )</ColoredNumber>
             <NumberedBlockText>
-              Most users felt that the “overlay” Ul was the most user friendly
-              and did the best job of helping the user understand what they were
-              and were not editing.
+              Most users felt that they would feel more confident making changes to
+              their campaign if the UI was more explicit about who the changes would
+              affect and when the changes would be implemented.
             </NumberedBlockText>
           </NumberedBlock>
         </Grid.Unit>

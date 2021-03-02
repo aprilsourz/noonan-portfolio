@@ -6,6 +6,8 @@ import { HeaderLg } from "../../components/typography"
 import decreasingUserExperienceFriction from "../../img/decreasing-user-friction/decreasing-user-friction-header-image.png"
 import dataDrivenDecisions from "../../img/data-driven-decisions/data-driven-decisions-rotated.png"
 import surfacingData from "../../img/surfacing-data-and-insights/00-reporting-header-image.png"
+import validatingViaBeta from "../../img/validating-via-beta/tempo-header-image.png"
+
 
 const ProjectSelectors = ({ history }) => {
   return (
@@ -32,7 +34,7 @@ const ProjectSelectors = ({ history }) => {
           <Image src={dataDrivenDecisions} />
         </ImageContainer>
       </ProjectSelectorBox>
-      <ProjectSelectorBox
+            <ProjectSelectorBox
         className="second-row"
         onClick={() =>
           history.push("/projects/surfacing-data-and-insights")
@@ -44,6 +46,20 @@ const ProjectSelectors = ({ history }) => {
         </ProjectSelectorText>
         <ImageContainer>
           <Image src={surfacingData} />
+        </ImageContainer>
+      </ProjectSelectorBox>
+      <ProjectSelectorBox
+        className="second-row"
+        onClick={() =>
+          window.open("https://s3.amazonaws.com/carrienoonan.fun/Tempo.pdf", '_blank')
+        }
+        color="lightBlue"
+      >
+        <ProjectSelectorText color="blue">
+          Validating direction via beta testing
+        </ProjectSelectorText>
+        <ImageContainer>
+          <Image src={validatingViaBeta} />
         </ImageContainer>
       </ProjectSelectorBox>
     </ProjectSelectorContainer>
@@ -112,7 +128,7 @@ const ProjectSelectorBox = styled.div`
     &.second-row {
       margin-top: 30px;
       max-width: unset;
-      width: 100%;
+      width: 49%;
       }
     }
   `};

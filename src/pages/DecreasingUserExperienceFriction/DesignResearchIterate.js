@@ -75,7 +75,7 @@ const DesignResearchIterate = () => {
             received, I worked towards updating the Campaigns Ul and editing
             specific workflows throughout the entire feature. I not only updated
             specific Ul components that already existed as part of Campaigns,
-            but I also designed a brand new piece of functionality that would
+            but I also designed a new recipient detail view that would
             allow users to more specifically understand what content their
             individual recipients would be receiving and the ability to
             customize that content on a per recipient basis.
