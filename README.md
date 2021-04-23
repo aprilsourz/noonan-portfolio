@@ -5,8 +5,7 @@ Git repository for Carrie's pesonal portfolio website. [https://www.carrienoonan
 This is a single page front-end application that does not have a server component or data store. The main programming language is JavaScript and React is the front-end framework. styled components is used for styling.
 
 ## Tooling
-
-This project was created with create react app. Here is the all of the documentation about it. 
+This project was created with create react app. Below are the build and test scripts.
 
 ### `yarn start`
 
