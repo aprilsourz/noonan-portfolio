@@ -37,7 +37,6 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    const width = this.props.size.width
     let originalIconsHTML = document.getElementById("icons").innerHTML
 
     // hack to get the this to work on page load. I think it takes a few
@@ -45,9 +44,6 @@ class Home extends React.Component {
     // didn't have the time to come up with a better solution :(
     setTimeout(() => {
       removeTouchingIcons()
-      if (width > 768) {
-        addTooltips()
-      }
     }, 50)
 
     let addEvent = function (object, type, callback) {
@@ -143,34 +139,6 @@ const resizeFunction = (originalIconsHTML, width) => {
 
   document.getElementById("icons").innerHTML = originalIconsHTML
   removeTouchingIcons()
-
-  addTooltips()
-}
-
-const addTooltips = () => {
-  tippy.setDefaults({
-    animation: "fade",
-    arrow: true,
-    theme: "joji",
-  })
-
-  tippy(".box img", {
-    content: function (reference) {
-      let id = reference.getAttribute("data-template")
-      let container = document.createElement("div")
-      let linkedTemplate = document.getElementById(id)
-      if (linkedTemplate) {
-        let node = document.importNode(linkedTemplate.content, true)
-        container.appendChild(node)
-        return container
-      } else {
-        let node = document.createElement("span")
-        node.innerHTML = "wait for copy!"
-        container.appendChild(node)
-        return container
-      }
-    },
-  })
 }
 
 const imageMap = {

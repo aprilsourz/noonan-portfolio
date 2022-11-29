@@ -20,6 +20,44 @@ const Experience = () => {
         </Grid.Unit>
         <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
           <BoldBodyText>
+            PRODUCT DESIGNER - LATTICE
+            <br />
+            Apr 2021 - present / Remote
+            <br />
+            <br />
+          </BoldBodyText>
+          <BodyText>
+            Leading design for Lattice’s integrated employee development solution, Grow, a product that helps HR admins effortlessly manage role expectations as their company evolves, empowers managers to successfully support their direct reports, and gives employees ownership over their growth.
+            <br />
+            <br />
+            <ul style={{ listStyle: "unset" }}>
+              <li>
+                Currently leading design with a focus on driving value and engagement for the employee and manager personas within the Lattice Performance suite by identifying key workflow gaps and building connected career development features in Lattice
+              </li>
+              <li>
+                Regularly partner with teammates across disciplines to build and strengthen team culture; facilitated roles and responsibilities conversations between design and engineering disciplines identifying where in the project lifecycle communication and process could be improved; partnered with design colleagues to voice and identify a need to strengthen the Product Design team’s identity as we scaled the team and evolved processes
+              </li>
+              <li>
+                Co-led discovery and research to understand job architecture in the HR industry and defined how to build an integrated job architecture platform into Lattice that would create a connective tissue between products at a foundational level and solve a deep HR admin pain point
+              </li>
+              <li>
+                Designed the user experience and interface of the job architecture platform in Lattice; collaborated across three cross-functional teams to implement a foundation of clearly defined rules and logic that connected and shared data across Lattice’s Grow, Compensation, and Platform products (previously unconnected products); launched a beta to early access participants that successfully validated core workflows and value; in less than 2 months after general release, saw a 200% increase in setup activities for companies using job architecture in Lattice
+              </li>
+              <li>
+                Researched, designed and implemented core workflow improvements in Grow that solved key HR admin pain points including: introducing a table stakes reporting feature, building and defining HRIS data integration workflows, and identifying iterative improvements to the usability of the product for the admin persona
+              </li>
+              <li>
+                With a small group of cross-discipline teammates in the design org, contributed to designing, collecting content, and writing for the Lattice Design Newsletter. Sent out quarterly to the company with the intention of highlighting the team’s processes, sharing project launches, and giving the org a closer look at our growing design org
+              </li>
+            </ul>
+          </BodyText>
+        </Grid.Unit>
+      </StyledGrid>
+      <StyledGrid>
+        <Grid.Unit size={{ mobile: 1, tablet: 1 / 3, desktop: 1 / 3 }}>
+        </Grid.Unit>
+        <Grid.Unit size={{ mobile: 1, tablet: 2 / 3, desktop: 2 / 3 }}>
+          <BoldBodyText>
             SENIOR PRODUCT DESIGNER - YESWARE
             <br />
             Mar 2019 - Oct 2020 / Boston, MA (remote)

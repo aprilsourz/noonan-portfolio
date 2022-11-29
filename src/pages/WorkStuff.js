@@ -16,13 +16,12 @@ const WorkStuff = ({ history }) => {
       <BlackSection>
         <ContentContainer>
           <IntroTextContainer>
-            <StyledLargeTitleText>Hi, I’m Carrie!</StyledLargeTitleText>
+            <StyledLargeTitleText>👋 Hi! I'm Carrie!</StyledLargeTitleText>
             <StyledLargeBodyText>
-              I'm an experienced senior product designer with a history designing for
-              SaaS applications. A strong generalist accustomed to wearing all the "product 
-              designer hats," user experience, user interface design, and user research all 
-              fall into my wheelhouse. Most recently, I was the lead designer for multiple teams 
-              at Yesware and I managed one direct report.
+               I'm a product designer with a love for storytelling and bringing visions to life. I studied graphic design at Western Washington University, stumbled into the startup world in Boston, MA, and am now an experienced product designer living and working remotely in the Western United States.
+              <br></br>
+              <br></br>
+              Currently, I'm designing at Lattice, helping companies effortlessly manage role expectations, empowering managers to successfully support their direct reports, and giving employees ownership over their growth 🌱
             </StyledLargeBodyText>
           </IntroTextContainer>
           <StyledRainbow />
